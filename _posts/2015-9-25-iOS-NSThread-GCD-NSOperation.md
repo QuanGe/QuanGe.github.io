@@ -284,10 +284,10 @@ NSLog(@"The result is %f", result);
 使用注意：
 1、使用 block 定义异步接口:
 
-```objective-c
+{% highlight objc %}
 - (void)downloadObjectsAtPath:(NSString *)path
                    completion:(void(^)(NSArray *objects, NSError *error))completion;
-```
+{% endhighlight %}
 
 当你定义一个类似上面的接口的时候，尽量使用一个单独的 block 作为接口的最后一个参数。把需要提供的数据和错误信息整合到一个单独 block 中，比分别提供成功和失败的 block 要好。
 
@@ -307,7 +307,7 @@ NSLog(@"The result is %f", result);
 因为调用者更关心的是实际的数据，就像这样：
 
 
-```objective-c
+{% highlight objc %}
 - (void)downloadObjectsAtPath:(NSString *)path
                    completion:(void(^)(NSArray *objects, NSError *error))completion {
     if (objects) {
@@ -317,7 +317,7 @@ NSLog(@"The result is %f", result);
         // some error occurred, 'error' variable should not be nil by contract
     }
 }
-```
+{% endhighlight %}
 
 
 此外，Apple 提供的一些同步接口在成功状态下向 error 参数（如果非 NULL) 写入了垃圾值，所以检查 error 的值可能出现问题。
@@ -340,7 +340,7 @@ NSLog(@"The result is %f", result);
 
 (下面代码是译者加的)
 
-```objective-c
+{% highlight objc %}
    ...
    CGFloat blockInt = 10;
    void (^playblock)(void) = ^{
@@ -351,7 +351,7 @@ NSLog(@"The result is %f", result);
     ...
     
     //结果为:blockInt = 10
-```
+{% endhighlight %}
 
 
 最重要的事情是 `__block` 声明的变量和指针在 block 里面是作为显示操作真实值/对象的结构来对待的。
@@ -376,24 +376,24 @@ block 在 Objective-C 的 runtime(运行时) 里面被当作一等公民对待�
 
 **例子:**
 
-```objective-c
+{% highlight objc %}
 __weak __typeof(self) weakSelf = self;
 [self executeBlock:^(NSData *data, NSError *error) {
     [weakSelf doSomethingWithData:data];
 }];
-```
+{% endhighlight %}
 
 **不要这样:**
 
-```objective-c
+{% highlight objc %}
 [self executeBlock:^(NSData *data, NSError *error) {
     [self doSomethingWithData:data];
 }];
-```
+{% endhighlight %}
 
 **多个语句的例子:**
 
-```objective-c
+{% highlight objc %}
 __weak __typeof(self)weakSelf = self;
 [self executeBlock:^(NSData *data, NSError *error) {
     __strong __typeof(weakSelf) strongSelf = weakSelf;
@@ -402,25 +402,25 @@ __weak __typeof(self)weakSelf = self;
         [strongSelf doSomethingWithData:data];
     }
 }];
-```
+{% endhighlight %}
 
 **不要这样:**
 
-```objective-c
+{% highlight objc %}
 __weak __typeof(self)weakSelf = self;
 [self executeBlock:^(NSData *data, NSError *error) {
     [weakSelf doSomethingWithData:data];
     [weakSelf doSomethingWithData:data];
 }];
-```
+{% endhighlight %}
 
 
 你应该把这两行代码作为 snippet 加到 Xcode 里面并且总是这样使用它们。
 
-```objective-c
+{% highlight objc %}
 __weak __typeof(self)weakSelf = self;
 __strong __typeof(weakSelf)strongSelf = weakSelf;
-```
+{% endhighlight %}
 
 这里我们来讨论下 block 里面的 self 的 `__weak` 和 `__strong`  限定词的一些微妙的地方。简而言之，我们可以参考 self 在 block 里面的三种不同情况。
 
@@ -433,7 +433,7 @@ __strong __typeof(weakSelf)strongSelf = weakSelf;
 
 如果我们直接在 block 里面用 self 关键字，对象会在 block 的定义时候被 retain，（实际上 block 是 [copied][blocks_caveat13]  但是为了简单我们可以忽略这个）。一个 const 的对 self 的引用在 block 里面有自己的位置并且它会影响对象的引用计数。如果这个block被其他的类使用并且(或者)彼此间传来传去，我们可能想要在 block 中保留 self，就像其他在 block 中使用的对象一样. 因为他们是block执行所需要的.
 
-```objective-c
+{% highlight objc %}
 dispatch_block_t completionBlock = ^{
     NSLog(@"%@", self);
 }
@@ -442,12 +442,12 @@ MyViewController *myController = [[MyViewController alloc] init...];
 [self presentViewController:myController
                    animated:YES
                  completion:completionHandler];
-```
+{% endhighlight %}
 
 
 没啥大不了。但是如果通过一个属性中的 `self` 保留 了这个 block（就像下面的例程一样）,对象( self )保留了 block 会怎么样呢？
 
-```objective-c
+{% highlight objc %}
 self.completionHandler = ^{
     NSLog(@"%@", self);
 }
@@ -456,14 +456,14 @@ MyViewController *myController = [[MyViewController alloc] init...];
 [self presentViewController:myController
                    animated:YES
                  completion:self.completionHandler];
-```
+{% endhighlight %}
 
 
 这就是有名的 retain cycle, 并且我们通常应该避免它。这种情况下我们收到 CLANG 的警告：
 
-```objective-c 
+{% highlight objc %}
 Capturing 'self' strongly in this block is likely to lead to a retain cycle （在 block 里面发现了 `self` 的强引用，可能会导致循环引用）
-```
+{% endhighlight %}
 所以 `__weak` 就有用武之地了。
 
 **方案 2. 在 block 外定义一个 `__weak` 的 引用到 self，并且在 block 里面使用这个弱引用**
@@ -471,7 +471,7 @@ Capturing 'self' strongly in this block is likely to lead to a retain cycle （�
 
 这样会避免循坏引用，也是通常情况下我们的block作为类的属性被self retain 的时候会做的。
 
-```objective-c
+{% highlight objc %}
 __weak typeof(self) weakSelf = self;
 self.completionHandler = ^{
     NSLog(@"%@", weakSelf);
@@ -481,7 +481,7 @@ MyViewController *myController = [[MyViewController alloc] init...];
 [self presentViewController:myController
                    animated:YES
                  completion:self.completionHandler];
-```
+{% endhighlight %}
 
 
 这个情况下 block 没有 retain 对象并且对象在属性里面 retain 了 block 。所以这样我们能保证了安全的访问 self。 不过糟糕的是，它可能被设置成 nil 的。问题是：如何让 self 在 block 里面安全地被销毁。
@@ -498,7 +498,7 @@ MyViewController *myController = [[MyViewController alloc] init...];
 
 [Apple 文档][blocks_caveat1] 中表示 "为了 non-trivial cycles ，你应该这样" ：
 
-```objective-c
+{% highlight objc %}
 MyViewController *myController = [[MyViewController alloc] init...];
 // ...
 MyViewController * __weak weakMyController = myController;
@@ -513,7 +513,7 @@ myController.completionHandler =  ^(NSInteger result) {
         // Probably nothing...
     }
 };
-```
+{% endhighlight %}
 
 
 首先，我觉得这个例子看起来是错误的。如果 block 本身在 completionHandler 属性中被 retain 了，那么 self 如何被 delloc 和在 block 之外赋值为 nil 呢? completionHandler 属性可以被声明为  `assign` 或者 `unsafe_unretained` 的，来允许对象在 block 被传递之后被销毁。
@@ -539,20 +539,20 @@ myController.completionHandler =  ^(NSInteger result) {
 
 block 的执行可以抢占，而且对 weakSelf 指针的调用时序不同可以导致不同的结果(如：在一个特定的时序下 weakSelf 可能会变成nil)。
 
-```objective-c
+{% highlight objc %}
 __weak typeof(self) weakSelf = self;
 dispatch_block_t block =  ^{
     [weakSelf doSomething]; // weakSelf != nil
     // preemption, weakSelf turned nil
     [weakSelf doSomethingElse]; // weakSelf == nil
 };
-```
+{% endhighlight %}
 
 **方案 3. 在 block 外定义一个 `__weak` 的 引用到 self，并在在 block 内部通过这个弱引用定义一个 `__strong`  的引用。**
 
 不管 block 是否通过属性被 retain ，这里也不会发生循环引用。如果 block 被传递到其他对象并且被复制了，执行的时候，weakSelf 可能被nil，因为强引用被赋值并且不会变成nil的时候，我们确保对象 在 block 调用的完整周期里面被 retain了，如果抢占发生了，随后的对 strongSelf 的执行会继续并且会产生一样的值。如果 strongSelf 的执行到 nil，那么在 block 不能正确执行前已经返回了。
 
-```objective-c
+{% highlight objc %}
 __weak typeof(self) weakSelf = self;
 myObj.myBlock =  ^{
     __strong typeof(self) strongSelf = weakSelf;
@@ -566,22 +566,22 @@ myObj.myBlock =  ^{
         return;
     }
 };
-```
+{% endhighlight %}
  
 在ARC条件中，如果尝试用 `->` 符号访问一个实例变量，编译器会给出非常清晰的错误信息：
 
-```objective-c
+{% highlight objc %}
 Dereferencing a __weak pointer is not allowed due to possible null value caused by race condition, assign it to a strong variable first. (对一个 __weak 指针的解引用不允许的，因为可能在竞态条件里面变成 null, 所以先把他定义成 strong 的属性)
-```
+{% endhighlight %}
 
 可以用下面的代码展示
 
-```objective-c
+{% highlight objc %}
 __weak typeof(self) weakSelf = self;
 myObj.myBlock =  ^{
     id localVal = weakSelf->someIVar;
 };
-```
+{% endhighlight %}
 
 
 在最后
