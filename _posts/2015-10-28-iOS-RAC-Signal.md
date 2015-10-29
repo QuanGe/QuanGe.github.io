@@ -31,19 +31,19 @@ title: iOS充电日记－－RACSignal
 @end
 {% endhighlight %}
 
-从上面的代码我们可以看到4点：
+从上面的代码我们可以看到5点：
 
 1、在头文件中类的前向声明使用@class 
 
 2、category名称的命名规范 如果是对iOS sdk的类或其他第三方库的类 加category ,要加上本项目的前缀
 
-2、property的修饰词 尽可能写全，虽然不写也有默认的
+3、property的修饰词 尽可能写全，虽然不写也有默认的
 
-3、property的命名规范 如果是对iOS sdk的类或其他第三方库的类 加category ,要加上本项目的前缀
+4、property的命名规范 如果是对iOS sdk的类或其他第三方库的类 加category ,要加上本项目的前缀
 
-4、函数的命名规范 如果是对iOS sdk的类或其他第三方库的类 加category ,要加上本项目的前缀
+5、函数的命名规范 如果是对iOS sdk的类或其他第三方库的类 加category ,要加上本项目的前缀
 
-对于3、4我写了个例子
+对于4、5我写了个例子
 
 {% highlight objc %}
 //
