@@ -12,6 +12,7 @@ func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath ind
 
 return somecell
 }
+{% highlight objc %}
 
 并在上面函数中动态设置`contentImageViewHeight.constant`的值,结果一运行总报NSLayoutConstraint冲突
 
