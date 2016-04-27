@@ -62,3 +62,7 @@ iOS
 
 ### 总结
 个人还是喜欢iOS的单例模式，简洁
+附app效果图
+![](https://raw.githubusercontent.com/QuanGe/QuanGe.github.io/master/images/girls05.png)
+下载二维码一张
+![](https://raw.githubusercontent.com/QuanGe/QuanGe.github.io/master/images/ysw_android.png)
