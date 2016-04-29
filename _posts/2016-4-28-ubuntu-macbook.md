@@ -63,7 +63,16 @@ sudo apt-get install bcmwl-kernel-source     #Broadcom 802.11 Linux STA 无线�
 ### rubymine 
 在这之前先安装jdk1.8.0_77
 配置环境变量
-
+gedit .profile
+{% highlight objc %}
+export JAVA_HOME="/home/git/文档/jdk1.8.0_77" 
+export PATH=".:$JAVA_HOME/bin:$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+{% endhighlight %}
+gedit .bashrc
+{% highlight objc %}
+export JAVA_HOME="/home/git/文档/jdk1.8.0_77"
+export PATH=".:$JAVA_HOME/bin:$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+{% endhighlight %}
 
 下载版本rubymine7.0 
 破解序列号：
@@ -77,4 +86,9 @@ LICENSE：
 Ysn1P!e"s830EDlHcWg8gmqYVkvZMo
 Injf4yqlO1yy"82NiwNzyYInoT7AiX
 
+### 如果重新打开终端输入ruby -v提示程序“ruby”尚未安装。 您可以使用以下命令安装：
+
+{% highlight objc %}
+/bin/bash --login
+{% endhighlight %}
 
