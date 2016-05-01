@@ -1,0 +1,37 @@
+sudo apt-get install libicu-dev
+sudo apt-get install libmysqlclient-dev 
+安装数据库 http://quange.github.io/ubuntu-mysql/
+
+git clone git@code.csdn.net:code_product/gitlab_git_client.git
+git clone git@code.csdn.net:code_product/labhub.git
+git checkout develop
+git pull 
+git checkout develop
+
+git submodule init
+git submodule update
+
+rvm list
+rvm use 2.1.8 --default
+
+
+复制code.yml.example 到 code.yml
+database.yml.example  database.yml   password: 
+
+bundle install
+
+rake db:create
+rake db:seed_fu
+
+如果遇到sql2相关错误 则执行gem uninstall mysql2 gem install mysql2
+
+
+rake db:migrate
+rake db:seed
+
+//以下可以不执行
+
+redis-server --port 6377 &
+redis-server --port 6378 &
+redis-server 
+
