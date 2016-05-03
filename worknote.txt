@@ -21,17 +21,25 @@ database.yml.example  database.yml   password:
 bundle install
 
 rake db:create
-rake db:seed_fu
 
 如果遇到sql2相关错误 则执行gem uninstall mysql2 gem install mysql2
 
-
 rake db:migrate
 rake db:seed
+rake db:seed_fu
 
 //以下可以不执行
 
 redis-server --port 6377 &
 redis-server --port 6378 &
 redis-server 
+
+都完成以后输入 super_admin 123456 登录不了 需要修改code.yml 
+cookies:
+  domin :zrq.net
+code:
+  host:zrq.net
+  url: http://zrq.net:3000
+然后控制台 输入 sudo gedit /etc/hosts  加上127.0.0.1	zrq.net
+
 
