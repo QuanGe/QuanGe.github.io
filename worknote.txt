@@ -1,6 +1,9 @@
 sudo apt-get install libicu-dev
 sudo apt-get install libmysqlclient-dev 
 安装数据库 http://quange.github.io/ubuntu-mysql/
+sudo chown -R mysql:mysql /usr/local/mysql/data
+sudo apt-get install node.js
+sudo apt-get install redits
 
 git clone git@code.csdn.net:code_product/gitlab_git_client.git
 git clone git@code.csdn.net:code_product/labhub.git
@@ -22,7 +25,14 @@ bundle install
 
 rake db:create
 
-如果遇到sql2相关错误 则执行gem uninstall mysql2 gem install mysql2
+如果遇到sql2相关错误 则执行
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1.gem uninstall mysql2 
+2.选择删除所系有所对应的数字，删除所有 mysql2的版本
+3.gem install mysql2 -- '--with-mysql-lib="/usr/local/mysql/lib" --with-mysql-include="/usr/local/mysql/include"'
+4.bundle install
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 rake db:migrate
 rake db:seed
