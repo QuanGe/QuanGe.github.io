@@ -33,9 +33,9 @@ sudo apt-get remove apparmor
 sudo groupadd mysql
 {% endhighlight %}
 
-2、添加 git（当前用户）添加到 mysql 用户组 
+2、添加 mysql（不是当前用户）添加到 mysql 用户组 
 {% highlight objc %}
-sudo useradd -g mysql git
+sudo adduser  mysql mysql
 {% endhighlight %}
 
 3、解压 mysql-5.5.49-linux2.6-x86_64.tar.gz（我将此文件放在了git［当前用户］的`文档`文件夹中） 到 /usr/local 
@@ -49,7 +49,7 @@ sudo mv mysql-5.5.49-linux2.6-x86_64 mysql
 4、设置 mysql 目录的拥有者和所属的用户组 
 {% highlight objc %}
 cd mysql
-sudo chown -R git .
+sudo chown -R mysql .
 sudo chgrp -R mysql .
 {% endhighlight %}
 
@@ -60,7 +60,7 @@ sudo apt-get install libaio1
 
 6、执行mysql 安装脚本
 {% highlight objc %}
-scripts/mysql_install_db --user=git  
+sudo scripts/mysql_install_db --user=mysql  
 {% endhighlight %}
 
 7、再次设置 mysql 目录的拥有者 
@@ -70,7 +70,7 @@ sudo chown -R root .
 
 8、设置 data 目录的拥有者 
 {% highlight objc %}
-sudo chown -R git data
+sudo chown -R mysql data
 {% endhighlight %}
 
 9、复制 mysql 配置文件 
@@ -80,7 +80,7 @@ sudo cp support-files/my-medium.cnf /etc/my.cnf
 
 10、启动 mysql 
 {% highlight objc %}
-sudo bin/mysqld_safe --user=git & 
+sudo bin/mysqld_safe --user=mysql & 
 sudo cp support-files/mysql.server /etc/init.d/mysql.server
 {% endhighlight %}
 
