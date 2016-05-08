@@ -14,4 +14,7 @@ mkdir macbook
 sudo mount -t vboxsf gongxiang macbook
 {% endhighlight %}
 
+### 粘贴板共享 
+
+设置 －》general－》advanced －》shared clipboard －》双向
 
