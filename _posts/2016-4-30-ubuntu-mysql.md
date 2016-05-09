@@ -35,7 +35,7 @@ sudo groupadd mysql
 
 2、添加 mysql（不是当前用户）添加到 mysql 用户组 
 {% highlight objc %}
-sudo adduser  mysql mysql
+sudo useradd -g  mysql mysql
 {% endhighlight %}
 
 3、解压 mysql-5.5.49-linux2.6-x86_64.tar.gz（我将此文件放在了git［当前用户］的`文档`文件夹中） 到 /usr/local 
