@@ -61,4 +61,8 @@ redis-server
 操作服务器
 ssh git@ip
 输入密码
+这样操作 以后不需要输入密码
+cd .ssh
+cat authorized_keys
+修改此文件在最后加入你的ssh公钥
 
