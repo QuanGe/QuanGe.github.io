@@ -38,11 +38,6 @@ rake db:migrate
 rake db:seed
 rake db:seed_fu
 
-//以下可以不执行
-
-redis-server --port 6377 &
-redis-server --port 6378 &
-redis-server 
 
 都完成以后输入 super_admin 123456 登录不了 需要修改code.yml 
 cookies:
@@ -52,4 +47,18 @@ code:
   url: http://zrq.net:3000
 然后控制台 输入 sudo gedit /etc/hosts  加上127.0.0.1	zrq.net
 
+
+执行仓操纵之前请执行
+
+cd labhub
+rake sidekiq:start
+ps -ef|grep side 查看有没有成功
+
+redis-server --port 6377 &
+redis-server --port 6378 &
+redis-server 
+
+操作服务器
+ssh git@ip
+输入密码
 
