@@ -1,1 +1,1 @@
-[{"title":"","detail":""},{"title":"","detail":""}]
+[{"title":"简画大师V1.0","detail":"http://quangelab.com/jhdsV1.0.html"},{"title":"简画大师logo征集","detail":"http://quangelab.com/jhdsLogo.html"}]
