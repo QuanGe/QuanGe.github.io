@@ -1,1 +1,1 @@
-{"img":"http://ww2.sinaimg.cn/mw690/84181a79jw1f4tpobzs32j20ku112q88.jpg","detail":"https://item.taobao.com/item.htm?spm=a1z0k.7385981.1997993937.d4919305.CbNzMM&id=526036223669&_u=rev6nao97a6","type":0}
+{"img":"http://quangelab.com/images/someo.jpg","detail":"https://item.taobao.com/item.htm?spm=a1z0k.7385981.1997993937.d4919305.CbNzMM&id=526036223669&_u=rev6nao97a6","type":0}
