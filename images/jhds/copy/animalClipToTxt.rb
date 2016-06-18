@@ -31,7 +31,9 @@ def traverse_dir()
         end
 
         if(count != 0)
+          text = text[0,text.length-1]
           text = text +"]"
+
           names[nameIndex] = text
           nameIndex = nameIndex +1
 
@@ -41,7 +43,7 @@ def traverse_dir()
         names.each do |text|
 
           aFile = File.new("#{theTextDir}#{theTextTag}_#{textIndex}.txt","w")
-          aFile.puts text
+          aFile.print text
           aFile.close
 
           textIndex = textIndex +1
@@ -49,7 +51,7 @@ def traverse_dir()
 
 
         aFile = File.new("#{theTextDir}#{theTextTag}.txt","w")
-        aFile.puts names.size.to_s
+        aFile.print names.size.to_s
         aFile.close
 
         puts "已经解析到#{theTextDir}文件夹"
