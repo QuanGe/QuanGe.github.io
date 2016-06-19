@@ -42,7 +42,7 @@ def traverse_dir()
         textIndex = 0
         names.each do |text|
 
-          aFile = File.new("#{theTextDir}#{theTextTag}_#{textIndex}.txt","w")
+          aFile = File.new("#{theTextDir}#{theTextTag}_#{names.size-textIndex-1}.txt","w")
           aFile.print text
           aFile.close
 
