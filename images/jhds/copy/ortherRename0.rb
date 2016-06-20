@@ -9,7 +9,8 @@ def traverse_dir()
             if file !="." and file !=".." and file !=".DS_Store"
               count = count+1
               oldName = theFileDir+ file
-              newName = theFileDir+"QuanGeLabOt"+count.to_s
+              timestr = Time.now.strftime("%Y%m%d%H%M%S")
+              newName = theFileDir+"QuanGeLabOt"+count.to_s+timestr
               File.rename(oldName,newName)
             end
         end
