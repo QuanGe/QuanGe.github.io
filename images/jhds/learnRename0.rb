@@ -17,13 +17,12 @@ def traverse_dir()
                 newName = theFileDir+Digest::MD5.hexdigest(timestr)+"-"+file
 
                 File.rename(oldName,newName)
+
               else
-
-
                 md5str,type,lessonIndex,imgIndex = file.split('-')
                 timestr = Time.now.strftime("%Y%m%d%H%M%S") + "QuanGeLabLn"+"#{type}#{lessonIndex}"
-                newName = theFileDir+"#{type}-#{lessonIndex}-#{imgIndex}"
-                #newName = theFileDir+Digest::MD5.hexdigest(timestr)+"-#{type}-#{lessonIndex}-#{imgIndex}"
+                #newName = theFileDir+"#{type}-#{lessonIndex}-#{imgIndex}"
+                newName = theFileDir+Digest::MD5.hexdigest(timestr)+"-#{type}-#{lessonIndex}-#{imgIndex}"
 
                 File.rename(oldName,newName)
 
@@ -31,6 +30,8 @@ def traverse_dir()
 
             end
         end
+
+        puts "已经解析到#{theFileDir}文件夹"
     else
         puts "File:#{File.basename(theFileDir)}, Size:#{File.size(theFileDir)}"
     end
