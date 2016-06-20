@@ -66,7 +66,7 @@ def traverse_dir()
 
                 size = FastImage.size(theFileDir + lastTheAllInfor + ".jpg")
 
-                if(type == "0")
+                if(lastType == "0")
 
                   text0 = text0 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]},#{size[1]}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount0 = lessonCount0 + 1
@@ -80,7 +80,7 @@ def traverse_dir()
                   elsif
                     text0 = text0 + ","
                   end
-                elsif(type == "1")
+                elsif(lastType == "1")
                   text1 = text1 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]},#{size[1]}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount1 = lessonCount1 + 1
                   if(lessonCount1 == 10)
@@ -92,7 +92,7 @@ def traverse_dir()
                   elsif
                     text1 = text1 + ","
                   end
-                elsif(type == "2")
+                elsif(lastType == "2")
                   text2 = text2 +  "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]},#{size[1]}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount2 = lessonCount2 + 1
                   if(lessonCount2 == 10)
@@ -104,7 +104,7 @@ def traverse_dir()
                   elsif
                     text2 = text2 + ","
                   end
-                elsif(type == "3")
+                elsif(lastType == "3")
                   text3 = text3 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]},#{size[1]}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount3 = lessonCount3+1
                   if(lessonCount3 == 10)
