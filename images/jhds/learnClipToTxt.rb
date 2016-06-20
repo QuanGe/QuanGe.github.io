@@ -45,7 +45,7 @@ def traverse_dir()
               fileName =  file.split('.')
               theAllInfor = fileName[0]
               md5str,type,lessonIndex,imgIndex = theAllInfor.split('-')
-
+              puts "#{theAllInfor}<<<<<<<<<<<"
               if(lastType == type && lastLessonIndex ==lessonIndex)
                 if(fileName[1] == "txt")
                   infoText = IO.read("#{theTextDir}#{file}");
@@ -53,10 +53,11 @@ def traverse_dir()
                   subsText = subsText+"\"#{theAllInfor}\","
                 end
 
-              elsif (lastLessonIndex !=lessonIndex && (lastLessonIndex != -1))
+              elsif ((lastLessonIndex !=lessonIndex && (lastLessonIndex != -1)) ||lastType != type)
                 subsText = subsText[0,subsText.length-1]
                 subsText = subsText +"]"
 
+                puts "#{lastTheAllInfor}<<<<<<<<<<<"+"#{subsText}"
                 if(lastFileType != "txt")
                   nextTxtName = lastimgIndex.to_i+1
                   aFile = File.new("#{theTextDir}#{lastType}-#{lastLessonIndex}-#{nextTxtName}.txt","w")
@@ -68,7 +69,7 @@ def traverse_dir()
 
                 if(lastType == "0")
 
-                  text0 = text0 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]},#{size[1]}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+                  text0 = text0 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount0 = lessonCount0 + 1
 
                   if(lessonCount0 == 10)
@@ -81,7 +82,7 @@ def traverse_dir()
                     text0 = text0 + ","
                   end
                 elsif(lastType == "1")
-                  text1 = text1 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]},#{size[1]}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+                  text1 = text1 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount1 = lessonCount1 + 1
                   if(lessonCount1 == 10)
                     text1 = text0 + "]"
@@ -93,7 +94,7 @@ def traverse_dir()
                     text1 = text1 + ","
                   end
                 elsif(lastType == "2")
-                  text2 = text2 +  "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]},#{size[1]}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+                  text2 = text2 +  "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount2 = lessonCount2 + 1
                   if(lessonCount2 == 10)
                     text2 = text2 + "]"
@@ -105,7 +106,7 @@ def traverse_dir()
                     text2 = text2 + ","
                   end
                 elsif(lastType == "3")
-                  text3 = text3 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]},#{size[1]}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+                  text3 = text3 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount3 = lessonCount3+1
                   if(lessonCount3 == 10)
                     text3 = text3 + "]"
