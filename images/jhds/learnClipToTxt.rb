@@ -53,7 +53,7 @@ def traverse_dir()
                   subsText = subsText+"\"#{theAllInfor}\","
                 end
 
-              elsif ((lastLessonIndex !=lessonIndex && (lastLessonIndex != -1)) ||lastType != type)
+              elsif ((lastLessonIndex !=lessonIndex && (lastLessonIndex != -1)) ||((lastType != type) && (lastLessonIndex != -1)))
                 subsText = subsText[0,subsText.length-1]
                 subsText = subsText +"]"
 
@@ -63,6 +63,7 @@ def traverse_dir()
                   aFile = File.new("#{theTextDir}#{lastType}-#{lastLessonIndex}-#{nextTxtName}.txt","w")
                   aFile.print "ceshi"
                   aFile.close
+                  puts "上次是：#{lastTheAllInfor}<<<<<<<<<<<所以要写个txt"
                 end
 
                 size = FastImage.size(theFileDir + lastTheAllInfor + ".jpg")
