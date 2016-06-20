@@ -1,1 +1,1 @@
-{"appVersion":"0.6","appiOSVersion":"0.5","shopTag":"1","messageTag":"1","protectBabyTag":"1"}
+{"appVersion":"1.0","appiOSVersion":"0.5","shopTag":"1","messageTag":"1","protectBabyTag":"1"}
