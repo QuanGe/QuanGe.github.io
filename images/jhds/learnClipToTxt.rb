@@ -44,7 +44,7 @@ def traverse_dir()
 
               fileName =  file.split('.')
               theAllInfor = fileName[0]
-              type,lessonIndex,imgIndex = theAllInfor.split('-')
+              md5str,type,lessonIndex,imgIndex = theAllInfor.split('-')
 
               if(lastType == type && lastLessonIndex ==lessonIndex)
                 if(fileName[1] == "txt")
