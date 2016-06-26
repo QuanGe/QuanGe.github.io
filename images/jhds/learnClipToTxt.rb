@@ -6,6 +6,9 @@ def traverse_dir()
   theTextDir = '/Users/Shared/GitHub/QuanGe.github.io/images/jhds/learn/'
   theTextTag = 'learn_'
     if File.directory? theFileDir
+
+
+
         #动物合集
         names0 = Array.new
         #植物合集
@@ -39,12 +42,43 @@ def traverse_dir()
         lastimgIndex = ""
 
         infoText = ""
+
+
+        temNames = Array.new
+        count = 0
         Dir.foreach(theFileDir) do |file|
+          if file !="." and file !=".." and file !=".DS_Store"
+            temNames[count] = file
+
+            count = count+1
+          end
+        end
+        count = temNames.size-1
+
+        temNames2 = Array.new
+
+        temNames.each do |file|
+          temNames2[count] = file
+          count = count-1
+        end
+
+        temNames2.each do |file|
             if file !="." and file !=".." and file !=".DS_Store"
 
               fileName =  file.split('.')
               theAllInfor = fileName[0]
-              md5str,type,lessonIndex,imgIndex = theAllInfor.split('-')
+              md5str = ""
+              type = ""
+              lessonIndex = ""
+              imgIndex = ""
+              ortherInfo = ""
+              args = theAllInfor.split('-')
+              if(args.size == 4)
+                md5str,type,lessonIndex,imgIndex = theAllInfor.split('-')
+              else
+                ortherInfo,md5str,type,lessonIndex,imgIndex = theAllInfor.split('-')
+              end
+
               puts "#{theAllInfor}<<<<<<<<<<<"
               if(lastType == type && lastLessonIndex ==lessonIndex)
                 if(fileName[1] == "txt")
