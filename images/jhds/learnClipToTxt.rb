@@ -42,7 +42,8 @@ def traverse_dir()
         lastimgIndex = ""
 
         infoText = ""
-
+        lastInfoText = ""
+        theListImage = ""
 
         temNames = Array.new
         count = 0
@@ -62,9 +63,11 @@ def traverse_dir()
           count = count-1
         end
 
+        count = 0
         temNames2.each do |file|
             if file !="." and file !=".." and file !=".DS_Store"
 
+              count = count+1
               fileName =  file.split('.')
               theAllInfor = fileName[0]
               md5str = ""
@@ -80,31 +83,25 @@ def traverse_dir()
               end
 
               puts "#{theAllInfor}<<<<<<<<<<<"
+              if(fileName[1] == "txt")
+                lastInfoText = infoText
+                infoText = IO.read("#{theTextDir}#{file}");
+              end
               if(lastType == type && lastLessonIndex ==lessonIndex)
-                if(fileName[1] == "txt")
-                  infoText = IO.read("#{theTextDir}#{file}");
-                elsif
-                  subsText = subsText+"\"#{theAllInfor}\","
-                end
+                subsText = subsText.insert(1,"\"#{theAllInfor}\",")
+                #subsText = subsText+"\"#{theAllInfor}\","
 
               elsif ((lastLessonIndex !=lessonIndex && (lastLessonIndex != -1)) ||((lastType != type) && (lastLessonIndex != -1)))
                 subsText = subsText[0,subsText.length-1]
                 subsText = subsText +"]"
 
                 puts "#{lastTheAllInfor}<<<<<<<<<<<"+"#{subsText}"
-                if(lastFileType != "txt")
-                  nextTxtName = lastimgIndex.to_i+1
-                  aFile = File.new("#{theTextDir}#{lastType}-#{lastLessonIndex}-#{nextTxtName}.txt","w")
-                  aFile.print "ceshi"
-                  aFile.close
-                  puts "上次是：#{lastTheAllInfor}<<<<<<<<<<<所以要写个txt"
-                end
 
                 size = FastImage.size(theFileDir + lastTheAllInfor + ".jpg")
 
                 if(lastType == "0")
 
-                  text0 = text0 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+                  text0 = text0 + "{\"url\":"+"\"#{theListImage}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{lastInfoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount0 = lessonCount0 + 1
 
                   if(lessonCount0 == 10)
@@ -117,7 +114,7 @@ def traverse_dir()
                     text0 = text0 + ","
                   end
                 elsif(lastType == "1")
-                  text1 = text1 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+                  text1 = text1 + "{\"url\":"+"\"#{theListImage}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{lastInfoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount1 = lessonCount1 + 1
                   if(lessonCount1 == 10)
                     text1 = text0 + "]"
@@ -129,7 +126,7 @@ def traverse_dir()
                     text1 = text1 + ","
                   end
                 elsif(lastType == "2")
-                  text2 = text2 +  "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+                  text2 = text2 +  "{\"url\":"+"\"#{theListImage}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{lastInfoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount2 = lessonCount2 + 1
                   if(lessonCount2 == 10)
                     text2 = text2 + "]"
@@ -141,7 +138,7 @@ def traverse_dir()
                     text2 = text2 + ","
                   end
                 elsif(lastType == "3")
-                  text3 = text3 + "{\"url\":"+"\"#{lastTheAllInfor}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{infoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+                  text3 = text3 + "{\"url\":"+"\"#{theListImage}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{lastInfoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
                   lessonCount3 = lessonCount3+1
                   if(lessonCount3 == 10)
                     text3 = text3 + "]"
@@ -157,13 +154,52 @@ def traverse_dir()
                 subsText = "["
               end
 
-              if(fileName[1] != "txt")
-                lastTheAllInfor = theAllInfor
-                lastType = type
-                lastLessonIndex = lessonIndex
-                lastimgIndex = imgIndex
+              if(count == temNames2.size)
+                subsText = subsText[0,subsText.length-1]
+                subsText = subsText +"]"
 
+                puts "#{lastTheAllInfor}<<<<<<<<<<<"+"#{subsText}"
+
+                size = FastImage.size(theFileDir + theAllInfor + ".jpg")
+
+                if(type == "0")
+
+                  text0 = text0 + "{\"url\":"+"\"#{theListImage}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{lastInfoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+
+                  text0 = text0 + "]"
+                  names0[nameIndex0] = text0
+                  nameIndex0 = nameIndex0+1
+
+                elsif(type == "1")
+                  text1 = text1 + "{\"url\":"+"\"#{theListImage}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{lastInfoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+
+                  text1 = text0 + "]"
+                  names1[nameIndex1] = text1
+                  nameIndex1 = nameIndex1+1
+                  lessonCount1 = 0
+
+                elsif(type == "2")
+                  text2 = text2 +  "{\"url\":"+"\"#{theListImage}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{lastInfoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+                  text2 = text2 + "]"
+                  names2[nameIndex2] = text2
+                  nameIndex2 = nameIndex2 + 1
+                  lessonCount2 = 0
+                elsif(type == "3")
+                  text3 = text3 + "{\"url\":"+"\"#{theListImage}\",\"detail\":"+"#{subsText},\"size\":\"#{size[0]/2},#{size[1]/2}\",\"info\":\"#{lastInfoText}\",\"stdNum\":\"200\",\"type\":\"0\"}"
+                  text3 = text3 + "]"
+                  names3[nameIndex3] = text3
+                  nameIndex3 = nameIndex3+1
+                  lessonCount3 = 0
+                end
               end
+
+              if(lastFileType == "txt")
+                theListImage = theAllInfor
+              end
+              lastTheAllInfor = theAllInfor
+              lastType = type
+              lastLessonIndex = lessonIndex
+              lastimgIndex = imgIndex
               lastFileType = fileName[1]
 
 
