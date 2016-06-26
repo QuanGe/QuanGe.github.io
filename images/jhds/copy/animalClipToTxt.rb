@@ -28,7 +28,7 @@ def traverse_dir()
           temNames2[count] = file
           count = count-1
         end
-
+        count = 0
         temNames2.each do |file|
             if file !="." and file !=".." and file !=".DS_Store"
               count = count+1
