@@ -97,7 +97,7 @@ def traverse_dir()
 
                 puts "#{lastTheAllInfor}<<<<<<<<<<<"+"#{subsText}"
 
-                size = FastImage.size(theFileDir + lastTheAllInfor + ".jpg")
+                size = FastImage.size(theFileDir + theListImage + ".jpg")
 
                 if(lastType == "0")
 
@@ -160,7 +160,7 @@ def traverse_dir()
 
                 puts "#{lastTheAllInfor}<<<<<<<<<<<"+"#{subsText}"
 
-                size = FastImage.size(theFileDir + theAllInfor + ".jpg")
+                size = FastImage.size(theFileDir + theListImage + ".jpg")
 
                 if(type == "0")
 
