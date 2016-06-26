@@ -11,12 +11,30 @@ def traverse_dir()
         text = "["
         count = 0
         nameIndex = 0
+        temNames = Array.new
+
         Dir.foreach(theFileDir) do |file|
+          if file !="." and file !=".." and file !=".DS_Store"
+            temNames[count] = file
+
+            count = count+1
+          end
+        end
+        count = temNames.size-1
+
+        temNames2 = Array.new
+
+        temNames.each do |file|
+          temNames2[count] = file
+          count = count-1
+        end
+
+        temNames2.each do |file|
             if file !="." and file !=".." and file !=".DS_Store"
               count = count+1
               fileName = theTextUrl+ file
               text = text + "{\"url\":"+"\"#{fileName}\",\"detail\":"+"\"#{fileName}\",\"type\":\"0\"}"
-              if(count == 10)
+              if(count == 12)
                 text = text +"]"
                 count = 0
                 names[nameIndex] = text
