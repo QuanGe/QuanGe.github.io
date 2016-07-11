@@ -2,13 +2,13 @@ require 'digest/md5'
 
 
 def traverse_dir()
-  theFileDir = '/Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/plant/'
+  theFileDir = '/Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/pepole/'
     if File.directory? theFileDir
         count = 0
         Dir.foreach(theFileDir) do |file|
             if file !="." and file !=".." and file !=".DS_Store"
               count = count+1
-              if file.length != 36
+              if file.length < 36
                 oldName = theFileDir+ file
                 timestr = Time.now.strftime("%Y%m%d%H%M%S")
                 newName = theFileDir+"zzQuanGeLabDw"+count.to_s+timestr

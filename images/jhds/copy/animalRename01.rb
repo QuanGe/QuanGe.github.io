@@ -2,14 +2,14 @@ require 'digest/md5'
 
 
 def traverse_dir()
-  theFileDir = '/Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/plant/'
+  theFileDir = '/Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/pepole/'
     if File.directory? theFileDir
         count = 0
         Dir.foreach(theFileDir) do |file|
             if file !="." and file !=".." and file !=".DS_Store"
 
 		            #File.rename('/Users/git/Desktop/jhds/copy/'+ file,'/Users/git/Desktop/jhds/copy/'+ "QuanGeLab"+file)
-              if(file.length != 36)
+              if(file.length < 36)
                 oldName = theFileDir+ file
                 newName = ""
                 if(count<10)
