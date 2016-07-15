@@ -58,7 +58,7 @@ def traverse_dir()
         aFile.print names.size.to_s
         aFile.close
 
-        puts "已经解析到#{$outFileDir}文件夹"
+        #puts "已经解析到#{$outFileDir}文件夹"
 
     else
         puts "File:#{File.basename($theFileDir)}, Size:#{File.size($theFileDir)}"

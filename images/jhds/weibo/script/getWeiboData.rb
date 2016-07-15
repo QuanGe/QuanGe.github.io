@@ -19,7 +19,7 @@ end
 frontExist()
 
 $index = $index + $frontExistNames.size
-puts $frontExistNames.to_s
+#puts $frontExistNames.to_s
 def traverse_dir()
 
   if File.directory? $theTextDir
@@ -43,7 +43,7 @@ def traverse_dir()
     $since_id = json_temp_str['page']['pageInfo']['since_id'].to_s
 
     #puts "ERROR #{resp.code}: #{resp.body}"
-    puts "hh"
+    #puts "hh"
 
     if($since_id != "")
 
