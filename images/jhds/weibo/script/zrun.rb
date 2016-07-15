@@ -45,6 +45,8 @@ def traverse_dir()
           end
         elsif line.include?"."
           $subcmd.concat("&& git add #{line.lstrip.rstrip}")
+        else
+          puts line
         end
 
       end
