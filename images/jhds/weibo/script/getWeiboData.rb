@@ -47,6 +47,7 @@ def traverse_dir()
 
     if($since_id != "")
 
+      shouldEnd = false
       cards = json_temp_str['page']['cards']
       cards.each do |card|
         if(card['_appid'] != nil)
@@ -58,13 +59,23 @@ def traverse_dir()
                     ,\"original_pic\":\"#{weiboItem['mblog']['original_pic']}\",\"userIcon\":\"#{weiboItem['mblog']['user']['profile_image_url']}\"
                     ,\"nickName\":\"#{weiboItem['mblog']['user']['screen_name']}\",\"userId\":\"#{weiboItem['mblog']['user']['id'].to_s}\"
                     ,\"created_timestamp\":\"#{weiboItem['mblog']['created_timestamp'].to_s}\"}"
+            else
+              shouldEnd = true
             end
 
           end
         end
       end
+      if(shouldEnd == false)
+        traverse_dir()
+      else
+        puts "已经是最新的数据了，所以这里结束"
+        writeDataToDir()
 
-      traverse_dir()
+
+      end
+
+
     else
       writeDataToDir()
     end
@@ -74,7 +85,9 @@ def traverse_dir()
 end
 
 def writeDataToDir
-
+  if($itemContents.size == 0)
+    puts "看上面，没有获取到数据"
+  end
   $itemContents.each do |item|
     json_temp_str = JSON.parse(item)
     newFileName = ""
