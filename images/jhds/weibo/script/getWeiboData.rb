@@ -39,46 +39,52 @@ def traverse_dir()
       http.request(request)
     }
 
-    json_temp_str = JSON.parse(resp.body)
-    $since_id = json_temp_str['page']['pageInfo']['since_id'].to_s
+    if(resp.code.to_s == "200")
+      json_temp_str = JSON.parse(resp.body)
+      $since_id = json_temp_str['page']['pageInfo']['since_id'].to_s
 
-    #puts "ERROR #{resp.code}: #{resp.body}"
-    #puts "hh"
 
-    if($since_id != "")
+      #puts "hh"
 
-      shouldEnd = false
-      cards = json_temp_str['page']['cards']
-      cards.each do |card|
-        if(card['_appid'] != nil)
-          card_group = card['card_group']
-          card_group.each do |weiboItem|
-            if !($frontExistNames.include?weiboItem['mblog']['idstr'])
-            $itemContents[0,0] = "{\"idstr\":\"#{weiboItem['mblog']['idstr']}\",\"text\":\"#{weiboItem['mblog']['text'].gsub(/<\/?.*?>/, "")}\"
+      if($since_id != "")
+
+        shouldEnd = false
+        cards = json_temp_str['page']['cards']
+        cards.each do |card|
+          if(card['_appid'] != nil)
+            card_group = card['card_group']
+            card_group.each do |weiboItem|
+              if !($frontExistNames.include?weiboItem['mblog']['idstr'])
+                $itemContents[0,0] = "{\"idstr\":\"#{weiboItem['mblog']['idstr']}\",\"text\":\"#{weiboItem['mblog']['text'].gsub(/<\/?.*?>/, "")}\"
                     ,\"pic_ids\":#{weiboItem['mblog']['pic_ids'].to_s}
                     ,\"original_pic\":\"#{weiboItem['mblog']['original_pic']}\",\"userIcon\":\"#{weiboItem['mblog']['user']['profile_image_url']}\"
                     ,\"nickName\":\"#{weiboItem['mblog']['user']['screen_name']}\",\"userId\":\"#{weiboItem['mblog']['user']['id'].to_s}\"
                     ,\"created_timestamp\":\"#{weiboItem['mblog']['created_timestamp'].to_s}\"}"
-            else
-              shouldEnd = true
-            end
+              else
+                shouldEnd = true
+              end
 
+            end
           end
         end
-      end
-      if(shouldEnd == false)
-        traverse_dir()
+        if(shouldEnd == false)
+          traverse_dir()
+        else
+          puts "已经是最新的数据了，所以这里结束"
+          writeDataToDir()
+
+
+        end
+
+
       else
-        puts "已经是最新的数据了，所以这里结束"
         writeDataToDir()
-
-
       end
-
-
     else
-      writeDataToDir()
+      puts "接口报错了 #{resp.code}: #{resp.body}"
     end
+
+
 
   end
 
