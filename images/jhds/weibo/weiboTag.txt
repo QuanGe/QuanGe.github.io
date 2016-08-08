@@ -1,3 +1,3 @@
-{"idstr":"4006202419589339","text":"2012年的今天我和老婆到民政局领了证，一晃已经有四年了，在此借助此平台感谢老婆的选择和付出，纪念日快乐[心][心][心][玫瑰][玫瑰][玫瑰]"
-                    ,"pic_urls":"84181a79jw1f6mb32yzwmj20qo19xq53,84181a79jw1f6mb33fbzrj20do0m8mzk,84181a79jw1f6mb33x13rj20im0dgwgf","original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f5q96buylqj20qo19x44h.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.1.509.509.180/84181a79gw1f5uem0opbbj20e80e8mxn.jpg"
+{"idstr":"4000736788553549","text":"我们将不定期的在此同步用户在新浪微博中分享的作品数据，所有作品经过过滤后在此展现。如有问题可以新浪微博中私信我。"
+                    ,"pic_urls":"","original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f5q96buylqj20qo19x44h.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.1.509.509.180/84181a79gw1f5uem0opbbj20e80e8mxn.jpg"
               ,"nickName":"简画大师","userId":"2216172153"}
