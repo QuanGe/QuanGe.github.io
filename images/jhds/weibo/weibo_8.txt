@@ -1,4 +1,16 @@
-[{"idstr":"4010304579110877","text":"#简画大师#尊重对手，就是给对手一个公正，公开，公平的比赛！"
+[{"idstr":"4011040448647993","text":"#简画大师# 坚持不懈！那一刻，所有的汗水和泪水都是幸福的！[good]"
+                    ,"pic_ids":["9ea145c3jw1f71qq904vhj20qo19xn1f", "9ea145c3jw1f71qqeiqdfj20qo19xtbf"]
+                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f71qq904vhj20qo19xn1f.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1471790027"},{"idstr":"4010940427039436","text":"#简画大师#女排精神是民族财富，是凝聚力，女排，赞！"
+              ,"pic_ids":["006biWBzjw1f71f98byvtj30qo19xwho"]
+              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f71f98byvtj30qo19xwho.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1471766180"},{"idstr":"4010680564966911","text":"#简画大师#开心？不开心？"
+              ,"pic_ids":["006biWBzjw1f70letybf5j30qo19x419"]
+              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f70letybf5j30qo19x419.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1471704224"},{"idstr":"4010304579110877","text":"#简画大师#尊重对手，就是给对手一个公正，公开，公平的比赛！"
                     ,"pic_ids":["9ea145c3jw1f6ze7kug7ej20qo19xwlp", "9ea145c3jw1f6ze7pkxfpj20qo19xdjb"]
                     ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f6ze7kug7ej20qo19xwlp.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -34,16 +46,4 @@
               ,"pic_ids":["006biWBzjw1f6uq76mjt6j30qo19xwfx"]
               ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f6uq76mjt6j30qo19xwfx.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1471265760"},{"idstr":"4008492636024413","text":"#简画大师#活在当下，且行且珍惜……"
-                    ,"pic_ids":["9ea145c3jw1f6tm49g70sj20qo19x0ug", "9ea145c3jw1f6tm4ac8ncj20qo19xn01", "9ea145c3jw1f6tm4bks43j20qo19xgpl"]
-                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f6tm49g70sj20qo19x0ug.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1471182581"},{"idstr":"4008515854668167","text":"#简画大师#太累了，不想说话"
-              ,"pic_ids":["006biWBzjw1f6tosqxog1j30qo19xabf"]
-              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f6tosqxog1j30qo19xabf.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1471188117"},{"idstr":"4008109460986343","text":"#简画大师#伏天难耐，盼望着下雨换换空气吧[下雨][下雨][下雨]"
-                    ,"pic_ids":["9ea145c3jw1f6se3w49mdj20qo19xtbg", "9ea145c3jw1f6se3xdzbvj20qo19xn10"]
-                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f6se3w49mdj20qo19xtbg.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1471091225"}]
+              ,"created_timestamp":"1471265760"}]

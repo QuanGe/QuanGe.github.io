@@ -66,3 +66,272 @@ cd .ssh
 cat authorized_keys
 修改此文件在最后加入你的ssh公钥
 
+svnadmin create ~/svn/svnserver/mycode
+cd ~/svn/svnserver/mycode/conf
+vi svnserve.conf
+vi passwd
+vi authz
+svnserve -d -r ~/svn/svnserver/mycode
+
+svn import /Users/git/Desktop/svn svn://localhost/mycode/weibo --username=zrq --password=123456 -m “lira set”
+
+svn checkout  svn://localhost/mycode/weibo --username=zrq --password=123456 /Users/git/Documents/code/weibo
+
+/Users/Shared/adt-bundle-mac-x86_64-20140702/sdk/platform-tools/adb reboot
+导入私仓 https://code.csdn.net/github_34949402/testprivate.git
+帐号github_34949402
+
+
+导入svn仓 svn://192.168.5.24/mycode/weibo
+帐号zrq
+密码123
+
+
+开源库：http://anonsvn.jboss.org/repos/jbossas/
+http://anonsvn.jboss.org/repos/hibernate/
+http://shelves.googlecode.com/svn/
+http://hustoj.googlecode.com/svn/
+http://zxing.googlecode.com/svn/
+http://swiftp.googlecode.com/svn/
+http://acra.googlecode.com/svn/
+
+
+
+svnadmin create /Volumes/ext/svnserver/mycode
+cd /Volumes/ext/svnserver/mycode
+
+svnserve.conf
+anon-access = none
+auth-access = write
+password-db = passwd
+authz-db = authz
+
+passwd
+[users]
+zrq = 456
+lgz = 456
+
+[groups]
+dev = zrq,lgz
+
+[/]
+@dev = rw
+
+
+
+svnserve -d -r /Volumes/ext/svnserver
+
+
+
+svn import /Volumes/ext/svnimport/weibo svn://localhost/mycode/weibo --username=zrq --password=456 -m "fuck"
+
+svn checkout  svn://localhost/mycode/weibo --username=zrq --password=123 /Users/zhangruquan/Documents/code/weibo
+
+cd /Users/zhangruquan/Documents/code/weibo
+
+svn log
+svn commit -m "修改了readme"
+svn update
+
+
+cd /Volumes/ext/svn2git
+git svn clone svn://localhost/mycode/weibo  weibo
+
+svn add trunk
+svn add tags
+svn add branches
+
+svn commit -m "创建主要文件夹2" 
+
+svn copy svn://localhost/mycode/weibo/trunk svn://localhost/mycode/weibo/branches/develop -m ‘创建develop分支’
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+sudo apt install subversion(ubuntu)
+sudo apt-get install git-svn(ubuntu)
+
+gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
+sudo gem install svn2git
+
+cd /Volumes/ext/svn2git/weibo 
+svn2git svn://localhost/mycode/weibo --username zrq
+cd /Volumes/ext/svn2git/weibo
+
+git remote add origin git@code.csdn.net:woashizhangsi/trysvn.git
+git push -u origin master -f
+
+git push --tags 
+
+git add .
+
+git branch 
+
+git checkout *
+
+git push -u origin * -f
+
+
+cd /Volumes/ext/svn2git/weibo 
+yes 456 | svn2git svn://192.168.5.24/mycode/weibo --username zrq
+
+git clone https://github_34949402:Csdn2016C”@code.csdn.net/github_34949402/testprivate.git
+
+https://code.csdn.net/github_34949402/testprivate.git
+
+
+sudo docker ps -a 
+sudo docker exec -ti code_sidekiq_backend bash
+sudo docker stop code_ssh_protocol_rpc_server
+sudo docker start code_ssh_protocol_rpc_server
+
+sudo docker stop code_sidekiq_backend
+sudo docker start code_sidekiq_backend
+
+scp /Users/git/labhub/app/projects/lib/gitlab_git/repository.rb git@192.168.5.179:/home/git/gitlab_git_server/lib/gitlab_git/repository.rb
+
+scp /Users/git/gitlab_git_server/lib/gitlab_git/workers/fork_worker.rb git@192.168.5.179:/home/git/gitlab_git_server/lib/gitlab_git/workers/fork_worker.rb
+
+Gitlab::Git::Repository.import('zhangrq/abcsdn','https://code.csdn.net/woashizhangsi/coderplus.git')
+
+Gitlab::Git::Repository.import('zhangrq/dsdasdw231212','svn://192.168.5.179/project_nopw','svn',false)
+
+
+ssh git@192.168.5.179 -p2222
+ssh git@192.168.5.179
+csdn.net
+cd .ssh
+cat authorized_keys
+修改此文件在最后加入你的ssh公钥
+
+cd labhub
+rake sidekiq:start
+ps -ef|grep side 查看有没有成功
+
+
+ps -ef | grep side
+kill -9 4257
+
+192.168.6.149
+修改code.yml
+backend:
+  default_host: 192.168.5.179
+  repo_hosts: [192.168.5.179]
+  snippet_host: [192.168.5.179]
+
+code_shell:
+  # REPOS_PATH MUST NOT BE A SYMLINK!!!
+  shell_script_path: /home/git/code_scripts/code-shell
+  repos_path: /home/git/repositories/
+  snippets_path: /home/git/repositories/snippets/
+  hooks_path: /home/git/code_scripts/code-shell/hooks/
+  #rugged repo path
+  rugged_repos_path: /home/git/
+  # Only for testing: File used as authorized_keys for code user
+  auth_file: "/home/git/.ssh/authorized_keys”
+
+"config文件夹里面的sidekiq.yml 复制粘贴
+
+
+svnserve -d -r ~/Users/git/Documents/svnserver
+启动redis
+redis-server --port 6377 &
+redis-server --port 6378 &
+redis-server 
+
+rails s
+
+
+cd /Users/zhangruquan/Desktop/ssss && yes 123 | svn2git svn://192.168.5.24/mycode/weibo --username zrq  && cd && cd /Users/zhangruquan/Desktop/testFree && git clone —-bare /Users/zhangruquan/Desktop/ssss second && rm -rf /Users/zhangruquan/Desktop/ssss
+
+
+ cd repositories/ && mkdir temp01qwe && cd temp01qwe && yes 123 | svn2git svn://192.168.5.24/mycode/weibo --username zrq &&cd  && cd repositories/ && git clone --bare /home/git/repositories/temp01qwe fandyvon/tttt.git && cd &&cd repositories/ && rm -rf temp01qwe
+
+ssh 192.168.5.179 /home/git/code_scripts/code-shell/bin/gitlab-projects import-svn-project fandyvon/tttt.git svn://192.168.5.24/mycode/weibo zrq 123 
+
+
+svn2git svn://192.168.5.179/project_nopw
+popen(["echo '#{path}' > qlog.txt"], "/home/git")
+
+sudo docker exec -ti code_ssh_protocol_rpc_server bash
+sudo docker exec -ti code_sidekiq_backend bash
+sudo docker exec -ti code_sidkiq_background bash
+
+sudo docker exec -ti code_web_server bash
+
+
+ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/animalRename0.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/animalRename1.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/ortherRename0.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/ortherRename1.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/pepoleRename0.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/pepoleRename1.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/plantRename0.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/plantRename1.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/plantClipToTxt.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/pepoleClipToTxt.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/ortherClipToTxt.rb  && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/copy/animalClipToTxt.rb 
+
+
+ssh git@192.168.6.148 -p2222
+sudo docker exec -ti code_web_server bash
+
+sudo docker stop code_web_server
+sudo docker start code_web_server
+
+scp /Users/git/labhub/app/views/projects/wait.html.haml git@192.168.6.148:/home/git/labhub/app/views/projects/wait.html.haml
+
+
+sudo docker ps -a
+
+ssh git@192.168.6.149 -p2222
+sudo docker exec -ti code_sidekiq_backend bash
+
+sudo docker exec -ti code_ssh_protocol_rpc_server bash
+sudo docker stop code_ssh_protocol_rpc_server
+sudo docker start code_ssh_protocol_rpc_server
+
+
+sudo docker stop code_sidekiq_backend
+sudo docker start code_sidekiq_backend
+
+rails generate model AdminJiraSet jiraUrl:string jiraUserName:string jiraPassword:string jiraApiUrl:string jiraIssue:string jiraSaveNull:boolean jiraCheck:integer 
+
+
+rake db:migrate
+
+rails g controller AdminJiraSets
+
+rails generate migration AddJiraInfoToProjects open_jira:boolean jira_project_url:string
+
+
+Gitlab::Git::Repository.import(‘zzz/nide’, 'svn://192.168.5.24/mycode/weibo','svn',false,'yuf','123456')
+
+
+
+ssh git@192.168.6.66 -p2222
+ssh git@192.168.6.147 -p2222
+ssh git@192.168.6.159 -p2222
+
+132 133 160 135
+ssh git@192.168.6.160 -p2222
+
+
+sudo /Applications/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/Yosemite --applicationpath /Applications/Install\ OS\ X\ Yosemite.app --nointeraction
+
+
+
+svnserve -d -r /Users/git/Documents/svnserver/mycode
+
+
+
+rails generate model RuleAction actionName:string 
+rails generate model Role roleName:string
+rails generate 
+
+bundle exec sidekiq -C config/sidekiq.yml
+
+
+flushall
+
+
+bundle exec irb
+require 'gitlab_git_server'
+repo = Gitlab::Git::Repository.import("zhangrq/bb.git","git@code.csdn.net:dwzteam/dwz_springmvc.git")
+bundle exec sidekiq-server
+
+
+sudo docker rm -f code_sidekiq_backend
+
+sudo docker run -dti --net csdn_code_net --name code_sidekiq_backend --restart=always   -v /home/git/repositories:/home/git/repositories   -v /home/git/code_scripts:/home/git/code_scripts   -v /home/git/code_conf/code_scripts/redis_conf:/etc/redis_conf   -v /home/git/code_conf/code_scripts/rpc_conf:/etc/rpc_conf   -v /home/git/code_conf/code_web_server/code.yml:/home/git/config/code.yml   -v /home/git/code_conf/gitlab_git_server/config.yml:/home/git/gitlab_git_server/config.yml   -v /home/git/code_scripts/ssh_rpc:/bin/ssh_rpc   -v /home/git/code_scripts/ssh_rpc:/bin/ssh-rpc   -v /home/git/code_log/code_git_rpc_server:/home/git/gitlab_git_server_log   -v /home/git/code_log/git_ssh_protocol_server_be:/home/git/labhub/log   -v /home/git/code_log/gitlab_git_server:/home/git/gitlab_git_server/logs -w /home/git/gitlab_git_server  -u git csdn_code/code_ssh_protocol_rpc_server:201608261652 bundle exec sidekiq-server
+
+
