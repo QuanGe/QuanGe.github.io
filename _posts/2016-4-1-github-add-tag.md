@@ -15,3 +15,11 @@ git tag -a v0.1.1 -m 'supper swift'
 
 git push --tags//或者git push origin --tags或者git push origin v0.1.1
 {% endhighlight %}
+
+### 如何删除tag
+在终端中先cd到项目当前目录 然后执行
+
+{% highlight objc %}
+git tag -d v0.1.1
+git push origin :refs/tags/v0.1.1
+{% endhighlight %}
