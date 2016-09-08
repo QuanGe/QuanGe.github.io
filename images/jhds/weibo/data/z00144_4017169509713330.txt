@@ -1,0 +1,5 @@
+{"idstr":"4017169509713330","text":"#简画大师#在人生的道路，走着走着，就丢掉了出发时的豪情壮志，或安于现状，或恐惧再出发，牵绊脚步的是惰性，也是竞争中的不公平。于是，恶狠狠地，迷惘而又空洞地盯着这个世界，寻找继续前行的意义……不努力工作，明天早上买煎饼的钱找谁要呀～"
+              ,"pic_ids":["006biWBzjw1f7lann3vxkj30qo19xq5i"]
+              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f7lann3vxkj30qo19xq5i.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1473251309"}
