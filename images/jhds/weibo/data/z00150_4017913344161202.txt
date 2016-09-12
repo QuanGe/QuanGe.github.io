@@ -1,0 +1,5 @@
+{"idstr":"4017913344161202","text":"#简画大师#人这一生，总是要错过些什么，一些人、一些事，不愿去看、去想、去面对，也总是无济于事，错过的就像洗不掉的疤，时间久了便没有感觉，也慢慢习惯，但偶尔看到还是会有一丝惆怅，见到熟悉的背影也总会心头一紧，设想如果当时怎样怎样，然后笑笑……人生大抵如此，遗憾才诗意，经历过才完整"
+              ,"pic_ids":["006biWBzjw1f7no31uefij30qo19x0tz"]
+              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f7no31uefij30qo19x0tz.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1473428652"}
