@@ -1,0 +1,49 @@
+[{"idstr":"4024081374051271","text":"#简画大师#bug——软件会有漏洞，计划会有不周，再好的技术也有短板，再好的风景也总有时限，所爱之人总是会成为我们的软肋，尤其是那些熊孩子，这真是人生最大的bug，喏，一幅图都画不完，各种捣乱"
+              ,"pic_ids":["006biWBzjw1f87ch1ga7rj30qo19xwha"]
+              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f87ch1ga7rj30qo19xwha.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474899226"},{"idstr":"4023732957522554","text":"#简画大师#克制——静以修身，俭以养德"
+              ,"pic_ids":["006biWBzjw1f868ghu60dj30qo19xq5r"]
+              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f868ghu60dj30qo19xq5r.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474816156"},{"idstr":"4023355781365245","text":"#简画大师#较量——谁比谁辛苦，谁比谁值得，付出跟收获之间，放在人情世故上，两者并没有半毛钱关系，夫妻，朋友，同学之间没有天然的联系（血缘关系，即使亲人也有反目成仇的呢），人情，都是小情绪和大脾气之间的较量，人情不在了，就只剩下故事和事故了"
+              ,"pic_ids":["006biWBzjw1f85151nkvpj30qo19xadb"]
+              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f85151nkvpj30qo19xadb.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474726231"},{"idstr":"4023015123418058","text":"#简画大师#匆匆——生活太琐碎，任何改变都由许多个小概率事件构成，这些个小事件莹莹绕绕纠缠在一起，然后悄悄地把时间和青春带走，它们像是密谋好了一样，一点一点改变着你，最后变成以前，现在和以后的你……困……睡着了……"
+              ,"pic_ids":["006biWBzjw1f83y0l5m46j30qo19xdil"]
+              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f83y0l5m46j30qo19xdil.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474645012"},{"idstr":"4022637782890236","text":"#简画大师#左手画——感受手指在屏幕上滑动，亦或聆听木彩在宣纸上摩擦，画画的心每天都不同，就如同世上没有相同的两片叶子，春去夏远秋已至，生命轮回，也无轮回，人世间只此一遭，落叶归根，感恩生命。"
+              ,"pic_ids":["006biWBzjw1f82qogfobej30qo19xjwn"]
+              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f82qogfobej30qo19xjwn.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474555047"},{"idstr":"4022283993717367","text":"自画像——许久没有画，手有些生了，把生活放慢，再放慢，学会感恩，懂得享受，爱自己，爱生活——#简画大师#我为自己代言[挤眼]"
+              ,"pic_ids":["006biWBzgw1f81lx28ihtj30qo145gsl", "006biWBzgw1f81lx6m6hvj30qo0zkq7i"]
+              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzgw1f81lx28ihtj30qo145gsl.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474470697"},{"idstr":"4023699071661544","text":"#简画大师#《小气鬼》[月亮]"
+                    ,"pic_ids":["9ea145c3jw1f864k4w9ekj20qo19xq5g", "9ea145c3jw1f864k664kfj20qo19xjtt"]
+                    ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f864k4w9ekj20qo19xq5g.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474808078"},{"idstr":"4023332477703449","text":"#简画大师#《向日葵[向日葵] 》[爱心] ，希望一切都会好起来"
+                    ,"pic_ids":["9ea145c3jw1f84yg85egdj20qo19xdhs", "9ea145c3jw1f84yg9ht93j20qo19xwjy"]
+                    ,"original_pic":"http://ww4.sinaimg.cn/large/9ea145c3jw1f84yg85egdj20qo19xdhs.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474720675"},{"idstr":"4022619327946147","text":"#简画大师#《小气的大树》[月亮]福兮祸兮！珍惜之！"
+                    ,"pic_ids":["9ea145c3jw1f82oivfnc0j20qo19xjux", "9ea145c3jw1f82oiw5dvuj20qo19xgpc"]
+                    ,"original_pic":"http://ww4.sinaimg.cn/large/9ea145c3jw1f82oivfnc0j20qo19xjux.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474550646"},{"idstr":"4022270491408806","text":"#简画大师#每晚一幅画，每日一故事！坚持！[爱你]《白雪公主》[月亮]"
+                    ,"pic_ids":["9ea145c3jw1f81kg9qxa4j20qo19xwhl", "9ea145c3jw1f81kgaxa4wj20qo19x42n"]
+                    ,"original_pic":"http://ww4.sinaimg.cn/large/9ea145c3jw1f81kg9qxa4j20qo19xwhl.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474467479"},{"idstr":"4021894368060793","text":"#简画大师# 《城堡里的孩子话》[偷笑][月亮][月亮][月亮]"
+                    ,"pic_ids":["9ea145c3jw1f80dabk52pj20qo19xwjn", "9ea145c3jw1f80daca088j20qo19x0xg"]
+                    ,"original_pic":"http://ww4.sinaimg.cn/large/9ea145c3jw1f80dabk52pj20qo19xwjn.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474377803"},{"idstr":"4021895106147501","text":"#简画大师#网络是一次大爆炸，它的出现不像二战原子弹令人震撼，却已像病毒深入人的血液骨髓，没有时空界限，交流的即视感令人愉悦，匿名和潜水反向满足了人们偷窥的心，以前只见七大姑八大姨饭后东家长西家短，围观评论则迎合了年轻人八卦的心，舆论的狂欢更是对内心躁动的释放，无所谓对错。让人焦"
+              ,"pic_ids":["006biWBzjw1f80ddg2hf7j30qo19xdhj", "006biWBzjw1f80ddggsgyj30qo1betfr"]
+              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f80ddg2hf7j30qo19xdhj.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474377979"}]
