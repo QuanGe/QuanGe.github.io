@@ -24,10 +24,7 @@ end
 
 def traverse_dir()
 
-  cd = "ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/weibo/script/getWeiboData.rb &&
-
-
-        ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/weibo/script/weiboClipToTxt.rb && cd #{$theFileDir} && git status"
+  cd = "ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/weibo/script/getWeiboData.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/weibo/script/getWeiboDatalyh.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/weibo/script/getWeiboDatalyy.rb && ruby /Users/Shared/GitHub/QuanGe.github.io/images/jhds/weibo/script/weiboClipToTxt.rb && cd #{$theFileDir} && git status"
   Open3.popen3(cd) do |stdin, stdout, stderr, wait_thr|
 
     $subcmd = "cd #{$theFileDir} "
@@ -61,7 +58,7 @@ def traverse_dir()
 end
 
 def dowiboData()
-  $scheduler.every '15s' do
+  $scheduler.every '60s' do
     if($tag==0)
       puts "开始处理微博数据"
       traverse_dir()
