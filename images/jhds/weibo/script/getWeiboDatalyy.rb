@@ -25,7 +25,7 @@ def traverse_dir()
   if File.directory? $theTextDir
     urlstr = ""
 
-    urlstr = "http://m.weibo.cn/page/json?containerid=1005055663851873_-_WEIBO_SECOND_PROFILE_WEIBO&page=1"
+    urlstr = "http://m.weibo.cn/page/json?containerid=1005052661369283_-_WEIBO_SECOND_PROFILE_WEIBO&page=1"
 
     urlstr = URI.escape(urlstr)
     url = URI.parse(urlstr)
