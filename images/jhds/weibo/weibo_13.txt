@@ -1,4 +1,12 @@
-[{"idstr":"4020816054835819","text":"#简画大师#在父母眼中，孩子总长的太快，一眨眼就上学，毕业，工作，成家，也为人父为人母；在父母眼中，孩子总长的太慢，衣食住行，操不完的心，总想着什么苦什么罪都能代劳，即使七老八十，在父母身边就仍是孩子，会撒娇，会嗔怪。这真是世界上最美好的一种情感。"
+[{"idstr":"4020813487777861","text":"#简画大师#《小鹿斑比⑦夏天的猎杀》"
+                    ,"pic_ids":["9ea145c3jw1f7wx592juuj20qo19xn1w", "9ea145c3jw1f7wx5a8usyj20qo19x0wb"]
+                    ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f7wx592juuj20qo19xn1w.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474120101"},{"idstr":"4020445991310813","text":"#简画大师#每天一幅画，每日一故事，继续《小鹿斑比⑥鹿王出现了》[月亮][亲亲]"
+                    ,"pic_ids":["9ea145c3jw1f7vqxfm96bj20qo19xq6p", "9ea145c3jw1f7vqxiatyuj20qo19x79e"]
+                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f7vqxfm96bj20qo19xq6p.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474032483"},{"idstr":"4020816054835819","text":"#简画大师#在父母眼中，孩子总长的太快，一眨眼就上学，毕业，工作，成家，也为人父为人母；在父母眼中，孩子总长的太慢，衣食住行，操不完的心，总想着什么苦什么罪都能代劳，即使七老八十，在父母身边就仍是孩子，会撒娇，会嗔怪。这真是世界上最美好的一种情感。"
               ,"pic_ids":["006biWBzgw1f7wwnwxn4wj30qo19x76m"]
               ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzgw1f7wwnwxn4wj30qo19x76m.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -38,12 +46,4 @@
               ,"pic_ids":["006biWBzjw1f7pyd4mqumj30qo19xwg8"]
               ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7pyd4mqumj30qo19xwg8.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1473599461"},{"idstr":"4018281905750354","text":"#简画大师#教师节节日快乐[月亮]"
-                    ,"pic_ids":["9ea145c3jw1f7ouekly0xj20qo19x7b9", "9ea145c3jw1f7ouemas1rj20qo1be0x1"]
-                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f7ouekly0xj20qo19x7b9.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1473516525"},{"idstr":"4018265443392930","text":"#简画大师#祝天下所有教书育人的教师们节日快乐，辛苦了，爱老爸[樱花]"
-              ,"pic_ids":["006biWBzgw1f7ositwe14j30qo19xq61"]
-              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzgw1f7ositwe14j30qo19xq61.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1473512600"}]
+              ,"created_timestamp":"1473599461"}]
