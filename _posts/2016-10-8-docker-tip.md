@@ -3,10 +3,10 @@ layout: post
 title: 常用docker命令，及一些坑
 ---
 
-###常用命令
+### 常用命令
  
 
-####查看容器的root用户密码
+#### 查看容器的root用户密码
 
 {% highlight objc %}
 docker logs <容器名orID> 2>&1 | grep '^User: ' | tail -n1
