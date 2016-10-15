@@ -1,32 +1,4 @@
-[{"idstr":"4026249275874101","text":"#简画大师#没错，今天出去玩了；没错，人比景更抢镜；没错，已经累成一摊肉泥了。。。"
-              ,"pic_ids":["006biWBzjw1f8e9gcbnjzj30qo19xq4k"]
-              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8e9gcbnjzj30qo19xq4k.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1475416094"},{"idstr":"4025838582510186","text":"#简画大师#欢聚一堂，共度国庆，亲爱的祖国生日快乐！"
-              ,"pic_ids":["006biWBzjw1f8cyaaei6fj30qo19xais"]
-              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f8cyaaei6fj30qo19xais.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1475318176"},{"idstr":"4025540774386263","text":"#简画大师#9.30，法定烈士纪念日，为新生活奉献青春，奉献生命的前辈们，今天的幸福生活来之不易[心]。明天享受美好假期的同时，也要学会感恩和珍惜。"
-              ,"pic_ids":["006biWBzjw1f8c02zuk22j30qo19xjtj"]
-              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f8c02zuk22j30qo19xjtj.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1475247174"},{"idstr":"4025162314282098","text":"#简画大师#咳咳咳，快好吧《握住阳光》[月亮]"
-              ,"pic_ids":["9ea145c3jw1f8aslncso0j20qo19xtae", "9ea145c3jw1f8aslvn6i1j20qo19xdjq"]
-              ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f8aslncso0j20qo19xtae.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-              ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1475156942"},{"idstr":"4024795652053632","text":"#简画大师#每晚一故事，每晚一幅画！简画很好的平台，可以做故事绘本！你也来试试吧"
-              ,"pic_ids":["9ea145c3jw1f89mh8hvubj20qo19xtda", "9ea145c3jw1f89mh9e4pfj20qo19xacm"]
-              ,"original_pic":"http://ww4.sinaimg.cn/large/9ea145c3jw1f89mh8hvubj20qo19xtda.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-              ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1475069523"},{"idstr":"4024429019051714","text":"#简画大师#告诫孩子，提高警惕《不要随便摸我》[拳头][拳头][拳头]"
-              ,"pic_ids":["9ea145c3jw1f88gdmyzfyj20qo19xmzd", "9ea145c3jw1f88gdnwb1xj20qo19xmzg"]
-              ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f88gdmyzfyj20qo19xmzd.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-              ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1474982111"},{"idstr":"4024069411951010","text":"#简画大师#《乱吃药的玫瑰花[玫瑰] 》[月亮]简画在手，画画不愁！"
-              ,"pic_ids":["9ea145c3jw1f87b2shy4wj20qo19xad1", "9ea145c3jw1f87b2t9r57j20qo19xtb5"]
-              ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f87b2shy4wj20qo19xad1.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-              ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1474896374"},{"idstr":"4025164922898560","text":"#简画大师#明天节前最后一天上班，小伙伴们假期都去哪玩啊？"
+[{"idstr":"4025164922898560","text":"#简画大师#明天节前最后一天上班，小伙伴们假期都去哪玩啊？"
               ,"pic_ids":["006biWBzjw1f8asx10odcj30qo19x75x"]
               ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f8asx10odcj30qo19x75x.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -46,4 +18,32 @@
               ,"pic_ids":["006biWBzjw1f87ch1ga7rj30qo19xwha"]
               ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f87ch1ga7rj30qo19xwha.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1474899226"}]
+              ,"created_timestamp":"1474899226"},{"idstr":"4023732957522554","text":"#简画大师#克制——静以修身，俭以养德"
+              ,"pic_ids":["006biWBzjw1f868ghu60dj30qo19xq5r"]
+              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f868ghu60dj30qo19xq5r.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474816156"},{"idstr":"4023355781365245","text":"#简画大师#较量——谁比谁辛苦，谁比谁值得，付出跟收获之间，放在人情世故上，两者并没有半毛钱关系，夫妻，朋友，同学之间没有天然的联系（血缘关系，即使亲人也有反目成仇的呢），人情，都是小情绪和大脾气之间的较量，人情不在了，就只剩下故事和事故了"
+              ,"pic_ids":["006biWBzjw1f85151nkvpj30qo19xadb"]
+              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f85151nkvpj30qo19xadb.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474726231"},{"idstr":"4023015123418058","text":"#简画大师#匆匆——生活太琐碎，任何改变都由许多个小概率事件构成，这些个小事件莹莹绕绕纠缠在一起，然后悄悄地把时间和青春带走，它们像是密谋好了一样，一点一点改变着你，最后变成以前，现在和以后的你……困……睡着了……"
+              ,"pic_ids":["006biWBzjw1f83y0l5m46j30qo19xdil"]
+              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f83y0l5m46j30qo19xdil.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474645012"},{"idstr":"4022637782890236","text":"#简画大师#左手画——感受手指在屏幕上滑动，亦或聆听木彩在宣纸上摩擦，画画的心每天都不同，就如同世上没有相同的两片叶子，春去夏远秋已至，生命轮回，也无轮回，人世间只此一遭，落叶归根，感恩生命。"
+              ,"pic_ids":["006biWBzjw1f82qogfobej30qo19xjwn"]
+              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f82qogfobej30qo19xjwn.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474555047"},{"idstr":"4022283993717367","text":"自画像——许久没有画，手有些生了，把生活放慢，再放慢，学会感恩，懂得享受，爱自己，爱生活——#简画大师#我为自己代言[挤眼]"
+              ,"pic_ids":["006biWBzgw1f81lx28ihtj30qo145gsl", "006biWBzgw1f81lx6m6hvj30qo0zkq7i"]
+              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzgw1f81lx28ihtj30qo145gsl.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474470697"},{"idstr":"4023699071661544","text":"#简画大师#《小气鬼》[月亮]"
+                    ,"pic_ids":["9ea145c3jw1f864k4w9ekj20qo19xq5g", "9ea145c3jw1f864k664kfj20qo19xjtt"]
+                    ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f864k4w9ekj20qo19xq5g.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474808078"},{"idstr":"4023332477703449","text":"#简画大师#《向日葵[向日葵] 》[爱心] ，希望一切都会好起来"
+                    ,"pic_ids":["9ea145c3jw1f84yg85egdj20qo19xdhs", "9ea145c3jw1f84yg9ht93j20qo19xwjy"]
+                    ,"original_pic":"http://ww4.sinaimg.cn/large/9ea145c3jw1f84yg85egdj20qo19xdhs.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474720675"}]
