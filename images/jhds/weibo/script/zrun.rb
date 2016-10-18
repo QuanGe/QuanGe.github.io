@@ -9,7 +9,7 @@ def pushCode()
   if($subcmd != "cd #{$theFileDir} ")
     timestr = Time.now.strftime("%Y%m%d%H%M%S")
     $subcmd.concat("&& git commit -m 'update weibo data#{timestr}' && git push")
-    puts "开始上传微博数据#{$subcmd}"
+    puts timestr+"开始上传微博数据#{$subcmd}"
     Open3.popen3($subcmd) do |stdin, stdout, stderr, wait_thr|
       $subcmd = "cd #{$theFileDir} "
       stdout.each_line { |line|
@@ -60,11 +60,12 @@ end
 def dowiboData()
   $scheduler.every '60s' do
     if($tag==0)
-      puts "开始处理微博数据"
+      timestr = Time.now.strftime("%Y%m%d%H%M%S")
+      puts  timestr+"开始处理微博数据"
       traverse_dir()
       $tag = $tag +1
     else
-      puts "将要上传微博数据#{$subcmd}"
+      puts  timestr+"将要上传微博数据#{$subcmd}"
       pushCode()
       $tag = 0
     end
