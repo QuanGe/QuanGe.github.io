@@ -59,8 +59,9 @@ end
 
 def dowiboData()
   $scheduler.every '60s' do
+    timestr = Time.now.strftime("%Y%m%d%H%M%S")
     if($tag==0)
-      timestr = Time.now.strftime("%Y%m%d%H%M%S")
+      
       puts  timestr+"开始处理微博数据"
       traverse_dir()
       $tag = $tag +1
