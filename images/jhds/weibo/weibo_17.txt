@@ -1,4 +1,8 @@
-[{"idstr":"4028436231823072","text":"#简画大师#秋凉了，大家注意身体[抱抱]"
+[{"idstr":"3997979964527152","text":"每日一画#简画大师#红色的世界[心]"
+                    ,"pic_ids":["9ea145c3jw1f5w2rclz7sj20qo19xgrh", "9ea145c3jw1f5w2rd9elcj20qo19x0w4"]
+                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f5w2rclz7sj20qo19xgrh.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1468676165"},{"idstr":"4028436231823072","text":"#简画大师#秋凉了，大家注意身体[抱抱]"
               ,"pic_ids":["9ea145c3jw1f8l8m1f2r6j20qo19x42e", "9ea145c3jw1f8l8m2fidcj20qo19xq7d"]
               ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f8l8m1f2r6j20qo19x42e.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
               ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -42,8 +46,4 @@
               ,"pic_ids":["9ea145c3jw1f8ea9h3awxj20qo19xn0r", "9ea145c3jw1f8ea9kf28nj20qo19xacp"]
               ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f8ea9h3awxj20qo19xn0r.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
               ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1475417810"},{"idstr":"4025888926668261","text":"#简画大师#祝伟大的祖国，生日快乐！ 北京·新康园"
-              ,"pic_ids":["9ea145c3jw1f8d41yxozmj20qo19xwii", "9ea145c3jw1f8d422ggqdj20qo19xwhh"]
-              ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f8d41yxozmj20qo19xwii.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-              ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1475330180"}]
+              ,"created_timestamp":"1475417810"}]
