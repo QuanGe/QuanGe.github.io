@@ -1,4 +1,8 @@
-[{"idstr":"4009955067328833","text":"#简画大师#仰望是一种姿态，不要变成一种习惯！"
+[{"idstr":"4010324208332062","text":"#简画大师#努力了就不遗憾，超越自己就是英雄"
+              ,"pic_ids":["006biWBzjw1f6zghg90p7j30qo19xgm4"]
+              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f6zghg90p7j30qo19xgm4.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1471619262"},{"idstr":"4009955067328833","text":"#简画大师#仰望是一种姿态，不要变成一种习惯！"
                     ,"pic_ids":["9ea145c3jw1f6ya28owfxj20qo19xtbq", "9ea145c3jw1f6ya2aqg3qj20qo19xn0i"]
                     ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f6ya28owfxj20qo19xtbq.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1f6rapqsi11j20qo19xae6", "9ea145c3jw1f6raprkpqoj20qo19xwgy"]
                     ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f6rapqsi11j20qo19xae6.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1471009450"},{"idstr":"4008126921782877","text":"#简画大师#生活看似一团麻，总有柳暗花明时"
-              ,"pic_ids":["006biWBzjw1f6sg4oljx4j30qo19x0xx"]
-              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f6sg4oljx4j30qo19x0xx.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1471095388"}]
+                    ,"created_timestamp":"1471009450"}]
