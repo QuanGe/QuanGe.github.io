@@ -1,4 +1,8 @@
-[{"idstr":"4026989880819458","text":"#简画大师#心情——起伏线，荡到低谷，修修补补，丢掉了轻松的初衷"
+[{"idstr":"4027336779076945","text":"#简画大师#好家伙——最近发现一部好看的电视剧，未来是梦与梦的战争，梦想与自由、奋斗与坚持、屈辱与抗争……关于历史的新思考"
+              ,"pic_ids":["006biWBzjw1f8hqco64s9j30qo19x0ux"]
+              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8hqco64s9j30qo19x0ux.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1475675375"},{"idstr":"4026989880819458","text":"#简画大师#心情——起伏线，荡到低谷，修修补补，丢掉了轻松的初衷"
               ,"pic_ids":["006biWBzjw1f8gmidyceqj30qo19xjt1"]
               ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f8gmidyceqj30qo19xjt1.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
               ,"pic_ids":["9ea145c3jw1f88gdmyzfyj20qo19xmzd", "9ea145c3jw1f88gdnwb1xj20qo19xmzg"]
               ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f88gdmyzfyj20qo19xmzd.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
               ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1474982111"},{"idstr":"4024069411951010","text":"#简画大师#《乱吃药的玫瑰花[玫瑰] 》[月亮]简画在手，画画不愁！"
-              ,"pic_ids":["9ea145c3jw1f87b2shy4wj20qo19xad1", "9ea145c3jw1f87b2t9r57j20qo19xtb5"]
-              ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f87b2shy4wj20qo19xad1.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-              ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1474896374"}]
+              ,"created_timestamp":"1474982111"}]
