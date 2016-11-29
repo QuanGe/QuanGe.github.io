@@ -1,4 +1,8 @@
-[{"idstr":"4022283993717367","text":"自画像——许久没有画，手有些生了，把生活放慢，再放慢，学会感恩，懂得享受，爱自己，爱生活——#简画大师#我为自己代言[挤眼]"
+[{"idstr":"4022637782890236","text":"#简画大师#左手画——感受手指在屏幕上滑动，亦或聆听木彩在宣纸上摩擦，画画的心每天都不同，就如同世上没有相同的两片叶子，春去夏远秋已至，生命轮回，也无轮回，人世间只此一遭，落叶归根，感恩生命。"
+              ,"pic_ids":["006biWBzjw1f82qogfobej30qo19xjwn"]
+              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f82qogfobej30qo19xjwn.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474555047"},{"idstr":"4022283993717367","text":"自画像——许久没有画，手有些生了，把生活放慢，再放慢，学会感恩，懂得享受，爱自己，爱生活——#简画大师#我为自己代言[挤眼]"
               ,"pic_ids":["006biWBzgw1f81lx28ihtj30qo145gsl", "006biWBzgw1f81lx6m6hvj30qo0zkq7i"]
               ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzgw1f81lx28ihtj30qo145gsl.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
               ,"pic_ids":["006biWBzgw1f7y173vpn5j30qo19xtaa"]
               ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzgw1f7y173vpn5j30qo19xtaa.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1474203212"},{"idstr":"4020813487777861","text":"#简画大师#《小鹿斑比⑦夏天的猎杀》"
-                    ,"pic_ids":["9ea145c3jw1f7wx592juuj20qo19xn1w", "9ea145c3jw1f7wx5a8usyj20qo19x0wb"]
-                    ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f7wx592juuj20qo19xn1w.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474120101"}]
+              ,"created_timestamp":"1474203212"}]
