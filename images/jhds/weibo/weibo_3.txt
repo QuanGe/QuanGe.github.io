@@ -1,4 +1,8 @@
-[{"idstr":"4000894226154084","text":"#简画大师#天气太热，[太阳][太阳][太阳]发挥失常！"
+[{"idstr":"4000882897417641","text":"#简画大师#一场暴雨，多少百姓受灾，抗洪之后，是不是也该反思，防患于未然、有作为，要远比解释、补救更重要。愿天佑邢台，天佑中华。[心]"
+              ,"pic_ids":["006biWBzjw1f65c5y8vb5j30qo19x0um"]
+              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f65c5y8vb5j30qo19x0um.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1469368278"},{"idstr":"4000894226154084","text":"#简画大师#天气太热，[太阳][太阳][太阳]发挥失常！"
                     ,"pic_ids":["9ea145c3jw1f65dfh9vytj20qo19xact", "9ea145c3jw1f65dfi44gvj20qo19xq7p"]
                     ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f65dfh9vytj20qo19xact.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1f5yb3lm3bej20qo19xdkc", "9ea145c3jw1f5yb3mvx2nj20qo19xgpg"]
                     ,"original_pic":"http://ww4.sinaimg.cn/large/9ea145c3jw1f5yb3lm3bej20qo19xdkc.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1468842932"},{"idstr":"3998684829977153","text":"简画，就是简单，想画就画，我骄傲[开心]？#简画大师#"
-                    ,"pic_ids":["006biWBzjw1f5ybpy9xa4j30qo19x76s"]
-                    ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f5ybpy9xa4j30qo19x76s.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1468844218"}]
+                    ,"created_timestamp":"1468842932"}]

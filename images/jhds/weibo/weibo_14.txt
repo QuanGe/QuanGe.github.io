@@ -1,4 +1,8 @@
-[{"idstr":"4023355781365245","text":"#简画大师#较量——谁比谁辛苦，谁比谁值得，付出跟收获之间，放在人情世故上，两者并没有半毛钱关系，夫妻，朋友，同学之间没有天然的联系（血缘关系，即使亲人也有反目成仇的呢），人情，都是小情绪和大脾气之间的较量，人情不在了，就只剩下故事和事故了"
+[{"idstr":"4023732957522554","text":"#简画大师#克制——静以修身，俭以养德"
+              ,"pic_ids":["006biWBzjw1f868ghu60dj30qo19xq5r"]
+              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f868ghu60dj30qo19xq5r.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474816156"},{"idstr":"4023355781365245","text":"#简画大师#较量——谁比谁辛苦，谁比谁值得，付出跟收获之间，放在人情世故上，两者并没有半毛钱关系，夫妻，朋友，同学之间没有天然的联系（血缘关系，即使亲人也有反目成仇的呢），人情，都是小情绪和大脾气之间的较量，人情不在了，就只剩下故事和事故了"
               ,"pic_ids":["006biWBzjw1f85151nkvpj30qo19xadb"]
               ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f85151nkvpj30qo19xadb.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1f7z8k58empj20qo19xwjj"]
                     ,"original_pic":"http://ww4.sinaimg.cn/large/9ea145c3jw1f7z8k58empj20qo19xwjj.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474293278"},{"idstr":"4021550044195812","text":"#简画大师#你第一次当宝宝，我第一次当妈妈，你总想无所拘束，我总想定各种规矩，我们之间有很多需要相互沟通和适应，好好说，行吗"
-              ,"pic_ids":["006biWBzjw1f7z9r5yu34j30qo19xtau"]
-              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f7z9r5yu34j30qo19xtau.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1474295710"}]
+                    ,"created_timestamp":"1474293278"}]
