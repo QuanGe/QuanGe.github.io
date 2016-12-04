@@ -1,4 +1,8 @@
-[{"idstr":"4019004064864574","text":"#简画大师# 睡前故事《小鹿斑比②去大草地》[爱你][爱你][爱你][月亮][月亮][月亮]"
+[{"idstr":"4043283548600727","text":"#简画大师#生活中难免会有自欺欺人的情况，无非是自我安慰罢了！"
+                    ,"pic_ids":["9ea145c3jw1f9wlsdz37uj20qo19xacc", "9ea145c3jw1f9wlsefnj9j20qo19xgpz"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f9wlsdz37uj20qo19xacc.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1479477381"},{"idstr":"4019004064864574","text":"#简画大师# 睡前故事《小鹿斑比②去大草地》[爱你][爱你][爱你][月亮][月亮][月亮]"
                     ,"pic_ids":["9ea145c3jw1f7r5c8xe7ej20qo19xwio", "9ea145c3jw1f7r5c9lhg7j20qo19x0xz"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7r5c8xe7ej20qo19xwio.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -42,8 +46,4 @@
               ,"pic_ids":["006biWBzjw1f8e9gcbnjzj30qo19xq4k"]
               ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8e9gcbnjzj30qo19xq4k.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1475416094"},{"idstr":"4006291451718335","text":"#简画大师#淅淅沥沥下了一天雨，立秋了，果然凉爽了许多！"
-                    ,"pic_ids":["9ea145c3jw1f6mla8xllij20qo19xah5", "9ea145c3jw1f6mla9oc8tj20qo19xq5w"]
-                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f6mla8xllij20qo19xah5.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1470657777"}]
+              ,"created_timestamp":"1475416094"}]

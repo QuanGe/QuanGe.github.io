@@ -1,4 +1,8 @@
-[{"idstr":"4037815622855319","text":"#简画大师#[睡][睡][睡]"
+[{"idstr":"4042906240937471","text":"#简画大师#日复一日，年复一年，过好每一天！"
+                    ,"pic_ids":["9ea145c3jw1f9vegy28duj20qo19xmzc", "9ea145c3jw1f9vegyldbjj20qo19xgq2"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f9vegy28duj20qo19xmzc.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1479387423"},{"idstr":"4037815622855319","text":"#简画大师#[睡][睡][睡]"
                     ,"pic_ids":["9ea145c3jw1f9f5t9og36j20qo19xgmo", "9ea145c3jw1f9f5ta9d1uj20qo1be7dy"]
                     ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f9f5t9og36j20qo19xgmo.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -42,8 +46,4 @@
               ,"pic_ids":["006biWBzjw1f7vs15h5jzj30qo19x40p"]
               ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f7vs15h5jzj30qo19x40p.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1474034717"},{"idstr":"4014669389538830","text":"哎呀，妈呀，累死我了，终于画完了#简画大师#"
-                    ,"pic_ids":["006bfzEJgw1f7dbiscd9nj30qo19x402"]
-                    ,"original_pic":"http://ww3.sinaimg.cn/large/006bfzEJgw1f7dbiscd9nj30qo19x402.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.996.996.180/006bfzEJjw8f71off4zzgj30ro0romza.jpg"
-                    ,"nickName":"玺v1128","userId":"5663048673"
-                    ,"created_timestamp":"1472655234"}]
+              ,"created_timestamp":"1474034717"}]

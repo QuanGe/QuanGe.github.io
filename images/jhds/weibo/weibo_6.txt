@@ -1,4 +1,8 @@
-[{"idstr":"4022283993717367","text":"自画像——许久没有画，手有些生了，把生活放慢，再放慢，学会感恩，懂得享受，爱自己，爱生活——#简画大师#我为自己代言[挤眼]"
+[{"idstr":"4006291451718335","text":"#简画大师#淅淅沥沥下了一天雨，立秋了，果然凉爽了许多！"
+                    ,"pic_ids":["9ea145c3jw1f6mla8xllij20qo19xah5", "9ea145c3jw1f6mla9oc8tj20qo19xq5w"]
+                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f6mla8xllij20qo19xah5.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1470657777"},{"idstr":"4022283993717367","text":"自画像——许久没有画，手有些生了，把生活放慢，再放慢，学会感恩，懂得享受，爱自己，爱生活——#简画大师#我为自己代言[挤眼]"
               ,"pic_ids":["006biWBzgw1f81lx28ihtj30qo145gsl", "006biWBzgw1f81lx6m6hvj30qo0zkq7i"]
               ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzgw1f81lx28ihtj30qo145gsl.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
               ,"pic_ids":["006biWBzjw1f6no74r9qyj30qo19xta6"]
               ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f6no74r9qyj30qo19xta6.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1470738467"},{"idstr":"4008841513844205","text":"#简画大师#婚姻需要经营，爱对方，也要爱自己，保持双方地位相当，维持好爱情的天平，才不会造成任何一方的任性妄为"
-              ,"pic_ids":["006biWBzjw1f6uq76mjt6j30qo19xwfx"]
-              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f6uq76mjt6j30qo19xwfx.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1471265760"}]
+              ,"created_timestamp":"1470738467"}]

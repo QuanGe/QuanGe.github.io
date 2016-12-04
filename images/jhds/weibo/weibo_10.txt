@@ -1,4 +1,8 @@
-[{"idstr":"4002326698510725","text":"啥？我画的不好看？你来试试#简画大师#昨天狂风暴雨，吓得我没画画，今天补上。"
+[{"idstr":"4034224858765384","text":"#简画大师#心态好，才能笑对一切事物！心态决定常态"
+                    ,"pic_ids":["9ea145c3jw1f93pez3vg5j20qo19xmyu", "9ea145c3jw1f93pf1aa29j20qo19x77n"]
+                    ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f93pez3vg5j20qo19xmyu.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1477317620"},{"idstr":"4002326698510725","text":"啥？我画的不好看？你来试试#简画大师#昨天狂风暴雨，吓得我没画画，今天补上。"
               ,"pic_ids":["006biWBzjw1f69xzez3eyj30qo19xdgt"]
               ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f69xzez3eyj30qo19xdgt.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1f5uxemarq6j20qo19xq8f", "9ea145c3jw1f5uxendbqsj20qo19xwi4"]
                     ,"original_pic":"http://ww4.sinaimg.cn/large/9ea145c3jw1f5uxemarq6j20qo19xq8f.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1468590312"},{"idstr":"4030226750857490","text":"#简画大师#雪莱——冬天来了，春天还会远吗？"
-              ,"pic_ids":["006biWBzjw1f8qy9d9bqpj30qo19xq5w"]
-              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f8qy9d9bqpj30qo19xq5w.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1476364397"}]
+                    ,"created_timestamp":"1468590312"}]

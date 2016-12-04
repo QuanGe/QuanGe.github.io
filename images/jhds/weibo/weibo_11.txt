@@ -1,4 +1,8 @@
-[{"idstr":"4009228584633701","text":"#简画大师#家，是避风的港湾！该是温暖的地方！是可以放下一切面具的不用伪装的地方！希望一切安好！"
+[{"idstr":"4032424075505940","text":"#简画大师#好家伙——青山，时光，何思奇，门栓，若水，涂先生，欠老板。。。"
+              ,"pic_ids":["006biWBzjw1f8xymb47fej30qo19xjte"]
+              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f8xymb47fej30qo19xjte.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1476888281"},{"idstr":"4009228584633701","text":"#简画大师#家，是避风的港湾！该是温暖的地方！是可以放下一切面具的不用伪装的地方！希望一切安好！"
                     ,"pic_ids":["9ea145c3jw1f6vymxsa4dj20qo19x77y", "9ea145c3jw1f6vymyaipgj20qo19xn1c"]
                     ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f6vymxsa4dj20qo19x77y.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -42,8 +46,4 @@
               ,"pic_ids":["006biWBzjw1f8ffd62lo7j30qo19xdh5"]
               ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f8ffd62lo7j30qo19xdh5.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1475503101"},{"idstr":"4034224858765384","text":"#简画大师#心态好，才能笑对一切事物！心态决定常态"
-                    ,"pic_ids":["9ea145c3jw1f93pez3vg5j20qo19xmyu", "9ea145c3jw1f93pf1aa29j20qo19x77n"]
-                    ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f93pez3vg5j20qo19xmyu.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1477317620"}]
+              ,"created_timestamp":"1475503101"}]
