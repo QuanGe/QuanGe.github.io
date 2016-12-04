@@ -11,7 +11,7 @@ $tag = 0
 def pushCode()
   if($subcmd != "")
     timestr = Time.now.strftime("%Y%m%d%H%M%S")
-    $subcmd.concat("&& git commit -m 'update weibo data#{timestr}' && git pull --rebase && git push")
+    $subcmd.concat(" && git commit -m 'update weibo data#{timestr}' && git pull --rebase && git push")
     puts timestr+"开始上传微博数据#{$subcmd}"
     Open3.popen3($subcmd) do |stdin, stdout, stderr, wait_thr|
       $subcmd = ""
@@ -27,7 +27,7 @@ end
 
 def traverse_dir()
 
-  cd = "ruby ./getWeiboData.rb && ruby ./getWeiboDatalyh.rb && ruby ./getWeiboDatalyy.rb && ruby ./weiboClipToTxt.rb && cd #{$theFileDir} && git status && git add ."
+  cd = "ruby ./getWeiboData.rb && ruby ./getWeiboDatalyh.rb && ruby ./getWeiboDatalyy.rb && ruby ./weiboClipToTxt.rb && cd #{$theFileDir} && git status "
   Open3.popen3(cd) do |stdin, stdout, stderr, wait_thr|
 
     $subcmd = ""
@@ -36,15 +36,15 @@ def traverse_dir()
 
         if(line.include?"modified:   ")
           file = line.split("modified:   ").last.rstrip
-          if (!line.include?"getWeiboData") && (!line.include?"zrun") &&($subcmd == "")
+          if (!line.include?"getWeiboData") && (!line.include?"zrun") && ($subcmd == "")
            $subcmd.concat("git add .")
           end
         elsif(line.include?"new file:   ")
           file = line.split("new file:   ").last.rstrip
-          if (!line.include?"getWeiboData") && (!line.include?"zrun") &&($subcmd == "")
+          if (!line.include?"getWeiboData") && (!line.include?"zrun") && ($subcmd == "")
             $subcmd.concat("git add .")
           end
-        elsif line.include?"." &&($subcmd == "")
+        elsif (line.include?".") && ($subcmd == "")
           $subcmd.concat("git add .")
         else
           
