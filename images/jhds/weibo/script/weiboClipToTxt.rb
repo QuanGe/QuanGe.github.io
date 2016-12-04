@@ -1,7 +1,8 @@
+#encoding: utf-8
 require 'digest/md5'
 
-$theFileDir = '/Users/Shared/GitHub/QuanGe.github.io/images/jhds/weibo/data/'
-$outFileDir = '/Users/Shared/GitHub/QuanGe.github.io/images/jhds/weibo/'
+$theFileDir = '../data/'
+$outFileDir = '..'
 def traverse_dir()
 
     if File.directory? $theFileDir

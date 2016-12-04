@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 require 'digest/md5'
 require "open-uri"
 require 'net/http'
@@ -5,7 +7,7 @@ require 'json'
 
 $since_id = ""
 $index = 0
-$theTextDir = '/Users/Shared/GitHub/QuanGe.github.io/images/jhds/weibo/data/'
+$theTextDir = '../data/'
 $itemContents = Array.new
 $frontExistNames = Array.new
 
