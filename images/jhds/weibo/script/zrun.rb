@@ -11,7 +11,7 @@ $tag = 0
 def pushCode()
   if($subcmd != "")
     timestr = Time.now.strftime("%Y%m%d%H%M%S")
-    $subcmd.concat("&& git commit -m 'update weibo data#{timestr}' && git pull --rebase && git push")
+    $subcmd.concat(" && git commit -m 'update weibo data#{timestr}' && git pull --rebase && git push")
     puts timestr+"开始上传微博数据#{$subcmd}"
     Open3.popen3($subcmd) do |stdin, stdout, stderr, wait_thr|
       $subcmd = ""
