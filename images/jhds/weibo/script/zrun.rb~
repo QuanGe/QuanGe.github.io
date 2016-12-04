@@ -37,15 +37,15 @@ def traverse_dir()
         if(line.include?"modified:   ")
           file = line.split("modified:   ").last.rstrip
           if (!line.include?"getWeiboData") && (!line.include?"zrun") && ($subcmd == "")
-           $subcmd.concat("git add #{$theFileDir}")
+           $subcmd.concat("git add --all #{$theFileDir}")
           end
         elsif(line.include?"new file:   ")
           file = line.split("new file:   ").last.rstrip
           if (!line.include?"getWeiboData") && (!line.include?"zrun") && ($subcmd == "")
-            $subcmd.concat("git add #{$theFileDir}")
+            $subcmd.concat("git add --all #{$theFileDir}")
           end
         elsif (line.include?".") && ($subcmd == "")
-          $subcmd.concat("git add #{$theFileDir}")
+          $subcmd.concat("git add --all #{$theFileDir}")
         else
           
         end
