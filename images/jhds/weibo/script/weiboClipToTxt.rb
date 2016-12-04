@@ -2,7 +2,7 @@
 require 'digest/md5'
 
 $theFileDir = '../data/'
-$outFileDir = '..'
+$outFileDir = '../'
 def traverse_dir()
 
     if File.directory? $theFileDir
