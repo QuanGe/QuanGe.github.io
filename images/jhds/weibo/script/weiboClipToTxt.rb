@@ -12,13 +12,23 @@ def traverse_dir()
         nameIndex = 0
         items = Array.new
 
+        dataArray = Array.new
         Dir.foreach($theFileDir) do |file|
           if file !="." and file !=".." and file !=".DS_Store"
-            filePath =  $theFileDir + file
-            items[0,0] =  IO.read(filePath);
+            dataArray.push(file)
           end
         end
-
+        puts dataArray
+        dataArray.sort! do |a, b|
+          b.split("_").at(0) <=> a.split("_").at(0)
+        end
+        puts dataArray
+        dataArray.each do |file|
+          if file !="." and file !=".." and file !=".DS_Store"
+            filePath =  $theFileDir + file
+            items.push IO.read(filePath);
+          end
+        end
         count = 0
         items.each do |item|
               count = count+1
