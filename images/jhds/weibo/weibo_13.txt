@@ -1,49 +1,49 @@
-[{"idstr":"4013092797276832","text":"#简画大师#最美就是你向我奔跑，钻入我的怀抱，我们开心的大笑，空气里弥漫着幸福，风儿轻轻地吻着，把时光拉长，多久都不嫌久"
-              ,"pic_ids":["006biWBzjw1f78agbax96j30qo19xtbr"]
-              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f78agbax96j30qo19xtbr.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+[{"idstr":"4020816054835819","text":"#简画大师#在父母眼中，孩子总长的太快，一眨眼就上学，毕业，工作，成家，也为人父为人母；在父母眼中，孩子总长的太慢，衣食住行，操不完的心，总想着什么苦什么罪都能代劳，即使七老八十，在父母身边就仍是孩子，会撒娇，会嗔怪。这真是世界上最美好的一种情感。"
+              ,"pic_ids":["006biWBzgw1f7wwnwxn4wj30qo19x76m"]
+              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzgw1f7wwnwxn4wj30qo19x76m.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1472279345"},{"idstr":"4010324208332062","text":"#简画大师#努力了就不遗憾，超越自己就是英雄"
-              ,"pic_ids":["006biWBzjw1f6zghg90p7j30qo19xgm4"]
-              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f6zghg90p7j30qo19xgm4.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"created_timestamp":"1474120713"},{"idstr":"4020455361169873","text":"#简画大师#下雨了，一场秋雨一场寒，秋是收获的季节，也是容易让人伤感的季节，有瓜熟蒂落，也有落叶归根，岁岁年年如此，变化的却是人心人情，终究还是境由心生。"
+              ,"pic_ids":["006biWBzjw1f7vs15h5jzj30qo19x40p"]
+              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f7vs15h5jzj30qo19x40p.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1471619262"},{"idstr":"4000522824371206","text":"#简画大师#早睡早起身体好，小朋友都明白的道理，可随着年龄的增长，我们总是加班、应酬、沉迷于游戏、不断刷新信息、在屏幕前追星追剧追综艺，你的眼睛多久没有好好休息了？从今天开始，早点说晚安吧，愿你好梦，愿百姓安康[心]"
-              ,"pic_ids":["006biWBzjw1f646sw0by3j30qo19xabl"]
-              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f646sw0by3j30qo19xabl.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1469282429"},{"idstr":"4023355781365245","text":"#简画大师#较量——谁比谁辛苦，谁比谁值得，付出跟收获之间，放在人情世故上，两者并没有半毛钱关系，夫妻，朋友，同学之间没有天然的联系（血缘关系，即使亲人也有反目成仇的呢），人情，都是小情绪和大脾气之间的较量，人情不在了，就只剩下故事和事故了"
-              ,"pic_ids":["006biWBzjw1f85151nkvpj30qo19xadb"]
-              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f85151nkvpj30qo19xadb.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1474726231"},{"idstr":"4013206328665340","text":"#简画大师#脾气不好控制，还是我自制力不够……怎么破？"
-                    ,"pic_ids":["9ea145c3jw1f78ngnioclj20qo19x76o", "9ea145c3jw1f78ngpgvgyj20qo19xgp5"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f78ngnioclj20qo19x76o.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+              ,"created_timestamp":"1474034717"},{"idstr":"4019735974726608","text":"#简画大师#继续连载，《小鹿斑比④亲朋好友》[月亮]晚安了，亲"
+                    ,"pic_ids":["9ea145c3jw1f7thdom131j20qo19xagn", "9ea145c3jw1f7thdpjhv1j20qo19xq78"]
+                    ,"original_pic":"http://ww4.sinaimg.cn/large/9ea145c3jw1f7thdom131j20qo19xagn.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1472306413"},{"idstr":"4002674481307272","text":"简画，就是简单，想画就画，我骄傲[开心]#简画大师#"
-              ,"pic_ids":["006biWBzjw1f6b1x8k5k4j30qo19x414", "006biWBzjw1f6b1x96l4rj30qo19xtb9"]
-              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f6b1x8k5k4j30qo19x414.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1469795424"},{"idstr":"4018647700322165","text":"#简画大师#《小鹿斑比①斑比出世》[月亮][月亮][月亮][嘻嘻]"
-                    ,"pic_ids":["9ea145c3jw1f7q0eitciej20qo19xjvx", "9ea145c3jw1f7q0ev5kfkj20qo19xadu"]
-                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f7q0eitciej20qo19xjvx.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1473603737"},{"idstr":"4007707058862322","text":"小手一抖，简画在手#简画大师#"
-              ,"pic_ids":["006biWBzjw1f6r3wo72yej30hs0umaah"]
-              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f6r3wo72yej30hs0umaah.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1470995284"},{"idstr":"4000169550497382","text":"#简画大师#在这个世界上，只有真正爱你的人，才会成为你的超级英雄；或者你爱的人，让你愿意成为TA的超级英雄。是爱，让人强大，是爱，造就了超级英雄。"
-              ,"pic_ids":["006biWBzjw1f6328ks3cmj30qo19xgnh"]
-              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f6328ks3cmj30qo19xgnh.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1469198202"},{"idstr":"4029132670850922","text":"#简画大师#感冒了，难受。"
-              ,"pic_ids":["006biWBzjw1f8ngluu804j30qo19x751"]
-              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f8ngluu804j30qo19x751.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1476103549"},{"idstr":"4020119312861671","text":"#简画大师#月圆人团圆，愿亲人安康，关爱常伴，岁月长留"
+                    ,"created_timestamp":"1473863201"},{"idstr":"4020119312861671","text":"#简画大师#月圆人团圆，愿亲人安康，关爱常伴，岁月长留"
               ,"pic_ids":["006biWBzjw1f7upfqfzyij30qo19xq4x"]
               ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f7upfqfzyij30qo19xq4x.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1473954597"},{"idstr":"4035668202579602","text":"#简画大师#做选择的难度就在于不知道以后得选择是对还是错的！我该如何选择？"
-              ,"pic_ids":["9ea145c3jw1f98b622mbfj20hs0umq3x", "9ea145c3jw1f98b6e6m9jj20hs0um0wn", "9ea145c3jw1f98b6xl4frj20hs0um0xo"]
-              ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f98b622mbfj20hs0umq3x.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-              ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1477661741"}]
+              ,"created_timestamp":"1473954597"},{"idstr":"4019360085346474","text":"#简画大师# 睡前故事《小鹿斑比③疑惑》故事讲到一半就睡着了[偷笑][月亮]晚安"
+                    ,"pic_ids":["9ea145c3jw1f7sa7zcjxmj20qo19x7bo", "9ea145c3jw1f7sa7zqcxpj20qo19xq68"]
+                    ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f7sa7zcjxmj20qo19x7bo.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1473773583"},{"idstr":"4019004064864574","text":"#简画大师# 睡前故事《小鹿斑比②去大草地》[爱你][爱你][爱你][月亮][月亮][月亮]"
+                    ,"pic_ids":["9ea145c3jw1f7r5c8xe7ej20qo19xwio", "9ea145c3jw1f7r5c9lhg7j20qo19x0xz"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7r5c8xe7ej20qo19xwio.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1473688701"},{"idstr":"4019711463842099","text":"#简画大师#我的新发型，游走在萌妹和大妈之间"
+              ,"pic_ids":["006biWBzjw1f7telgawzpj30qo19xt9i"]
+              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7telgawzpj30qo19xt9i.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1473857358"},{"idstr":"4019367006198044","text":"#简画大师#心里长草了"
+              ,"pic_ids":["006biWBzjw1f7sb1a3hm2j30qo19x75v"]
+              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7sb1a3hm2j30qo19x75v.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1473775232"},{"idstr":"4019006350533299","text":"#简画大师#小孩子，就是对什么都好奇，对什么都热心肠，对什么都充满激情；而大人，则大多不愿尝试新事物，害怕改变，习惯冷眼旁观。"
+              ,"pic_ids":["006biWBzjw1f7r5m51ptpj30qo19xgo8"]
+              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7r5m51ptpj30qo19xgo8.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1473689245"},{"idstr":"4018629765395948","text":"#简画大师#天干物燥，多吃水果"
+              ,"pic_ids":["006biWBzjw1f7pyd4mqumj30qo19xwg8"]
+              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7pyd4mqumj30qo19xwg8.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1473599461"},{"idstr":"4018281905750354","text":"#简画大师#教师节节日快乐[月亮]"
+                    ,"pic_ids":["9ea145c3jw1f7ouekly0xj20qo19x7b9", "9ea145c3jw1f7ouemas1rj20qo1be0x1"]
+                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f7ouekly0xj20qo19x7b9.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1473516525"},{"idstr":"4018265443392930","text":"#简画大师#祝天下所有教书育人的教师们节日快乐，辛苦了，爱老爸[樱花]"
+              ,"pic_ids":["006biWBzgw1f7ositwe14j30qo19xq61"]
+              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzgw1f7ositwe14j30qo19xq61.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1473512600"}]
