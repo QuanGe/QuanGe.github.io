@@ -1,0 +1,5 @@
+{"idstr":"4049436932370940","text":"#简画大师#时间，是真相，是治愈，是习惯，是成长。时间是冰冷的，总是直白地，叙述着一切。时间是温暖的，让我们亲近，让我们学会珍惜。"
+              ,"pic_ids":["006biWBzjw1fag8iorxmjj30qo19xgn0"]
+              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fag8iorxmjj30qo19xgn0.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1480944462"}

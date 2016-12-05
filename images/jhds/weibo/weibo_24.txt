@@ -1,4 +1,8 @@
-[{"idstr":"4049090709370615","text":"#简画大师#哄了大的，哄小的！终于算是睡着了[睡]我也该睡了[困][睡]"
+[{"idstr":"4049436932370940","text":"#简画大师#时间，是真相，是治愈，是习惯，是成长。时间是冰冷的，总是直白地，叙述着一切。时间是温暖的，让我们亲近，让我们学会珍惜。"
+              ,"pic_ids":["006biWBzjw1fag8iorxmjj30qo19xgn0"]
+              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fag8iorxmjj30qo19xgn0.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1480944462"},{"idstr":"4049090709370615","text":"#简画大师#哄了大的，哄小的！终于算是睡着了[睡]我也该睡了[困][睡]"
               ,"pic_ids":["9ea145c3jw1faf4pgobjkj20qo19x3zl", "9ea145c3jw1faf4pk8e6xj20qo1beq7l"]
               ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1faf4pgobjkj20qo19x3zl.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
               ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1fa9bwvg5hej20qo19xgn0", "9ea145c3jw1fa9bwwhwf7j20qo19xgs7"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1fa9bwvg5hej20qo19xgn0.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1480428392"},{"idstr":"4047258557692542","text":"#简画大师#涂涂已经学会画棒棒糖了，说“送给妈妈吃”，还跟自己说“我不吃，我有牙洞”[good]"
-              ,"pic_ids":["006biWBzjw1fa9ac4464mj30qo19xmyq"]
-              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1fa9ac4464mj30qo19xmyq.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1480425097"}]
+                    ,"created_timestamp":"1480428392"}]
