@@ -18,11 +18,11 @@ def traverse_dir()
             dataArray.push(file)
           end
         end
-        puts dataArray
+        
         dataArray.sort! do |a, b|
           b.split("_").at(0) <=> a.split("_").at(0)
         end
-        puts dataArray
+       
         dataArray.each do |file|
           if file !="." and file !=".." and file !=".DS_Store"
             filePath =  $theFileDir + file
