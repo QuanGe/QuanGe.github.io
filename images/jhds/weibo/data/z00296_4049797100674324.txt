@@ -1,0 +1,5 @@
+{"idstr":"4049797100674324","text":"#简画大师#缘来是你[心]。人生的每一次邂逅都需要需要缘分。感谢父母赐予我生命，让我拥有最真最美的亲情。感谢路过我人生旅途的亲朋，好友，同窗，一起经历美好，丰富我的生活。感谢生命中遇到的每一个人，让我始终能经营着最美好的自己。"
+              ,"pic_ids":["006biWBzjw1fahdvtknhaj30qo19xgni"]
+              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fahdvtknhaj30qo19xgni.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1481030333"}
