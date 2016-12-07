@@ -1,4 +1,8 @@
-[{"idstr":"4049797100674324","text":"#简画大师#缘来是你[心]。人生的每一次邂逅都需要需要缘分。感谢父母赐予我生命，让我拥有最真最美的亲情。感谢路过我人生旅途的亲朋，好友，同窗，一起经历美好，丰富我的生活。感谢生命中遇到的每一个人，让我始终能经营着最美好的自己。"
+[{"idstr":"4050154288387932","text":"#简画大师#生活圈——大北京，五环外，一公里的生活圈。衣食住行，我在这里生活了四年。在这个小小的圈子里，装满了我的青春岁月，漂泊、艰苦、奋斗、成长、友情、爱情、亲情……这就是属于我的小圈子。"
+              ,"pic_ids":["006biWBzjw1faiiwmrx5fj30qo19xmz2"]
+              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1faiiwmrx5fj30qo19xmz2.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1481115493"},{"idstr":"4049797100674324","text":"#简画大师#缘来是你[心]。人生的每一次邂逅都需要需要缘分。感谢父母赐予我生命，让我拥有最真最美的亲情。感谢路过我人生旅途的亲朋，好友，同窗，一起经历美好，丰富我的生活。感谢生命中遇到的每一个人，让我始终能经营着最美好的自己。"
               ,"pic_ids":["006biWBzjw1fahdvtknhaj30qo19xgni"]
               ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fahdvtknhaj30qo19xgni.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
               ,"pic_ids":["006biWBzjw1faafh3ylegj30qo19xmz3"]
               ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1faafh3ylegj30qo19xmz3.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1480510499"},{"idstr":"4047636259078005","text":"#简画大师#追剧《锦绣未央》，今晚太痛苦，[泪]相爱的人不能在一起，虽然是拍的电视剧@唐嫣 @罗晋 把内心挣扎的感情表现的淋漓尽致！中毒太深[可怜]"
-                    ,"pic_ids":["9ea145c3jw1faahn7rzb4j20qo19x41t", "9ea145c3jw1faahn910ctj20qo19xqb5"]
-                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1faahn7rzb4j20qo19x41t.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1480515147"}]
+              ,"created_timestamp":"1480510499"}]
