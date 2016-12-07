@@ -1,4 +1,8 @@
-[{"idstr":"4023015123418058","text":"#简画大师#匆匆——生活太琐碎，任何改变都由许多个小概率事件构成，这些个小事件莹莹绕绕纠缠在一起，然后悄悄地把时间和青春带走，它们像是密谋好了一样，一点一点改变着你，最后变成以前，现在和以后的你……困……睡着了……"
+[{"idstr":"4023355781365245","text":"#简画大师#较量——谁比谁辛苦，谁比谁值得，付出跟收获之间，放在人情世故上，两者并没有半毛钱关系，夫妻，朋友，同学之间没有天然的联系（血缘关系，即使亲人也有反目成仇的呢），人情，都是小情绪和大脾气之间的较量，人情不在了，就只剩下故事和事故了"
+              ,"pic_ids":["006biWBzjw1f85151nkvpj30qo19xadb"]
+              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f85151nkvpj30qo19xadb.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474726231"},{"idstr":"4023015123418058","text":"#简画大师#匆匆——生活太琐碎，任何改变都由许多个小概率事件构成，这些个小事件莹莹绕绕纠缠在一起，然后悄悄地把时间和青春带走，它们像是密谋好了一样，一点一点改变着你，最后变成以前，现在和以后的你……困……睡着了……"
               ,"pic_ids":["006biWBzjw1f83y0l5m46j30qo19xdil"]
               ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f83y0l5m46j30qo19xdil.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
               ,"pic_ids":["006biWBzjw1f7z9r5yu34j30qo19xtau"]
               ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f7z9r5yu34j30qo19xtau.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1474295710"},{"idstr":"4021168161885772","text":"#简画大师#铭记于心，勿忘国耻9.18       《小鹿斑比⑧秋风秋叶》"
-                    ,"pic_ids":["9ea145c3jw1f7y1uuud0yj20qo19xq5h", "9ea145c3jw1f7y1uw5ycbj20qo19xjw1", "9ea145c3jw1f7y1uxcvrkj20qo19xq6y"]
-                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f7y1uuud0yj20qo19xq5h.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474204661"}]
+              ,"created_timestamp":"1474295710"}]
