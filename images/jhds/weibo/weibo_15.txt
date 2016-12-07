@@ -1,8 +1,4 @@
-[{"idstr":"4025162314282098","text":"#简画大师#咳咳咳，快好吧《握住阳光》[月亮]"
-              ,"pic_ids":["9ea145c3jw1f8aslncso0j20qo19xtae", "9ea145c3jw1f8aslvn6i1j20qo19xdjq"]
-              ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f8aslncso0j20qo19xtae.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-              ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1475156942"},{"idstr":"4024795652053632","text":"#简画大师#每晚一故事，每晚一幅画！简画很好的平台，可以做故事绘本！你也来试试吧"
+[{"idstr":"4024795652053632","text":"#简画大师#每晚一故事，每晚一幅画！简画很好的平台，可以做故事绘本！你也来试试吧"
               ,"pic_ids":["9ea145c3jw1f89mh8hvubj20qo19xtda", "9ea145c3jw1f89mh9e4pfj20qo19xacm"]
               ,"original_pic":"http://ww4.sinaimg.cn/large/9ea145c3jw1f89mh8hvubj20qo19xtda.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
               ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -46,4 +42,8 @@
               ,"pic_ids":["006biWBzjw1f83y0l5m46j30qo19xdil"]
               ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1f83y0l5m46j30qo19xdil.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1474645012"}]
+              ,"created_timestamp":"1474645012"},{"idstr":"4022637782890236","text":"#简画大师#左手画——感受手指在屏幕上滑动，亦或聆听木彩在宣纸上摩擦，画画的心每天都不同，就如同世上没有相同的两片叶子，春去夏远秋已至，生命轮回，也无轮回，人世间只此一遭，落叶归根，感恩生命。"
+              ,"pic_ids":["006biWBzjw1f82qogfobej30qo19xjwn"]
+              ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1f82qogfobej30qo19xjwn.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1474555047"}]

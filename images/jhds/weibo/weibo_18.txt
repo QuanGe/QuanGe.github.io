@@ -1,8 +1,4 @@
-[{"idstr":"4030952671867656","text":"#简画大师#新闻——今天有什么新闻吗？大都是八卦罢了"
-              ,"pic_ids":["006biWBzjw1f8t9mqa5xtj30qo19xgnk"]
-              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8t9mqa5xtj30qo19xgnk.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1476537471"},{"idstr":"4031000352502740","text":"#简画大师#还记得那窗外五彩缤纷的花海吗？那里留着我们最纯真的记忆。到现在，那花儿依然鲜艳，等待着你我继续畅游在花海中。@简画大师"
+[{"idstr":"4031000352502740","text":"#简画大师#还记得那窗外五彩缤纷的花海吗？那里留着我们最纯真的记忆。到现在，那花儿依然鲜艳，等待着你我继续畅游在花海中。@简画大师"
                     ,"pic_ids":["006zWL79gw1f8tf3vahf3j30qo1a10xi"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006zWL79gw1f8tf3vahf3j30qo1a10xi.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.996.996.180/006zWL79jw8f7whk153hxj30ro0rpn18.jpg"
                     ,"nickName":"可可公主陛下","userId":"6027972887"
@@ -46,4 +42,8 @@
               ,"pic_ids":["006biWBzjw1f8poqtb1bij30qo19xtav"]
               ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1f8poqtb1bij30qo19xtav.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1476269910"}]
+              ,"created_timestamp":"1476269910"},{"idstr":"4029859959171019","text":"#简画大师#这两天听PPAP听多了[嘻嘻]"
+                    ,"pic_ids":["9ea145c3jw1f8ps4olea9j20qo19x42q", "9ea145c3jw1f8ps4peicuj20qo19xju0"]
+                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f8ps4olea9j20qo19x42q.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1476276948"}]

@@ -1,8 +1,4 @@
-[{"idstr":"4049797100674324","text":"#简画大师#缘来是你[心]。人生的每一次邂逅都需要需要缘分。感谢父母赐予我生命，让我拥有最真最美的亲情。感谢路过我人生旅途的亲朋，好友，同窗，一起经历美好，丰富我的生活。感谢生命中遇到的每一个人，让我始终能经营着最美好的自己。"
-              ,"pic_ids":["006biWBzjw1fahdvtknhaj30qo19xgni"]
-              ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fahdvtknhaj30qo19xgni.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1481030333"},{"idstr":"4049436932370940","text":"#简画大师#时间，是真相，是治愈，是习惯，是成长。时间是冰冷的，总是直白地，叙述着一切。时间是温暖的，让我们亲近，让我们学会珍惜。"
+[{"idstr":"4049436932370940","text":"#简画大师#时间，是真相，是治愈，是习惯，是成长。时间是冰冷的，总是直白地，叙述着一切。时间是温暖的，让我们亲近，让我们学会珍惜。"
               ,"pic_ids":["006biWBzjw1fag8iorxmjj30qo19xgn0"]
               ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fag8iorxmjj30qo19xgn0.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -46,4 +42,8 @@
                     ,"pic_ids":["9ea145c3jw1faahn7rzb4j20qo19x41t", "9ea145c3jw1faahn910ctj20qo19xqb5"]
                     ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1faahn7rzb4j20qo19x41t.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1480515147"}]
+                    ,"created_timestamp":"1480515147"},{"idstr":"4047272377871942","text":"#简画大师#下雨了，出门真冷[下雨][下雨][下雨]"
+                    ,"pic_ids":["9ea145c3jw1fa9bwvg5hej20qo19xgn0", "9ea145c3jw1fa9bwwhwf7j20qo19xgs7"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1fa9bwvg5hej20qo19xgn0.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1480428392"}]

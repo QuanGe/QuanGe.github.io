@@ -1,8 +1,4 @@
-[{"idstr":"4020813487777861","text":"#简画大师#《小鹿斑比⑦夏天的猎杀》"
-                    ,"pic_ids":["9ea145c3jw1f7wx592juuj20qo19xn1w", "9ea145c3jw1f7wx5a8usyj20qo19x0wb"]
-                    ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1f7wx592juuj20qo19xn1w.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474120101"},{"idstr":"4020445991310813","text":"#简画大师#每天一幅画，每日一故事，继续《小鹿斑比⑥鹿王出现了》[月亮][亲亲]"
+[{"idstr":"4020445991310813","text":"#简画大师#每天一幅画，每日一故事，继续《小鹿斑比⑥鹿王出现了》[月亮][亲亲]"
                     ,"pic_ids":["9ea145c3jw1f7vqxfm96bj20qo19xq6p", "9ea145c3jw1f7vqxiatyuj20qo19x79e"]
                     ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f7vqxfm96bj20qo19xq6p.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -46,4 +42,8 @@
               ,"pic_ids":["006biWBzjw1f7pyd4mqumj30qo19xwg8"]
               ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7pyd4mqumj30qo19xwg8.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1473599461"}]
+              ,"created_timestamp":"1473599461"},{"idstr":"4018281905750354","text":"#简画大师#教师节节日快乐[月亮]"
+                    ,"pic_ids":["9ea145c3jw1f7ouekly0xj20qo19x7b9", "9ea145c3jw1f7ouemas1rj20qo1be0x1"]
+                    ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1f7ouekly0xj20qo19x7b9.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1473516525"}]
