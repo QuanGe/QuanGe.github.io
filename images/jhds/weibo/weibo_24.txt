@@ -1,4 +1,8 @@
-[{"idstr":"4050154782467994","text":"#简画大师##简画大师#生活圈——大北京，五环外，一公里的生活圈。衣食住行，我在这里生活了四年。偶尔去趟奥森，吹吹清冽的风。逢年过节回老家，风尘仆仆。在这个小小的圈子里，装满了我的青春岁月，漂泊、艰苦、奋斗、成长、友情、爱情、亲情……这就是属于我的小圈子。"
+[{"idstr":"4050168729468894","text":"#简画大师#一路走下去……珍惜和感谢自己所遇到的所有！"
+              ,"pic_ids":["9ea145c3jw1faikjkrlrmj20qo19x40l", "9ea145c3jw1faikjln9caj20qo19xn21"]
+              ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1faikjkrlrmj20qo19x40l.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+              ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+              ,"created_timestamp":"1481118936"},{"idstr":"4050154782467994","text":"#简画大师##简画大师#生活圈——大北京，五环外，一公里的生活圈。衣食住行，我在这里生活了四年。偶尔去趟奥森，吹吹清冽的风。逢年过节回老家，风尘仆仆。在这个小小的圈子里，装满了我的青春岁月，漂泊、艰苦、奋斗、成长、友情、爱情、亲情……这就是属于我的小圈子。"
               ,"pic_ids":["006biWBzjw1faiiyoaqvnj30qo19xmz2"]
               ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1faiiyoaqvnj30qo19xmz2.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1fabnfokmkoj20qo19xgog", "9ea145c3jw1fabnfpglqoj20qo19xtes"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1fabnfokmkoj20qo19xgog.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1480601814"},{"idstr":"4047992191957134","text":"#简画大师#朵拉迷们，还记得这个穿过秋天的森林，翻过冬天的雪山，走过春天的牧场，寻找夏天的湖的小火烈鸟宝宝吗？"
-              ,"pic_ids":["006biWBzjw1fabmlco8r7j30qo19xabz"]
-              ,"original_pic":"http://ww3.sinaimg.cn/large/006biWBzjw1fabmlco8r7j30qo19xabz.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-              ,"nickName":"V-xiaoxin","userId":"5663851873"
-              ,"created_timestamp":"1480600009"}]
+                    ,"created_timestamp":"1480601814"}]
