@@ -335,3 +335,111 @@ sudo docker rm -f code_sidekiq_backend
 sudo docker run -dti --net csdn_code_net --name code_sidekiq_backend --restart=always   -v /home/git/repositories:/home/git/repositories   -v /home/git/code_scripts:/home/git/code_scripts   -v /home/git/code_conf/code_scripts/redis_conf:/etc/redis_conf   -v /home/git/code_conf/code_scripts/rpc_conf:/etc/rpc_conf   -v /home/git/code_conf/code_web_server/code.yml:/home/git/config/code.yml   -v /home/git/code_conf/gitlab_git_server/config.yml:/home/git/gitlab_git_server/config.yml   -v /home/git/code_scripts/ssh_rpc:/bin/ssh_rpc   -v /home/git/code_scripts/ssh_rpc:/bin/ssh-rpc   -v /home/git/code_log/code_git_rpc_server:/home/git/gitlab_git_server_log   -v /home/git/code_log/git_ssh_protocol_server_be:/home/git/labhub/log   -v /home/git/code_log/gitlab_git_server:/home/git/gitlab_git_server/logs -w /home/git/gitlab_git_server  -u git csdn_code/code_ssh_protocol_rpc_server:201608261652 bundle exec sidekiq-server
 
 
+~/sonar-temp/csdn-docker-sonar-scanner/docker$  sudo vim docker-compose.yml
+sudo docker compose up -d
+
+#####################
+192.168.26.166 code.dev.net
+192.168.26.166 bj.code.dev.net
+192.168.26.166 hz.code.dev.net
+192.168.26.166 im0.notify.code.dev.net
+192.168.26.166 im1.notify.code.dev.net
+192.168.26.166 im2.notify.code.dev.net
+192.168.26.166 im3.notify.code.dev.net
+192.168.26.166 im4.notify.code.dev.net
+192.168.26.166 api.notify.code.dev.net
+192.168.26.166 notify.code.dev.net
+192.168.26.166 group.code.dev.net
+192.168.26.166 demo.group.code.dev.net
+192.168.26.166 audit.group.code.dev.net
+192.168.26.166 download.code.dev.net
+192.168.26.166 admin.code.dev.net
+192.168.26.166 tag.code.dev.net
+192.168.26.166 shipyard.code.dev.net
+
+
+#####################
+alias test-fe1="ssh -p 2222 git@192.168.26.111"
+alias test-fe2="ssh -p 2222 git@192.168.26.112"
+alias test-hz-be1="ssh -p 2222 git@192.168.26.113"
+alias test-hz-be2="ssh -p 2222 git@192.168.26.114"
+alias test-db1="ssh -p 2222 git@192.168.26.115"
+alias test-be1="ssh -p 2222 git@192.168.26.116"
+alias test-be2="ssh -p 2222 git@192.168.26.117"
+alias test-be3="ssh -p 2222 git@192.168.26.118"
+alias test-hz-fe1="ssh -p 2222 git@192.168.26.119"
+alias test-lvs1="ssh -p 2222 git@192.168.26.120"
+
+
+/private/etc/sonar-scanner-2.7/bin/sonar-runner  -Dsonar.login=admin -Dsonar.password=admin
+
+
+sudo docker run --rm -e GOPATH=/go:/usr/src/myapp -v "/Users/git/workhorse/":/usr/src/myapp -w /usr/src/myapp 192.168.5.179:5000/csdn_code/gobuilder:latest bash -c make
+
+
+export GOPATH=`pwd`
+go get gopkg.in/yaml.v2
+
+
+
+docker run -d --name nginx-gen --volumes-from nginx_quange  -v /var/run/docker.sock:/tmp/docker.sock:ro -v /tmp/templates:/etc/docker-gen/templates  -t jwilder/docker-gen -notify-sighup nginx_quange -watch -only-exposed /etc/docker-gen/templates/nginx.tmpl /etc/nginx/conf.d/default.conf
+
+docker run -d --name docker-gen_quange  -v /tmp/templates:/etc/docker-gen/templates  -t jwilder/docker-gen -notify-sighup nginx_quange -watch -only-exposed /etc/docker-gen/templates/nginx.tmpl /etc/nginx/conf.d/default.conf
+
+docker-gen -only-exposed -watch -notify "/tmp/nginx/init.d/nginx reload" /tmp/templates/nginx.tmpl /tmp/nginx/sites-enabled/default
+
+
+redis-cli -h 192.168.6.146 -p 6377
+keys *
+
+redis-cli -h 192.168.6.146 -p 6379
+keys *:queue:default
+lrange prj_sync:10.0.9.73:queue:default 0 -1
+
+redis-cli -h 192.168.6.146 -p 6377
+
+
+---
+layout: post
+title: git仓库同步
+---
+
+网页修改一个项目的名字
+fe端
+[labhub]项目的（project_controller） 中的<rename> @project.name = @project.old_name ===>(ProjectObserver)中的<after_update> ===>(Gitlab::Git::Repository)中的<rename> drb_remote_rename ===>(GitLab::Git::ClientMethods)中的<define_remote_methods> ===> (Gitlab::Git::Client)中的 (get_service_by_path) ===>(DRbObject)中的<new_with_uri>这里通过be-resource-manager动态获取仓库的ip <send>
+
+be端
+[gitlab_git_server]项目的(Gitlab::Git::Repository)中的<rename>注意：为什么这个类的这个函数调用是由fe通过drb指定的。===>(ProjectSyncClient) 中的<push> ===>(Gitlab::Git::RedisApi)中的<sync_route>
+
+[code-shell-go]项目的(be-resource-manager)中的<syncrepo>---><handelSyncRepo>---><sync> ===>(projectsync)中的<QueueSyncRequest>函数中的redis配置是由be-resource-manager传过来的queue_redis  ===>(redis)中的Do("LPUSH", queueName, queueJSON)存在了QueueRedis中
+
+
+[git_sync]项目的redis配置sync_worker_redis保存的是所有等待同步的队列namespace是prj_sync。项目启动是通过RACK_ENV=production ./script/queue_server start来启动，而queue_server又配置了sidekiq指定的redis的sync_worker_redis作为任务队列的存储。而ProjectSyncWorker指定了sidekiq_options即这就是处理任务队列的类。(ProjectSyncWorker)中的<perform>
+由be-resource-manager判断项目的仓库ip是否和此项目中config.yml配置的host是否一致。如果一致则调用===>(QueueServer::LocalBaseWorker)中的<sync_master>===>(QueueServer::RepoRoute)中的<update_repo_status>===>(Redis)中的<hset>这里的redis是route_redis。这里保存的值除了同步的状态还有时间戳
+
+
+code-shell-go中的projectsync往redis存储的是下面类似的数据list数据，key为prj_sync:10.0.9.73:queue:default，value为
+1) "{\"retry\":4,\"queueu\":\"10.0.9.73\",\"class\":\"ProjectSyncWorker\",\"args\":[{\"prj\":\"gzhulee/ror\",\"act\":\"push\",\"t\":1480503875,\"tno\":295,\"o\":\"\"}],\"jid\":\"6153874996238244255\"}"
+2) "{\"retry\":4,\"queueu\":\"10.0.9.73\",\"class\":\"ProjectSyncWorker\",\"args\":[{\"prj\":\"gzhulee/ror\",\"act\":\"push\",\"t\":1480503795,\"tno\":294,\"o\":\"\"}],\"jid\":\"5151019881447332000\"}"
+3) "{\"retry\":4,\"queueu\":\"10.0.9.73\",\"class\":\"ProjectSyncWorker\",\"args\":[{\"prj\":\"gzhulee/ror\",\"act\":\"push\",\"t\":1480503559,\"tno\":293,\"o\":\"\"}],\"jid\":\"2954344336542379836\"}"
+4) "{\"retry\":4,\"queueu\":\"10.0.9.73\",\"class\":\"ProjectSyncWorker\",\"args\":[{\"prj\":\"gzhulee/ror\",\"act\":\"push\",\"t\":1480503510,\"tno\":292,\"o\":\"\"}],\"jid\":\"7575789593814131387\"}"
+5) "{\"retry\":4,\"queueu\":\"10.0.9.73\",\"class\":\"ProjectSyncWorker\",\"args\":[{\"prj\":\"gzhulee/ror\",\"act\":\"push\",\"t\":1480503369,\"tno\":291,\"o\":\"\"}],\"jid\":\"2916054483879692935\"}"
+6) "{\"retry\":4,\"queueu\":\"10.0.9.73\",\"class\":\"ProjectSyncWorker\",\"args\":[{\"prj\":\"xuyun/test_code\",\"act\":\"delete\",\"t\":1480413321,\"tno\":290,\"o\":\"\"}],\"jid\":\"8518089328986977892\"}"
+
+这里面的key已经指定了仓库的ip地址，这里多中心就会有多个key 
+
+而在be端的git_sync项目的config.yml会配置hostname，即同台机子上gitlab_git_server项目的docker container的ip
+由于在git_sync项目中的local_worker中指定了redis的namespace，即prj_sync:ip。所有每台be上的git_sync只会负责本台机子的仓库同步。同步完成以后会更新6377端口的redis，写入如下类似数据CSDN_Code/yanlp_test1 10.0.9.72 3 & 1479787875.代表某个项目的某台仓库机子已经同步完成。
+
+
+话说，code-shell-go中的projectsync往redis中存储了一条数据，然后git_sync就执行了同步，这是啥原理。应该说git_sync是Sidekiq:server 。docker部署此项目的时候用的是RACK_ENV=production ./script/queue_server star。来看源码实际上就是就是在终端执行了一下RACK_ENV=#{env} bundle exec sidekiq -r ./local_worker.rb -c #{config['thread_count']} -q #{config['queue_name']} -L #{log_file}
+-r : 指定需要引入的那些自定义 worker 以及相关的 ruby 代码 -q, --queue QUEUE[,WEIGHT] Queues to process with optional weights
+。sidekiq每隔一段时间就会去redis查看有没有可以拿过来的任务。比如你的项目的woker文件夹有好几个worker，那么sidekiq拿过来的任务用哪个worker执行？其实都是redis里写了，看面的数据{\"retry\":4,\"queueu\":\"10.0.9.73\",\"class\":\"ProjectSyncWorker\",\"args\":[{\"prj\":\"gzhulee/ror\",\"act\":\"push\",\"t\":1480503875,\"tno\":295,\"o\":\"\"}],\"jid\":\"6153874996238244255\"}这里面除了class还有args，也就是到时候直接拿过类来直接掉。
+下一个问题。要添加一个任务，除了直接往redis里插入数据还可以咋样？还可以Gitlab::Git::Workers::ForkWorker.perform_async(name_with_path, url, type, is_fork,username,password) 或者 
+Sidekiq::Client.push(
+  'class' => 'NonExistentWorker',
+  'queue' => 'other',
+  'args' => [1]
+)
+
+这两种本质上也是插入一条数据。这也提供了一种测试的思路啊。
