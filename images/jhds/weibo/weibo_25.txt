@@ -1,4 +1,8 @@
-[{"idstr":"4050874198829949","text":"#简画大师#国际金价跌破1200美元大关！北京黄金销量大涨两成！中国大妈大买黄金的日子又来了"
+[{"idstr":"4050910051465871","text":"#简画大师# 一个故事的结束，就是另一个故事的开始！周而复始，期待新的一天……"
+              ,"pic_ids":["9ea145c3jw1fakxove3hpj20qo19x410", "9ea145c3jw1fakxowqd74j20qo19xagy"]
+              ,"original_pic":"http://ww3.sinaimg.cn/large/9ea145c3jw1fakxove3hpj20qo19x410.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+              ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+              ,"created_timestamp":"1481295681"},{"idstr":"4050874198829949","text":"#简画大师#国际金价跌破1200美元大关！北京黄金销量大涨两成！中国大妈大买黄金的日子又来了"
               ,"pic_ids":["006biWBzjw1faktl4lvjcj30qo19xaaw"]
               ,"original_pic":"http://ww2.sinaimg.cn/large/006biWBzjw1faktl4lvjcj30qo19xaaw.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
               ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
               ,"pic_ids":["9ea145c3jw1fadxrzvvaoj20qo19xwht", "9ea145c3jw1fadxs0w3f6j20qo19xq8l"]
               ,"original_pic":"http://ww2.sinaimg.cn/large/9ea145c3jw1fadxrzvvaoj20qo19xwht.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
               ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1480772780"},{"idstr":"4048363525600376","text":"#简画大师#为什么要生两个孩子？[哼]为了孩子？还是为了自己？有时会惹自己生气，有时爱不释手！这，就是生活！终究是爱妮们的[爱你]"
-              ,"pic_ids":["9ea145c3jw1fact6kp9p2j20qo19xdhy", "9ea145c3jw1fact6mrtsej20qo19x78w"]
-              ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1fact6kp9p2j20qo19xdhy.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-              ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-              ,"created_timestamp":"1480688541"}]
+              ,"created_timestamp":"1480772780"}]
