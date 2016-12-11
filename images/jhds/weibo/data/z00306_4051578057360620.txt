@@ -1,0 +1,5 @@
+{"idstr":"4051578057360620","text":"#简画大师#厉害了北京西客站！开启“刷脸”进站模式。旅客将本人二代身份证和蓝色磁卡车票，叠放在一起，同时放入机器插口中，面向摄像头等待机器识别(类似于手机前置摄像头)，票证人相符，闸门就会开启。脸脏，带眼镜，吃东西，化妆，整容……应该都过不去吧？"
+              ,"pic_ids":["006biWBzjw1fan2f9aiqgj30qo19xaf6"]
+              ,"original_pic":"http://ww4.sinaimg.cn/large/006biWBzjw1fan2f9aiqgj30qo19xaf6.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+              ,"nickName":"V-xiaoxin","userId":"5663851873"
+              ,"created_timestamp":"1481454946"}
