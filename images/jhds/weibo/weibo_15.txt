@@ -1,4 +1,8 @@
-[{"idstr":"4024081374051271","text":"#简画大师#bug——软件会有漏洞，计划会有不周，再好的技术也有短板，再好的风景也总有时限，所爱之人总是会成为我们的软肋，尤其是那些熊孩子，这真是人生最大的bug，喏，一幅图都画不完，各种捣乱"
+[{"idstr":"4024312254370066","text":"叮咚，新鲜的简画出炉了，看我画的还凑合吧？#简画大师#"
+                    ,"pic_ids":["006wilN4gw1f882zlwiagj30qo19xwfy"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006wilN4gw1f882zlwiagj30qo19xwfy.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/006wilN4jw8f5hxt3czxlj30ro0rodi0.jpg"
+                    ,"nickName":"1998的等待","userId":"5974013414"
+                    ,"created_timestamp":"1474954272"},{"idstr":"4024081374051271","text":"#简画大师#bug——软件会有漏洞，计划会有不周，再好的技术也有短板，再好的风景也总有时限，所爱之人总是会成为我们的软肋，尤其是那些熊孩子，这真是人生最大的bug，喏，一幅图都画不完，各种捣乱"
                     ,"pic_ids":["006biWBzjw1f87ch1ga7rj30qo19xwha"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f87ch1ga7rj30qo19xwha.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1f81kg9qxa4j20qo19xwhl", "9ea145c3jw1f81kgaxa4wj20qo19x42n"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f81kg9qxa4j20qo19xwhl.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474467479"},{"idstr":"4021895106147501","text":"#简画大师#网络是一次大爆炸，它的出现不像二战原子弹令人震撼，却已像病毒深入人的血液骨髓，没有时空界限，交流的即视感令人愉悦，匿名和潜水反向满足了人们偷窥的心，以前只见七大姑八大姨饭后东家长西家短，围观评论则迎合了年轻人八卦的心，舆论的狂欢更是对内心躁动的释放，无所谓对错。让人焦"
-                    ,"pic_ids":["006biWBzjw1f80ddg2hf7j30qo19xdhj", "006biWBzjw1f80ddggsgyj30qo1betfr"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f80ddg2hf7j30qo19xdhj.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474377979"}]
+                    ,"created_timestamp":"1474467479"}]
