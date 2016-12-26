@@ -1,9 +1,9 @@
 [{"idstr":"4056687336072269","text":"#简画大师#心情快乐，每天都是节日！"
-                    ,"pic_ids":["9ea145c3ly1fb3d6wfrtej20qo19xdkl0", "9ea145c3ly1fb3d6x5yb0j20qo19xwhb0"]
+                    ,"pic_ids":["9ea145c3ly1fb3d6wfrtej20qo19xdkl0"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fb3d6wfrtej20qo19xdkl0.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1482673093"},{"idstr":"4056324503363311","text":"#简画大师#平平安安"
-                    ,"pic_ids":["9ea145c3ly1fb27je7q4hj20qo19x0u40", "9ea145c3ly1fb27jkmv9fj20qo19xn2l0"]
+                    ,"pic_ids":["9ea145c3ly1fb27je7q4hj20qo19x0u40"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fb27je7q4hj20qo19x0u40.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1482586587"},{"idstr":"4056315930148009","text":"#简画大师#平安夜，希望我们都健健康康、平平安安！享受涂涂每晚睡前的「妈妈，晚安，艾拉布由」。"
