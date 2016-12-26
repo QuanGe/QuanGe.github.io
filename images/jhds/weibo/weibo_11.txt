@@ -25,7 +25,7 @@
                     ,"created_timestamp":"1472733644"},{"idstr":"4014669389538830","text":"哎呀，妈呀，累死我了，终于画完了#简画大师#"
                     ,"pic_ids":["006bfzEJgw1f7dbiscd9nj30qo19x402"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006bfzEJgw1f7dbiscd9nj30qo19x402.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.996.996.180/006bfzEJjw8f71off4zzgj30ro0romza.jpg"
-                    ,"nickName":"玺v1128","userId":"5663048673"
+                    ,"nickName":"","userId":"5663048673"
                     ,"created_timestamp":"1472655234"},{"idstr":"4014651266076945","text":"#简画大师#睡前故事:问题小鸡！每晚一故事，每晚一幅画[月亮]晚安"
                     ,"pic_ids":["9ea145c3jw1f7d9ewxtw9j20qo19xwiv", "9ea145c3jw1f7d9exk7rqj20qo19xdjo"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7d9ewxtw9j20qo19xwiv.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
