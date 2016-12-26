@@ -1,13 +1,9 @@
-[{"idstr":"4053078632768941","text":"#简画大师#现在的孩子真是高消费，广告中毒太厉害[哼]"
-                    ,"pic_ids":["9ea145c3ly1faruqhnuoyj20qo19xdh60", "9ea145c3ly1faruqilmhrj20qo19xwk80"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1faruqhnuoyj20qo19xdh60.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1481812711"},{"idstr":"4053075507927698","text":"#简画大师#明天空气重污染红色预警，又限号了，可以骑马上路吗？额……是独角兽，它的名字叫尼欧"
+[{"idstr":"4053075507927698","text":"#简画大师#明天空气重污染红色预警，又限号了，可以骑马上路吗？额……是独角兽，它的名字叫尼欧"
                     ,"pic_ids":["006biWBzjw1farueisndij30qo19xacb"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1farueisndij30qo19xacb.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
                     ,"created_timestamp":"1481811965"},{"idstr":"4052704546566760","text":"#简画大师#我们的儿时，不像现在小朋友那么滋润，没有平板，没有童车，没有玩具！最重要的是没有wifi！但游戏可以给我们带来最大的快乐！！！跳皮筋，扔绣球，踢瓦片，拿石子，过家家等等！开心和快乐不局限于电脑科技，放下手机平板，玩耍吧[爱你][爱你][爱你]"
-                    ,"pic_ids":["9ea145c3ly1faqnmj66yhj20qo19xdik0", "9ea145c3ly1faqnmlcz0yj20qo19xn360"]
+                    ,"pic_ids":["9ea145c3ly1faqnmj66yhj20qo19xdik0"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1faqnmj66yhj20qo19xdik0.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
                     ,"created_timestamp":"1481723522"},{"idstr":"4052688310405107","text":"#简画大师#什么是家国情怀？就是从家出发，爱国爱家，我爱我的家[心]。每天下班都有一个小小的又大大的拥抱来迎接我[抱抱]，心情一下子就好了。这是涂涂的新王冠，她说「看，好漂亮吧！」[嘻嘻]"
@@ -15,7 +11,7 @@
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faqlxn519rj30qo19xjt1.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
                     ,"created_timestamp":"1481719651"},{"idstr":"4052344486642168","text":"#简画大师#习惯了忙于家庭，习惯了忙于工作，习惯了忙于社会，习惯了忙于低头看手机！有多久没有静静地只为抬头看一下满天的繁星……⭐ ⭐ ⭐ ⭐"
-                    ,"pic_ids":["9ea145c3ly1fapidl5z2mj20qo19xgo20", "9ea145c3ly1fapidlswdaj20qo19xwjb0"]
+                    ,"pic_ids":["9ea145c3ly1fapidl5z2mj20qo19xgo20"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fapidl5z2mj20qo19xgo20.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
                     ,"created_timestamp":"1481637677"},{"idstr":"4052334776902976","text":"#简画大师#看病，对病人是天大个事，对医生司空见惯，见的多，坐诊忙，也没时间细解释。怒怼医生，医患关系不好，这个问题太大，是社会问题。反正，还是，有啥别有病，相互理解。健康最重要。"
@@ -27,7 +23,7 @@
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faobwg16bhj30qo19xmz0.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
                     ,"created_timestamp":"1481549354"},{"idstr":"4051973609295979","text":"#简画大师#[爱你]"
-                    ,"pic_ids":["9ea145c3jw1faobtkvekdj20qo19x41w", "9ea145c3jw1faobtldlu5j20qo19x434", "9ea145c3jw1faobtmmbevj20qo1bdgum"]
+                    ,"pic_ids":["9ea145c3jw1faobtkvekdj20qo19x41w"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1faobtkvekdj20qo19x41w.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
                     ,"created_timestamp":"1481549253"},{"idstr":"4051613733701686","text":"#简画大师#送走了双十一，紧接着赶来了双十二……疯狂吧，剁手党[白眼]"
@@ -46,4 +42,8 @@
                     ,"pic_ids":["9ea145c3jw1falzgodg27j20qo19xju4", "9ea145c3jw1falzgq2oh3j20qo19xgsm"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1falzgodg27j20qo19xju4.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1481374175"}]
+                    ,"created_timestamp":"1481374175"},{"idstr":"4050910051465871","text":"#简画大师# 一个故事的结束，就是另一个故事的开始！周而复始，期待新的一天……"
+                    ,"pic_ids":["9ea145c3jw1fakxove3hpj20qo19x410", "9ea145c3jw1fakxowqd74j20qo19xagy"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1fakxove3hpj20qo19x410.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1481295681"}]
