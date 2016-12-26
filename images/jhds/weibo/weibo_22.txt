@@ -17,15 +17,15 @@
                     ,"created_timestamp":"1479043552"},{"idstr":"4040943646456472","text":"啥？我画的不好看？你来试试#简画大师#"
                     ,"pic_ids":["a27c2c03gw1f9p52s676oj20qo19xtba"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/a27c2c03gw1f9p52s676oj20qo19xtba.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/a27c2c03jw8f9jomrbg05j20ro0roq56.jpg"
-                    ,"nickName":"zmwhat","userId":"2726046723"
+                    ,"nickName":"","userId":"2726046723"
                     ,"created_timestamp":"1478919505"},{"idstr":"4040943009350307","text":"哎呀，妈呀，累死我了，终于画完了#简画大师#"
                     ,"pic_ids":["a27c2c03gw1f9p5077x2zj20qo19xgo3"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/a27c2c03gw1f9p5077x2zj20qo19xgo3.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/a27c2c03jw8f9jomrbg05j20ro0roq56.jpg"
-                    ,"nickName":"zmwhat","userId":"2726046723"
+                    ,"nickName":"","userId":"2726046723"
                     ,"created_timestamp":"1478919353"},{"idstr":"4040942258060391","text":"小手一抖，简画在手#简画大师#"
                     ,"pic_ids":["a27c2c03gw1f9p4x2fsd3j20qo19xq5r"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/a27c2c03gw1f9p4x2fsd3j20qo19xq5r.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/a27c2c03jw8f9jomrbg05j20ro0roq56.jpg"
-                    ,"nickName":"zmwhat","userId":"2726046723"
+                    ,"nickName":"","userId":"2726046723"
                     ,"created_timestamp":"1478919174"},{"idstr":"4038565698621805","text":"啥？我画的不好看？你来试试#简画大师#"
                     ,"pic_ids":["6c2a4953jw1f9hjz3x3i1j20qo19x0wz"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/6c2a4953jw1f9hjz3x3i1j20qo19x0wz.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.1002.1002.180/6c2a4953jw8f1s4fsxgzoj20ru0rvjtm.jpg"
