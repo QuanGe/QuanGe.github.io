@@ -5,15 +5,15 @@
                     ,"created_timestamp":"1470407473"},{"idstr":"4005226526625875","text":"#简画大师#能一直保持着一颗童真的心 [爱心]也是好的！你也来试试画吧[可爱]"
                     ,"pic_ids":["9ea145c3jw1f6j6zukl4qj20qo19x0z6", "9ea145c3jw1f6j6zv1x5dj20qo19xjun"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6j6zukl4qj20qo19x0z6.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1470403880"},{"idstr":"4005042795505397","text":"#简画大师#我也是醉了，太难画了 ，好不容易才画出了。[眼泪][眼泪] 广州·人和镇"
                     ,"pic_ids":["bf42bb7fgw1f6ilv51yicj20qo19x0vm", "bf42bb7fgw1f6ilv5jhl2j20qo19xtbc", "bf42bb7fgw1f6ilv5zof2j20qo19xgnn"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/bf42bb7fgw1f6ilv51yicj20qo19x0vm.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.664.664.180/bf42bb7fjw8f3wdxow6usj20ig0igjsv.jpg"
-                    ,"nickName":"红颜枯尘","userId":"3208821631"
+                    ,"nickName":"","userId":"3208821631"
                     ,"created_timestamp":"1470360075"},{"idstr":"4004869037648615","text":"#简画大师#陪伴成长[月亮]"
                     ,"pic_ids":["9ea145c3jw1f6i1yeabtnj20qo19xae9", "9ea145c3jw1f6i1yery8aj20qo19xn1v", "9ea145c3jw1f6i1yfmdebj20qo19xtbd"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6i1yeabtnj20qo19xae9.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1470318648"},{"idstr":"4004846711357632","text":"小手一抖，简画在手#简画大师#哈哈，密集症慎入"
                     ,"pic_ids":["006biWBzjw1f6hzeiga3sj30qo19xdm4"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f6hzeiga3sj30qo19xdm4.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
@@ -25,19 +25,19 @@
                     ,"created_timestamp":"1470225991"},{"idstr":"4004147315886794","text":"哎呀，妈呀，累死我了，终于画完了#简画大师#"
                     ,"pic_ids":["7229a2eegw1f6fr2tpntgj20qo19x0w2"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/7229a2eegw1f6fr2tpntgj20qo19x0w2.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.1080.1080.180/7229a2eejw8eu130w2mx2j20u00u0dh3.jpg"
-                    ,"nickName":"爱琴海的曦阳","userId":"1915331310"
+                    ,"nickName":"","userId":"1915331310"
                     ,"created_timestamp":"1470146576"},{"idstr":"4004147261089274","text":"啥？我画的不好看？你来试试#简画大师#"
                     ,"pic_ids":["7229a2eegw1f6fr2l5904j20qo19x0w2"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/7229a2eegw1f6fr2l5904j20qo19x0w2.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.1080.1080.180/7229a2eejw8eu130w2mx2j20u00u0dh3.jpg"
-                    ,"nickName":"爱琴海的曦阳","userId":"1915331310"
+                    ,"nickName":"","userId":"1915331310"
                     ,"created_timestamp":"1470146563"},{"idstr":"4004146493492904","text":"小手一抖，简画在手#简画大师#"
                     ,"pic_ids":["7229a2eegw1f6fqzfsuftj20qo19xn09"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/7229a2eegw1f6fqzfsuftj20qo19xn09.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.1080.1080.180/7229a2eejw8eu130w2mx2j20u00u0dh3.jpg"
-                    ,"nickName":"爱琴海的曦阳","userId":"1915331310"
+                    ,"nickName":"","userId":"1915331310"
                     ,"created_timestamp":"1470146380"},{"idstr":"4004141426501813","text":"#简画大师#黄种人[嘻嘻][月亮]"
                     ,"pic_ids":["9ea145c3jw1f6fqe0d049j20qo19xn2x", "9ea145c3jw1f6fqe157fij20qo19x0xl"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6fqe0d049j20qo19xn2x.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1470145171"},{"idstr":"4004129539372903","text":"哎呀，妈呀，累死我了，终于画完了#简画大师#"
                     ,"pic_ids":["006biWBzjw1f6fp1bsl65j30qo19xwga"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f6fp1bsl65j30qo19xwga.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
@@ -45,5 +45,5 @@
                     ,"created_timestamp":"1470142338"},{"idstr":"4003776086530206","text":"#简画大师#世界晚安[月亮]"
                     ,"pic_ids":["9ea145c3jw1f6ekfns661j20qo19xwht", "9ea145c3jw1f6ekfodlikj20qo19x438"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6ekfns661j20qo19xwht.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1470058068"}]

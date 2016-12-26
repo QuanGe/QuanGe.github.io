@@ -5,7 +5,7 @@
                     ,"created_timestamp":"1470995284"},{"idstr":"4007039867342936","text":"#简画大师#生活就像一团麻，日子就是问题叠着问题！快来用简画大师表达出你的心情吧，你也开画吧！"
                     ,"pic_ids":["9ea145c3jw1f6oz8uydnrj20qo19xk0q", "9ea145c3jw1f6oz8vlujuj20qo19xq5t"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6oz8uydnrj20qo19xk0q.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1470836214"},{"idstr":"4007029276505066","text":"一句话：不服来画给我看。#简画大师#"
                     ,"pic_ids":["006biWBzjw1f6oy2eqsdzj30qo19xjva"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f6oy2eqsdzj30qo19xjva.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
@@ -13,11 +13,11 @@
                     ,"created_timestamp":"1470833688"},{"idstr":"4006712555531671","text":"简画，就是简单，想画就画，我骄傲[开心]#简画大师#"
                     ,"pic_ids":["005C8VSigw1f6nxowm2zcj30qo19x789"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/005C8VSigw1f6nxowm2zcj30qo19x789.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/005C8VSijw8f4h1azp2n7j30ro0rojtb.jpg"
-                    ,"nickName":"夜之火咨询","userId":"5144294026"
+                    ,"nickName":"","userId":"5144294026"
                     ,"created_timestamp":"1470758177"},{"idstr":"4006669966668358","text":"#简画大师#七夕快乐[心][心][心]"
                     ,"pic_ids":["9ea145c3jw1f6nssgawpej20qo19x10d", "9ea145c3jw1f6nsshe3n0j20qo19xdiu"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6nssgawpej20qo19x10d.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1470748022"},{"idstr":"4006629890658801","text":"#简画大师#愿天下有情人终成眷属，七夕快乐"
                     ,"pic_ids":["006biWBzjw1f6no74r9qyj30qo19xta6"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f6no74r9qyj30qo19xta6.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
@@ -29,11 +29,11 @@
                     ,"created_timestamp":"1470659063"},{"idstr":"4006291451718335","text":"#简画大师#淅淅沥沥下了一天雨，立秋了，果然凉爽了许多！"
                     ,"pic_ids":["9ea145c3jw1f6mla8xllij20qo19xah5", "9ea145c3jw1f6mla9oc8tj20qo19xq5w"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6mla8xllij20qo19xah5.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1470657777"},{"idstr":"4006258061537833","text":"#简画大师#昨天画的，睡着了，忘记传[偷笑]"
                     ,"pic_ids":["9ea145c3jw1f6mhha8jv1j20qo19xwjc", "9ea145c3jw1f6mhhamwzaj20qo19x42e"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6mhha8jv1j20qo19xwjc.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1470649817"},{"idstr":"4005938086164231","text":"#简画大师#平安喜乐"
                     ,"pic_ids":["006biWBzjw1f6lgquis9hj30qo19xgmx"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f6lgquis9hj30qo19xgmx.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
@@ -45,5 +45,5 @@
                     ,"created_timestamp":"1470495267"},{"idstr":"4005597680713222","text":"#简画大师#诺说，她画的风筝[嘻嘻]我画的简画大师logo，你也来试试吧！"
                     ,"pic_ids":["9ea145c3jw1f6kdmiw7ntj20qo19xq5p", "9ea145c3jw1f6kdmjeebuj20qo19xwi1"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6kdmiw7ntj20qo19xq5p.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1470492369"}]

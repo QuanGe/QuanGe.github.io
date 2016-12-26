@@ -1,7 +1,7 @@
 [{"idstr":"4024795652053632","text":"#简画大师#每晚一故事，每晚一幅画！简画很好的平台，可以做故事绘本！你也来试试吧"
                     ,"pic_ids":["9ea145c3jw1f89mh8hvubj20qo19xtda", "9ea145c3jw1f89mh9e4pfj20qo19xacm"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f89mh8hvubj20qo19xtda.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1475069523"},{"idstr":"4024456302899272","text":"#简画大师#坏脾气——总是把坏脾气给最爱的人，越是亲近的人，越多机会感受我的坏脾气，多少次下决心改，让暴躁君滚蛋，却总是屡战屡败，继续抗战吧，加油"
                     ,"pic_ids":["006biWBzjw1f88jj7262sj30qo19xjt9"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f88jj7262sj30qo19xjt9.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
@@ -9,7 +9,7 @@
                     ,"created_timestamp":"1474988615"},{"idstr":"4024429019051714","text":"#简画大师#告诫孩子，提高警惕《不要随便摸我》[拳头][拳头][拳头]"
                     ,"pic_ids":["9ea145c3jw1f88gdmyzfyj20qo19xmzd", "9ea145c3jw1f88gdnwb1xj20qo19xmzg"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f88gdmyzfyj20qo19xmzd.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1474982111"},{"idstr":"4024312254370066","text":"叮咚，新鲜的简画出炉了，看我画的还凑合吧？#简画大师#"
                     ,"pic_ids":["006wilN4gw1f882zlwiagj30qo19xwfy"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006wilN4gw1f882zlwiagj30qo19xwfy.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/006wilN4jw8f5hxt3czxlj30ro0rodi0.jpg"
@@ -21,7 +21,7 @@
                     ,"created_timestamp":"1474899226"},{"idstr":"4024069411951010","text":"#简画大师#《乱吃药的玫瑰花[玫瑰] 》[月亮]简画在手，画画不愁！"
                     ,"pic_ids":["9ea145c3jw1f87b2shy4wj20qo19xad1", "9ea145c3jw1f87b2t9r57j20qo19xtb5"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f87b2shy4wj20qo19xad1.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1474896374"},{"idstr":"4023732957522554","text":"#简画大师#克制——静以修身，俭以养德"
                     ,"pic_ids":["006biWBzjw1f868ghu60dj30qo19xq5r"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f868ghu60dj30qo19xq5r.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
@@ -29,7 +29,7 @@
                     ,"created_timestamp":"1474816156"},{"idstr":"4023699071661544","text":"#简画大师#《小气鬼》[月亮]"
                     ,"pic_ids":["9ea145c3jw1f864k4w9ekj20qo19xq5g", "9ea145c3jw1f864k664kfj20qo19xjtt"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f864k4w9ekj20qo19xq5g.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1474808078"},{"idstr":"4023355781365245","text":"#简画大师#较量——谁比谁辛苦，谁比谁值得，付出跟收获之间，放在人情世故上，两者并没有半毛钱关系，夫妻，朋友，同学之间没有天然的联系（血缘关系，即使亲人也有反目成仇的呢），人情，都是小情绪和大脾气之间的较量，人情不在了，就只剩下故事和事故了"
                     ,"pic_ids":["006biWBzjw1f85151nkvpj30qo19xadb"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f85151nkvpj30qo19xadb.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
@@ -37,7 +37,7 @@
                     ,"created_timestamp":"1474726231"},{"idstr":"4023332477703449","text":"#简画大师#《向日葵[向日葵] 》[爱心] ，希望一切都会好起来"
                     ,"pic_ids":["9ea145c3jw1f84yg85egdj20qo19xdhs", "9ea145c3jw1f84yg9ht93j20qo19xwjy"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f84yg85egdj20qo19xdhs.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1474720675"},{"idstr":"4023015123418058","text":"#简画大师#匆匆——生活太琐碎，任何改变都由许多个小概率事件构成，这些个小事件莹莹绕绕纠缠在一起，然后悄悄地把时间和青春带走，它们像是密谋好了一样，一点一点改变着你，最后变成以前，现在和以后的你……困……睡着了……"
                     ,"pic_ids":["006biWBzjw1f83y0l5m46j30qo19xdil"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f83y0l5m46j30qo19xdil.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"

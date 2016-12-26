@@ -9,11 +9,11 @@
                     ,"created_timestamp":"1481380063"},{"idstr":"4051239279039271","text":"#简画大师#同学生日，不买生日蛋糕[白眼]个人觉得，生日没有生日蛋糕，是不可以的，哪怕是小小的！"
                     ,"pic_ids":["9ea145c3jw1falzgodg27j20qo19xju4", "9ea145c3jw1falzgq2oh3j20qo19xgsm"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1falzgodg27j20qo19xju4.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1481374175"},{"idstr":"4050910051465871","text":"#简画大师# 一个故事的结束，就是另一个故事的开始！周而复始，期待新的一天……"
                     ,"pic_ids":["9ea145c3jw1fakxove3hpj20qo19x410", "9ea145c3jw1fakxowqd74j20qo19xagy"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1fakxove3hpj20qo19x410.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1481295681"},{"idstr":"4050874198829949","text":"#简画大师#国际金价跌破1200美元大关！北京黄金销量大涨两成！中国大妈大买黄金的日子又来了"
                     ,"pic_ids":["006biWBzjw1faktl4lvjcj30qo19xaaw"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faktl4lvjcj30qo19xaaw.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
@@ -25,11 +25,11 @@
                     ,"created_timestamp":"1481202854"},{"idstr":"4050507947374587","text":"#简画大师#生了孩子就是一辈子的操心！小时候担心身体！上学了，担心学校！工作了，发愁单位！适婚年龄了，更是一百万个舍不得……[泪][泪][泪]"
                     ,"pic_ids":["9ea145c3jw1fajne91y7gj20qo19xabk", "9ea145c3jw1fajnea7jiwj20qo19xq7p"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1fajne91y7gj20qo19xabk.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1481199812"},{"idstr":"4050168729468894","text":"#简画大师#一路走下去……珍惜和感谢自己所遇到的所有！"
                     ,"pic_ids":["9ea145c3jw1faikjkrlrmj20qo19x40l", "9ea145c3jw1faikjln9caj20qo19xn21"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1faikjkrlrmj20qo19x40l.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"nickName":"","userId":"2661369283"
                     ,"created_timestamp":"1481118936"},{"idstr":"4050154782467994","text":"#简画大师##简画大师#生活圈——大北京，五环外，一公里的生活圈。衣食住行，我在这里生活了四年。偶尔去趟奥森，吹吹清冽的风。逢年过节回老家，风尘仆仆。在这个小小的圈子里，装满了我的青春岁月，漂泊、艰苦、奋斗、成长、友情、爱情、亲情……这就是属于我的小圈子。"
                     ,"pic_ids":["006biWBzjw1faiiyoaqvnj30qo19xmz2"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faiiyoaqvnj30qo19xmz2.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
