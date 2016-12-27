@@ -30,7 +30,11 @@
                     ,"pic_ids":["4a6d0adbgw1f9df5aevdyj20qo19xn2i"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/4a6d0adbgw1f9df5aevdyj20qo19xn2i.jpg","userIcon":"http://tva2.sinaimg.cn/crop.0.0.540.540.180/4a6d0adbjw8eep04fv2k7j20f00f0gmt.jpg"
                     ,"nickName":"风夜无翼","userId":"1248660187"
-                    ,"created_timestamp":"1478043635"},{"idstr":"4033121801847219","text":"快得了吧，这是我画的最好的了，[开心]#简画大师#"
+                    ,"created_timestamp":"1478043635"},{"idstr":"4036684444820000","text":"叮咚，新鲜的简画出炉了，看我画的还凑合吧？(新手请见谅)#简画大师#"
+                    ,"pic_ids":["8c106d87gw1f9bjwyzh2cj20k00y6gmg"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/8c106d87gw1f9bjwyzh2cj20k00y6gmg.jpg","userIcon":"http://tva2.sinaimg.cn/crop.0.0.664.664.180/8c106d87jw8f9agv5dw8oj20ig0ig3yz.jpg"
+                    ,"nickName":"G-空空如叶","userId":"2349886855"
+                    ,"created_timestamp":"1477904032"},{"idstr":"4033121801847219","text":"快得了吧，这是我画的最好的了，[开心]#简画大师#"
                     ,"pic_ids":["006B9gIYjw1f906r2u17tj30qo19xgnl", "006B9gIYjw1f906r3aib2j30qo1be43l"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006B9gIYjw1f906r2u17tj30qo19xgnl.jpg","userIcon":"http://tva2.sinaimg.cn/crop.0.0.80.80.180/006B9gIYjw8f8u0dn3hzbj3028028q2p.jpg"
                     ,"nickName":"祈求快乐6045730668","userId":"6045730668"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["006zWL79gw1f8tf3vahf3j30qo1a10xi"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006zWL79gw1f8tf3vahf3j30qo1a10xi.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.996.996.180/006zWL79jw8f7whk153hxj30ro0rpn18.jpg"
                     ,"nickName":"可可公主陛下","userId":"6027972887"
-                    ,"created_timestamp":"1476548839"},{"idstr":"4030637982115573","text":"哎呀，妈呀，累死我了，终于画完了#简画大师#感觉怎么样"
-                    ,"pic_ids":["006A80Ozgw1f8s9hm3kekj30qo19xdiq"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006A80Ozgw1f8s9hm3kekj30qo19xdiq.jpg","userIcon":"http://tva2.sinaimg.cn/crop.0.0.996.996.180/006A80Ozjw8f84g85ge36j30ro0romzv.jpg"
-                    ,"nickName":"乄陌","userId":"6030654847"
-                    ,"created_timestamp":"1476462442"}]
+                    ,"created_timestamp":"1476548839"}]
