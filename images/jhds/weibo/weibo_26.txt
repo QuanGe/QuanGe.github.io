@@ -1,4 +1,8 @@
-[{"idstr":"4014669389538830","text":"哎呀，妈呀，累死我了，终于画完了#简画大师#"
+[{"idstr":"4024312254370066","text":"叮咚，新鲜的简画出炉了，看我画的还凑合吧？#简画大师#"
+                    ,"pic_ids":["006wilN4gw1f882zlwiagj30qo19xwfy"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006wilN4gw1f882zlwiagj30qo19xwfy.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/006wilN4jw8f5hxt3czxlj30ro0rodi0.jpg"
+                    ,"nickName":"1998的等待","userId":"5974013414"
+                    ,"created_timestamp":"1474954272"},{"idstr":"4014669389538830","text":"哎呀，妈呀，累死我了，终于画完了#简画大师#"
                     ,"pic_ids":["006bfzEJgw1f7dbiscd9nj30qo19x402"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006bfzEJgw1f7dbiscd9nj30qo19x402.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.996.996.180/006bfzEJjw8f71off4zzgj30ro0romza.jpg"
                     ,"nickName":"玺v1128","userId":"5663048673"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["0065lHzkjw1f5spa8gw79j30k00y642n"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/0065lHzkjw1f5spa8gw79j30k00y642n.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.664.664.180/0065lHzkjw8f2kvby64zlj30ig0igabf.jpg"
                     ,"nickName":"咔叨咔嗒啦啦","userId":"5575851042"
-                    ,"created_timestamp":"1468423972"},{"idstr":"3995770149848814","text":"叮咚，新鲜的简画出炉了，看我画的还凑合吧？#简画大师#爱探险的朵拉[哈哈][哈哈][哈哈][哈哈]"
-                    ,"pic_ids":["84181a79jw1f5p0yagooxj20ku112ta0"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/84181a79jw1f5p0yagooxj20ku112ta0.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.1.509.509.180/84181a79gw1f5uem0opbbj20e80e8mxn.jpg"
-                    ,"nickName":"简画大师","userId":"2216172153"
-                    ,"created_timestamp":"1468149303"}]
+                    ,"created_timestamp":"1468423972"}]
