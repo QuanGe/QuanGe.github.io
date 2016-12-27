@@ -1,4 +1,12 @@
-[{"idstr":"4054132090076095","text":"#简画大师#涂涂最近特别喜欢听mary has a little lamb，单曲循环一天，现在满脑子都是这个旋律[晕]"
+[{"idstr":"4054520768522631","text":"#简画大师# 雾霾来袭……今天的雾霾阵势强大，尤其傍晚，能见度绝对低于五米！！！大家注意安全！"
+                    ,"pic_ids":["9ea145c3ly1fawgdrgprkj20qo19xq4t0", "9ea145c3ly1fawgdsj9ncj20qo19x11z0"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fawgdrgprkj20qo19xq4t0.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1482156543"},{"idstr":"4054136145977586","text":"#简画大师#周末愉快，迎接明天"
+                    ,"pic_ids":["9ea145c3ly1fav87ei6svj20qo19xags0", "9ea145c3ly1fav87f5t3fj20qo19xwjq0"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fav87ei6svj20qo19xags0.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1482064842"},{"idstr":"4054132090076095","text":"#简画大师#涂涂最近特别喜欢听mary has a little lamb，单曲循环一天，现在满脑子都是这个旋律[晕]"
                     ,"pic_ids":["006biWBzjw1fav7r0r3dij30qo19xq4w"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fav7r0r3dij30qo19xq4w.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -38,12 +46,4 @@
                     ,"pic_ids":["006biWBzjw1faphby01aej30qo19xaci"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faphby01aej30qo19xaci.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1481635362"},{"idstr":"4051974033356418","text":"#简画大师#现在，涂涂每天早上一睁眼，第一句话就是「妈妈，你不要上班」[抱抱]「妈妈要挣钱给你上学，买好吃的，漂亮衣服啊」今天双十二，妈妈给涂涂买了好多东西呢"
-                    ,"pic_ids":["006biWBzjw1faobwg16bhj30qo19xmz0"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faobwg16bhj30qo19xmz0.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1481549354"},{"idstr":"4051973609295979","text":"#简画大师#[爱你]"
-                    ,"pic_ids":["9ea145c3jw1faobtkvekdj20qo19x41w", "9ea145c3jw1faobtldlu5j20qo19x434", "9ea145c3jw1faobtmmbevj20qo1bdgum"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1faobtkvekdj20qo19x41w.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1481549253"}]
+                    ,"created_timestamp":"1481635362"}]
