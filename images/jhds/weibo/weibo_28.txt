@@ -1,5 +1,5 @@
 [{"idstr":"4057410413141746","text":"#简画大师# 文明礼让是中华的传统美德。切勿让自己成为马路杀手！"
-                    ,"pic_ids":["9ea145c3ly1fb5o8wdczqj20qo19xq5t0"]
+                    ,"pic_ids":["9ea145c3ly1fb5o8wdczqj20qo19xq5t0", "9ea145c3ly1fb5o8xghxyj20qo19xdmo0"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fb5o8wdczqj20qo19xq5t0.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
                     ,"created_timestamp":"1482845488"},{"idstr":"4057406592296492","text":"#简画大师#2016年余额不足，你今年制定的计划都完成了吗？"
