@@ -33,11 +33,11 @@
                     ,"created_timestamp":"1479043552"},{"idstr":"4040943009350307","text":"哎呀，妈呀，累死我了，终于画完了#简画大师#"
                     ,"pic_ids":["a27c2c03gw1f9p5077x2zj20qo19xgo3"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/a27c2c03gw1f9p5077x2zj20qo19xgo3.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.996.996.180/a27c2c03jw8fakn3ma6toj20ro0rodkn.jpg"
-                    ,"nickName":"zmwhat","userId":"2726046723"
+                    ,"nickName":"zimeizeng","userId":"2726046723"
                     ,"created_timestamp":"1478919353"},{"idstr":"4040942258060391","text":"小手一抖，简画在手#简画大师#"
                     ,"pic_ids":["a27c2c03gw1f9p4x2fsd3j20qo19xq5r"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/a27c2c03gw1f9p4x2fsd3j20qo19xq5r.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.996.996.180/a27c2c03jw8fakn3ma6toj20ro0rodkn.jpg"
-                    ,"nickName":"zmwhat","userId":"2726046723"
+                    ,"nickName":"zimeizeng","userId":"2726046723"
                     ,"created_timestamp":"1478919174"},{"idstr":"4038565647834330","text":"快来瞧，快来看，我刚创作了一番，看看我的水平是啥等级的#简画大师#"
                     ,"pic_ids":["6c2a4953jw1f9hjywdam1j20qo19x0wz"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/6c2a4953jw1f9hjywdam1j20qo19x0wz.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/6c2a4953jw8fahicajwh3j20ro0rogo4.jpg"
