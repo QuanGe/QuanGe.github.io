@@ -1,4 +1,8 @@
-[{"idstr":"4024429019051714","text":"#简画大师#告诫孩子，提高警惕《不要随便摸我》[拳头][拳头][拳头]"
+[{"idstr":"4024456302899272","text":"#简画大师#坏脾气——总是把坏脾气给最爱的人，越是亲近的人，越多机会感受我的坏脾气，多少次下决心改，让暴躁君滚蛋，却总是屡战屡败，继续抗战吧，加油"
+                    ,"pic_ids":["006biWBzjw1f88jj7262sj30qo19xjt9"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f88jj7262sj30qo19xjt9.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1474988615"},{"idstr":"4024429019051714","text":"#简画大师#告诫孩子，提高警惕《不要随便摸我》[拳头][拳头][拳头]"
                     ,"pic_ids":["9ea145c3jw1f88gdmyzfyj20qo19xmzd", "9ea145c3jw1f88gdnwb1xj20qo19xmzg"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f88gdmyzfyj20qo19xmzd.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["006biWBzgw1f81lx28ihtj30qo145gsl", "006biWBzgw1f81lx6m6hvj30qo0zkq7i"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzgw1f81lx28ihtj30qo145gsl.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474470697"},{"idstr":"4022270491408806","text":"#简画大师#每晚一幅画，每日一故事！坚持！[爱你]《白雪公主》[月亮]"
-                    ,"pic_ids":["9ea145c3jw1f81kg9qxa4j20qo19xwhl", "9ea145c3jw1f81kgaxa4wj20qo19x42n"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f81kg9qxa4j20qo19xwhl.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474467479"}]
+                    ,"created_timestamp":"1474470697"}]
