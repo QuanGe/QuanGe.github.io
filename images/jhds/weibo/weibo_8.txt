@@ -1,4 +1,8 @@
-[{"idstr":"4010940427039436","text":"#简画大师#女排精神是民族财富，是凝聚力，女排，赞！"
+[{"idstr":"4011040448647993","text":"#简画大师# 坚持不懈！那一刻，所有的汗水和泪水都是幸福的！[good]"
+                    ,"pic_ids":["9ea145c3jw1f71qq904vhj20qo19xn1f", "9ea145c3jw1f71qqeiqdfj20qo19xtbf"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f71qq904vhj20qo19xn1f.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1471790027"},{"idstr":"4010940427039436","text":"#简画大师#女排精神是民族财富，是凝聚力，女排，赞！"
                     ,"pic_ids":["006biWBzjw1f71f98byvtj30qo19xwho"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f71f98byvtj30qo19xwho.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["006biWBzjw1f6uq76mjt6j30qo19xwfx"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f6uq76mjt6j30qo19xwfx.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1471265760"},{"idstr":"4008515854668167","text":"#简画大师#太累了，不想说话"
-                    ,"pic_ids":["006biWBzjw1f6tosqxog1j30qo19xabf"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f6tosqxog1j30qo19xabf.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1471188117"}]
+                    ,"created_timestamp":"1471265760"}]
