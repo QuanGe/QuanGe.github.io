@@ -1,4 +1,12 @@
-[{"idstr":"3999782387512658","text":"#简画大师#雨过天晴，空气清新，鱼虾蟹将……来吧，有人捞[偷笑]"
+[{"idstr":"4000138751899274","text":"#简画大师#生活中不免遇到磕磕绊绊，态度很重要！"
+                    ,"pic_ids":["9ea145c3jw1f62yp8kmbbj20qo19x436", "9ea145c3jw1f62yp99j8bj20qo19xgpi"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f62yp8kmbbj20qo19x436.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1469190860"},{"idstr":"3999782588317130","text":"#简画大师#慢慢变老是很自然的事情，我们到了一定年纪，就特别爱回忆，和老朋友见面，总是回忆过去，这不仅能拉近人与人之间的距离，还能唤醒内心里的孩子气。只要保持年轻的心态，就不算真正的衰老"
+                    ,"pic_ids":["006biWBzjw1f61tso6366j30qo19xwgn"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f61tso6366j30qo19xwgn.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1469105943"},{"idstr":"3999782387512658","text":"#简画大师#雨过天晴，空气清新，鱼虾蟹将……来吧，有人捞[偷笑]"
                     ,"pic_ids":["9ea145c3jw1f61tq7qkjaj20qo19xwi3", "9ea145c3jw1f61tq8hhy1j20qo19xgov"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f61tq7qkjaj20qo19xwi3.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -38,12 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1f5w2rclz7sj20qo19xgrh", "9ea145c3jw1f5w2rd9elcj20qo19x0w4"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f5w2rclz7sj20qo19xgrh.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1468676165"},{"idstr":"3997619871546524","text":"#简画大师#缤纷多彩的世界[月亮]"
-                    ,"pic_ids":["9ea145c3jw1f5uxemarq6j20qo19xq8f", "9ea145c3jw1f5uxendbqsj20qo19xwi4"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f5uxemarq6j20qo19xq8f.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1468590312"},{"idstr":"3997602049184849","text":"简画，就是简单，想画就画，我骄傲[开心]？#简画大师#"
-                    ,"pic_ids":["006biWBzjw1f5uvd55vz3j30qo19xwh0"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f5uvd55vz3j30qo19xwh0.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1468586063"}]
+                    ,"created_timestamp":"1468676165"}]
