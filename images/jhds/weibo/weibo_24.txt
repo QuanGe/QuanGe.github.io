@@ -1,4 +1,12 @@
-[{"idstr":"4052334776902976","text":"#简画大师#看病，对病人是天大个事，对医生司空见惯，见的多，坐诊忙，也没时间细解释。怒怼医生，医患关系不好，这个问题太大，是社会问题。反正，还是，有啥别有病，相互理解。健康最重要。"
+[{"idstr":"4052688310405107","text":"#简画大师#什么是家国情怀？就是从家出发，爱国爱家，我爱我的家[心]。每天下班都有一个小小的又大大的拥抱来迎接我[抱抱]，心情一下子就好了。这是涂涂的新王冠，她说「看，好漂亮吧！」[嘻嘻]"
+                    ,"pic_ids":["006biWBzjw1faqlxn519rj30qo19xjt1"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faqlxn519rj30qo19xjt1.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1481719651"},{"idstr":"4052344486642168","text":"#简画大师#习惯了忙于家庭，习惯了忙于工作，习惯了忙于社会，习惯了忙于低头看手机！有多久没有静静地只为抬头看一下满天的繁星……⭐ ⭐ ⭐ ⭐"
+                    ,"pic_ids":["9ea145c3ly1fapidl5z2mj20qo19xgo20", "9ea145c3ly1fapidlswdaj20qo19xwjb0"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fapidl5z2mj20qo19xgo20.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1481637677"},{"idstr":"4052334776902976","text":"#简画大师#看病，对病人是天大个事，对医生司空见惯，见的多，坐诊忙，也没时间细解释。怒怼医生，医患关系不好，这个问题太大，是社会问题。反正，还是，有啥别有病，相互理解。健康最重要。"
                     ,"pic_ids":["006biWBzjw1faphby01aej30qo19xaci"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faphby01aej30qo19xaci.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -38,12 +46,4 @@
                     ,"pic_ids":["006biWBzjw1fajozlv2p4j30qo19xn0w"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fajozlv2p4j30qo19xn0w.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1481202854"},{"idstr":"4050507947374587","text":"#简画大师#生了孩子就是一辈子的操心！小时候担心身体！上学了，担心学校！工作了，发愁单位！适婚年龄了，更是一百万个舍不得……[泪][泪][泪]"
-                    ,"pic_ids":["9ea145c3jw1fajne91y7gj20qo19xabk", "9ea145c3jw1fajnea7jiwj20qo19xq7p"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1fajne91y7gj20qo19xabk.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1481199812"},{"idstr":"4050168729468894","text":"#简画大师#一路走下去……珍惜和感谢自己所遇到的所有！"
-                    ,"pic_ids":["9ea145c3jw1faikjkrlrmj20qo19x40l", "9ea145c3jw1faikjln9caj20qo19xn21"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1faikjkrlrmj20qo19x40l.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1481118936"}]
+                    ,"created_timestamp":"1481202854"}]
