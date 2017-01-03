@@ -1,4 +1,12 @@
-[{"idstr":"4022637782890236","text":"#简画大师#左手画——感受手指在屏幕上滑动，亦或聆听木彩在宣纸上摩擦，画画的心每天都不同，就如同世上没有相同的两片叶子，春去夏远秋已至，生命轮回，也无轮回，人世间只此一遭，落叶归根，感恩生命。"
+[{"idstr":"4023332477703449","text":"#简画大师#《向日葵[向日葵] 》[爱心] ，希望一切都会好起来"
+                    ,"pic_ids":["9ea145c3jw1f84yg85egdj20qo19xdhs", "9ea145c3jw1f84yg9ht93j20qo19xwjy"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f84yg85egdj20qo19xdhs.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474720675"},{"idstr":"4023015123418058","text":"#简画大师#匆匆——生活太琐碎，任何改变都由许多个小概率事件构成，这些个小事件莹莹绕绕纠缠在一起，然后悄悄地把时间和青春带走，它们像是密谋好了一样，一点一点改变着你，最后变成以前，现在和以后的你……困……睡着了……"
+                    ,"pic_ids":["006biWBzjw1f83y0l5m46j30qo19xdil"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f83y0l5m46j30qo19xdil.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1474645012"},{"idstr":"4022637782890236","text":"#简画大师#左手画——感受手指在屏幕上滑动，亦或聆听木彩在宣纸上摩擦，画画的心每天都不同，就如同世上没有相同的两片叶子，春去夏远秋已至，生命轮回，也无轮回，人世间只此一遭，落叶归根，感恩生命。"
                     ,"pic_ids":["006biWBzjw1f82qogfobej30qo19xjwn"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f82qogfobej30qo19xjwn.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -38,12 +46,4 @@
                     ,"pic_ids":["006biWBzgw1f7y173vpn5j30qo19xtaa"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzgw1f7y173vpn5j30qo19xtaa.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474203212"},{"idstr":"4020816054835819","text":"#简画大师#在父母眼中，孩子总长的太快，一眨眼就上学，毕业，工作，成家，也为人父为人母；在父母眼中，孩子总长的太慢，衣食住行，操不完的心，总想着什么苦什么罪都能代劳，即使七老八十，在父母身边就仍是孩子，会撒娇，会嗔怪。这真是世界上最美好的一种情感。"
-                    ,"pic_ids":["006biWBzgw1f7wwnwxn4wj30qo19x76m"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzgw1f7wwnwxn4wj30qo19x76m.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474120713"},{"idstr":"4020813487777861","text":"#简画大师#《小鹿斑比⑦夏天的猎杀》"
-                    ,"pic_ids":["9ea145c3jw1f7wx592juuj20qo19xn1w", "9ea145c3jw1f7wx5a8usyj20qo19x0wb"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7wx592juuj20qo19xn1w.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474120101"}]
+                    ,"created_timestamp":"1474203212"}]
