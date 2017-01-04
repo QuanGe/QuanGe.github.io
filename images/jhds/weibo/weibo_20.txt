@@ -1,4 +1,8 @@
-[{"idstr":"4042906240937471","text":"#简画大师#日复一日，年复一年，过好每一天！"
+[{"idstr":"4043283548600727","text":"#简画大师#生活中难免会有自欺欺人的情况，无非是自我安慰罢了！"
+                    ,"pic_ids":["9ea145c3jw1f9wlsdz37uj20qo19xacc", "9ea145c3jw1f9wlsefnj9j20qo19xgpz"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f9wlsdz37uj20qo19xacc.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1479477381"},{"idstr":"4042906240937471","text":"#简画大师#日复一日，年复一年，过好每一天！"
                     ,"pic_ids":["9ea145c3jw1f9vegy28duj20qo19xmzc", "9ea145c3jw1f9vegyldbjj20qo19xgq2"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f9vegy28duj20qo19xmzc.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -17,11 +21,11 @@
                     ,"created_timestamp":"1479043552"},{"idstr":"4040943009350307","text":"哎呀，妈呀，累死我了，终于画完了#简画大师#"
                     ,"pic_ids":["a27c2c03gw1f9p5077x2zj20qo19xgo3"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/a27c2c03gw1f9p5077x2zj20qo19xgo3.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/a27c2c03jw8fbaebhlqstj20ro0rojv9.jpg"
-                    ,"nickName":"zimeizeng","userId":"2726046723"
+                    ,"nickName":"曾管春","userId":"2726046723"
                     ,"created_timestamp":"1478919353"},{"idstr":"4040942258060391","text":"小手一抖，简画在手#简画大师#"
                     ,"pic_ids":["a27c2c03gw1f9p4x2fsd3j20qo19xq5r"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/a27c2c03gw1f9p4x2fsd3j20qo19xq5r.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/a27c2c03jw8fbaebhlqstj20ro0rojv9.jpg"
-                    ,"nickName":"zimeizeng","userId":"2726046723"
+                    ,"nickName":"曾管春","userId":"2726046723"
                     ,"created_timestamp":"1478919174"},{"idstr":"4038565647834330","text":"快来瞧，快来看，我刚创作了一番，看看我的水平是啥等级的#简画大师#"
                     ,"pic_ids":["6c2a4953jw1f9hjywdam1j20qo19x0wz"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/6c2a4953jw1f9hjywdam1j20qo19x0wz.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/6c2a4953jw8fahicajwh3j20ro0rogo4.jpg"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["4a6d0adbgw1f9df5aevdyj20qo19xn2i"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/4a6d0adbgw1f9df5aevdyj20qo19xn2i.jpg","userIcon":"http://tva2.sinaimg.cn/crop.0.0.540.540.180/4a6d0adbjw8eep04fv2k7j20f00f0gmt.jpg"
                     ,"nickName":"风夜无翼","userId":"1248660187"
-                    ,"created_timestamp":"1478043635"},{"idstr":"4037134031314918","text":"#简画大师#新的一个月开始了！天冷了，需要温暖，闺女自发用简画温习声母功课[爱你][爱你][爱你]"
-                    ,"pic_ids":["9ea145c3jw1f9czimkq0kj20qo19xmz2", "9ea145c3jw1f9czin7h3xj20qo19xgnu"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f9czimkq0kj20qo19xmz2.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1478011222"}]
+                    ,"created_timestamp":"1478043635"}]

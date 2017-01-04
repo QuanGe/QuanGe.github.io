@@ -26,7 +26,11 @@
                     ,"pic_ids":["006biWBzjw1fbck76fzxhj30qo19xadk"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fbck76fzxhj30qo19xadk.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1483360337"},{"idstr":"4059238387136178","text":"为自己撑起一把小伞#简画大师#"
+                    ,"created_timestamp":"1483360337"},{"idstr":"4059241985840897","text":"让自己撑起一个美好未来#简画大师#"
+                    ,"pic_ids":["005ZU2fRgw1fbbikjgz9nj30ku11275m"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/005ZU2fRgw1fbbikjgz9nj30ku11275m.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.1.750.750.180/005ZU2fRjw8exrm3l33xqj30ku0kwwfl.jpg"
+                    ,"nickName":"带着梦想周游世界by","userId":"5495375695"
+                    ,"created_timestamp":"1483282168"},{"idstr":"4059238387136178","text":"为自己撑起一把小伞#简画大师#"
                     ,"pic_ids":["005ZU2fRjw1fbbi6nciamj30ku11275g"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/005ZU2fRjw1fbbi6nciamj30ku11275g.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.1.750.750.180/005ZU2fRjw8exrm3l33xqj30ku0kwwfl.jpg"
                     ,"nickName":"带着梦想周游世界by","userId":"5495375695"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["005ZU2fRjw1fbacu8q2xqj30ku112myt"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/005ZU2fRjw1fbacu8q2xqj30ku112myt.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.1.750.750.180/005ZU2fRjw8exrm3l33xqj30ku0kwwfl.jpg"
                     ,"nickName":"带着梦想周游世界by","userId":"5495375695"
-                    ,"created_timestamp":"1483195522"},{"idstr":"4058864934322413","text":"#简画大师#2016再见[拜拜]"
-                    ,"pic_ids":["9ea145c3ly1fbabaid0nlj20qo19x40u"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fbabaid0nlj20qo19x40u.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1483192273"}]
+                    ,"created_timestamp":"1483195522"}]
