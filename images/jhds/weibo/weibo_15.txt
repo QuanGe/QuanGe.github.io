@@ -1,4 +1,8 @@
-[{"idstr":"4026256473395495","text":"#简画大师#锣鼓喧天，人山人海……不愧是黄金周！[good][晕][晕][晕] 北京·新康园"
+[{"idstr":"4026614209737122","text":"#简画大师#匆匆——在默默里算着，八千多日子已经从我手中溜去，像针尖上一滴水滴在大海里，我的日子滴在时间的流里，没有声音，也没有影子。"
+                    ,"pic_ids":["006biWBzjw1f8ffd62lo7j30qo19xdh5"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8ffd62lo7j30qo19xdh5.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1475503101"},{"idstr":"4026256473395495","text":"#简画大师#锣鼓喧天，人山人海……不愧是黄金周！[good][晕][晕][晕] 北京·新康园"
                     ,"pic_ids":["9ea145c3jw1f8ea9h3awxj20qo19xn0r", "9ea145c3jw1f8ea9kf28nj20qo19xacp"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f8ea9h3awxj20qo19xn0r.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["006biWBzjw1f88jj7262sj30qo19xjt9"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f88jj7262sj30qo19xjt9.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474988615"},{"idstr":"4024429019051714","text":"#简画大师#告诫孩子，提高警惕《不要随便摸我》[拳头][拳头][拳头]"
-                    ,"pic_ids":["9ea145c3jw1f88gdmyzfyj20qo19xmzd", "9ea145c3jw1f88gdnwb1xj20qo19xmzg"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f88gdmyzfyj20qo19xmzd.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474982111"}]
+                    ,"created_timestamp":"1474988615"}]
