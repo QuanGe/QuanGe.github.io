@@ -1,5 +1,5 @@
 [{"idstr":"4060315967097062","text":"#简画大师#水里有没有雾霾？"
-                    ,"pic_ids":["9ea145c3ly1fbexy8r6roj20qo19xdja"]
+                    ,"pic_ids":["9ea145c3ly1fbexy8r6roj20qo19xdja", "9ea145c3ly1fbexy964waj20qo19x78o"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fbexy8r6roj20qo19xdja.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
                     ,"created_timestamp":"1483538225"},{"idstr":"4060304184644249","text":"#简画大师#黄色预警，橙色预警，红色预警。今年冬天雾霾来的太猛烈，走的太不舍。。。想说点什么，又不知道说什么。。。"
