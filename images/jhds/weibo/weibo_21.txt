@@ -1,4 +1,8 @@
-[{"idstr":"4044745040528553","text":"#简画大师#停电一天，晚上才知道电闸坏了。[晕]打着电筒抢修好[哈哈]"
+[{"idstr":"4045090483510674","text":"#简画大师#了却一桩心事，感恩的心！以后小心小心再小心！"
+                    ,"pic_ids":["9ea145c3jw1fa2dbcduo1j20qo19xgoe", "9ea145c3jw1fa2dbd4zu8j20qo19xgov"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1fa2dbcduo1j20qo19xgoe.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1479908188"},{"idstr":"4044745040528553","text":"#简画大师#停电一天，晚上才知道电闸坏了。[晕]打着电筒抢修好[哈哈]"
                     ,"pic_ids":["9ea145c3jw1fa19m117c2j20qo19xdi0", "9ea145c3jw1fa19m1ssyhj20qo19x0y4"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1fa19m117c2j20qo19xdi0.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["a27c2c03gw1f9p4x2fsd3j20qo19xq5r"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/a27c2c03gw1f9p4x2fsd3j20qo19xq5r.jpg","userIcon":"http://tva2.sinaimg.cn/crop.0.0.996.996.180/a27c2c03jw8fbfvxes9vwj20ro0rodkn.jpg"
                     ,"nickName":"zimeizeng","userId":"2726046723"
-                    ,"created_timestamp":"1478919174"},{"idstr":"4038565647834330","text":"快来瞧，快来看，我刚创作了一番，看看我的水平是啥等级的#简画大师#"
-                    ,"pic_ids":["6c2a4953jw1f9hjywdam1j20qo19x0wz"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/6c2a4953jw1f9hjywdam1j20qo19x0wz.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/6c2a4953jw8fahicajwh3j20ro0rogo4.jpg"
-                    ,"nickName":"-豌豆-001","userId":"1814710611"
-                    ,"created_timestamp":"1478352546"}]
+                    ,"created_timestamp":"1478919174"}]
