@@ -18,7 +18,11 @@
                     ,"pic_ids":["84181a79jw1f5p0yagooxj20ku112ta0"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/84181a79jw1f5p0yagooxj20ku112ta0.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.1.509.509.180/84181a79gw1f5uem0opbbj20e80e8mxn.jpg"
                     ,"nickName":"简画大师","userId":"2216172153"
-                    ,"created_timestamp":"1468149303"},{"idstr":"4061023654545912","text":"#简画大师#今天，一老一小两件大喜事。第一件，先祝老爸生日快乐！健康长寿！爱您第二件，北京中小学、幼儿园试点安装空气净化设备。好事！好事！"
+                    ,"created_timestamp":"1468149303"},{"idstr":"4061059369137076","text":"#简画大师#亲爱的老爸，祝您福如东海，寿比南山！福乐安康！我们爱您！"
+                    ,"pic_ids":["9ea145c3ly1fbhbb0duzfj20qo19xtgc", "9ea145c3ly1fbhbb1bkrmj20qo19xt9x"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fbhbb0duzfj20qo19xtgc.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1483715467"},{"idstr":"4061023654545912","text":"#简画大师#今天，一老一小两件大喜事。第一件，先祝老爸生日快乐！健康长寿！爱您第二件，北京中小学、幼儿园试点安装空气净化设备。好事！好事！"
                     ,"pic_ids":["006biWBzjw1fbh78h6eidj30qo19xq54"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fbh78h6eidj30qo19xq54.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["005ZU2fRgw1fbep9lh1usj30ku1123zt"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/005ZU2fRgw1fbep9lh1usj30ku1123zt.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.1.750.750.180/005ZU2fRjw8exrm3l33xqj30ku0kwwfl.jpg"
                     ,"nickName":"带着梦想周游世界by","userId":"5495375695"
-                    ,"created_timestamp":"1483520215"},{"idstr":"4059953176481553","text":"#简画大师#今天看新闻才知道，大隆尧发生地震了，3.2级。图里的字，有人认识吗？[偷笑]"
-                    ,"pic_ids":["006biWBzjw1fbdsak4j0qj30qo19xdh8"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fbdsak4j0qj30qo19xdh8.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1483451730"}]
+                    ,"created_timestamp":"1483520215"}]
