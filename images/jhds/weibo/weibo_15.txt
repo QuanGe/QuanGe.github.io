@@ -1,4 +1,8 @@
-[{"idstr":"4027724304187592","text":"#简画大师#有闲——雨日，于家宅，徒增肥肉[挖鼻]"
+[{"idstr":"4028013479762787","text":"#简画大师#经典——今天在网上无意中发现儿童版白蛇传，一比一翻拍，有点意思[嘻嘻]"
+                    ,"pic_ids":["006biWBzjw1f8jw2id8khj30qo19xmye"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8jw2id8khj30qo19xmye.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1475836713"},{"idstr":"4027724304187592","text":"#简画大师#有闲——雨日，于家宅，徒增肥肉[挖鼻]"
                     ,"pic_ids":["006biWBzjw1f8iyuwfydpj30qo19xtak"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8iyuwfydpj30qo19xtak.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["006biWBzjw1f8c02zuk22j30qo19xjtj"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8c02zuk22j30qo19xjtj.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1475247174"},{"idstr":"4025529742627119","text":"#简画大师#《勇敢的小鸡》[月亮]明天勇敢的出发！"
-                    ,"pic_ids":["9ea145c3jw1f8bysvc4wkj20qo19x762", "9ea145c3jw1f8bysw3havj20qo19x0vs"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f8bysvc4wkj20qo19x762.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1475244544"}]
+                    ,"created_timestamp":"1475247174"}]
