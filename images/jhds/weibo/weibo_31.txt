@@ -1,4 +1,8 @@
-[{"idstr":"4033121801847219","text":"快得了吧，这是我画的最好的了，[开心]#简画大师#"
+[{"idstr":"4036684444820000","text":"叮咚，新鲜的简画出炉了，看我画的还凑合吧？(新手请见谅)#简画大师#"
+                    ,"pic_ids":["8c106d87gw1f9bjwyzh2cj20k00y6gmg"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/8c106d87gw1f9bjwyzh2cj20k00y6gmg.jpg","userIcon":"http://tva2.sinaimg.cn/crop.0.0.664.664.180/8c106d87jw8f9agv5dw8oj20ig0ig3yz.jpg"
+                    ,"nickName":"G-空空如叶","userId":"2349886855"
+                    ,"created_timestamp":"1477904032"},{"idstr":"4033121801847219","text":"快得了吧，这是我画的最好的了，[开心]#简画大师#"
                     ,"pic_ids":["006B9gIYjw1f906r2u17tj30qo19xgnl", "006B9gIYjw1f906r3aib2j30qo1be43l"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006B9gIYjw1f906r2u17tj30qo19xgnl.jpg","userIcon":"http://tva2.sinaimg.cn/crop.0.0.80.80.180/006B9gIYjw8f8u0dn3hzbj3028028q2p.jpg"
                     ,"nickName":"祈求快乐6045730668","userId":"6045730668"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["a200256fgw1f72tecr0ycj20qo19xn1t"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/a200256fgw1f72tecr0ycj20qo19xn1t.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.720.720.180/a200256fjw8eipd2wnj6xj20k00k0gmn.jpg"
                     ,"nickName":"哈梅林whistling","userId":"2717918575"
-                    ,"created_timestamp":"1471870272"},{"idstr":"4006712555531671","text":"简画，就是简单，想画就画，我骄傲[开心]#简画大师#"
-                    ,"pic_ids":["005C8VSigw1f6nxowm2zcj30qo19x789"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/005C8VSigw1f6nxowm2zcj30qo19x789.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/005C8VSijw8f4h1azp2n7j30ro0rojtb.jpg"
-                    ,"nickName":"夜之火咨询","userId":"5144294026"
-                    ,"created_timestamp":"1470758177"}]
+                    ,"created_timestamp":"1471870272"}]
