@@ -3,7 +3,7 @@
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fbo6bktow2j30qo19xmyl.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
                     ,"created_timestamp":"1484228191"},{"idstr":"4063207260013944","text":"#简画大师#像啥？猫头鹰？怪兽？还是外星人 ？[哈哈]"
-                    ,"pic_ids":["9ea145c3ly1fbo5zvglr3j20qo19x77m"]
+                    ,"pic_ids":["9ea145c3ly1fbo5zvglr3j20qo19x77m", "9ea145c3ly1fbo5zw552fj20qo19xjv0"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fbo5zvglr3j20qo19x77m.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
                     ,"created_timestamp":"1484227564"},{"idstr":"4062815386400388","text":"祝小熊顺利到达大洋彼岸#简画大师#@简画大师 ​"
