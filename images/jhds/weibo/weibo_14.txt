@@ -1,4 +1,12 @@
-[{"idstr":"4023732957522554","text":"#简画大师#克制——静以修身，俭以养德"
+[{"idstr":"4024081374051271","text":"#简画大师#bug——软件会有漏洞，计划会有不周，再好的技术也有短板，再好的风景也总有时限，所爱之人总是会成为我们的软肋，尤其是那些熊孩子，这真是人生最大的bug，喏，一幅图都画不完，各种捣乱"
+                    ,"pic_ids":["006biWBzjw1f87ch1ga7rj30qo19xwha"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f87ch1ga7rj30qo19xwha.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1474899226"},{"idstr":"4024069411951010","text":"#简画大师#《乱吃药的玫瑰花[玫瑰] 》[月亮]简画在手，画画不愁！"
+                    ,"pic_ids":["9ea145c3jw1f87b2shy4wj20qo19xad1", "9ea145c3jw1f87b2t9r57j20qo19xtb5"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f87b2shy4wj20qo19xad1.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474896374"},{"idstr":"4023732957522554","text":"#简画大师#克制——静以修身，俭以养德"
                     ,"pic_ids":["006biWBzjw1f868ghu60dj30qo19xq5r"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f868ghu60dj30qo19xq5r.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -38,12 +46,4 @@
                     ,"pic_ids":["006biWBzjw1f80ddg2hf7j30qo19xdhj", "006biWBzjw1f80ddggsgyj30qo1betfr"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f80ddg2hf7j30qo19xdhj.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474377979"},{"idstr":"4021894368060793","text":"#简画大师# 《城堡里的孩子话》[偷笑][月亮][月亮][月亮]"
-                    ,"pic_ids":["9ea145c3jw1f80dabk52pj20qo19xwjn", "9ea145c3jw1f80daca088j20qo19x0xg"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f80dabk52pj20qo19xwjn.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474377803"},{"idstr":"4021550044195812","text":"#简画大师#你第一次当宝宝，我第一次当妈妈，你总想无所拘束，我总想定各种规矩，我们之间有很多需要相互沟通和适应，好好说，行吗"
-                    ,"pic_ids":["006biWBzjw1f7z9r5yu34j30qo19xtau"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7z9r5yu34j30qo19xtau.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474295710"}]
+                    ,"created_timestamp":"1474377979"}]
