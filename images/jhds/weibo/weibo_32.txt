@@ -1,12 +1,12 @@
-[{"idstr":"4063936736773893","text":"@简画大师 #简画大师#最近，又又又看了《士兵突击》，还是喜欢这样干净、纯粹的作品。生活，好好活，做有意义的事。2017，越来越好。[拳头] ​"
+[{"idstr":"4063946829268260","text":"#简画大师#今天听了一堂精彩的演讲，看到一本受益匪浅的书，回来对生活，家庭就做出了改变，希望自己能坚持下去！ ​"
+                    ,"pic_ids":["9ea145c3ly1fbqix1rum8j20qo19xdih", "9ea145c3ly1fbqix2r37mj20qo1be10a"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fbqix1rum8j20qo19xdih.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1484403891"},{"idstr":"4063936736773893","text":"@简画大师 #简画大师#最近，又又又看了《士兵突击》，还是喜欢这样干净、纯粹的作品。生活，好好活，做有意义的事。2017，越来越好。[拳头] ​"
                     ,"pic_ids":["006biWBzly1fbqhnj8im4j30qo19xwhr"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fbqhnj8im4j30qo19xwhr.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1484401485"},{"idstr":"4063582797204416","text":"#简画大师#继续睡觉[睡] ​"
-                    ,"pic_ids":["9ea145c3ly1fbpd52p00fj20qo19xgns", "9ea145c3ly1fbpd53fjywj20qo19xmyi"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fbpd52p00fj20qo19xgns.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1484317099"},{"idstr":"4063198652712251","text":"@简画大师"
+                    ,"created_timestamp":"1484401485"},{"idstr":"4063198652712251","text":"@简画大师"
                     ,"pic_ids":["0065RviNgw1fbo5125i2aj30fn0qojrz"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/0065RviNgw1fbo5125i2aj30fn0qojrz.jpg","userIcon":"http://tva2.sinaimg.cn/crop.0.0.512.512.180/0065RviNjw8fblui0btv6j30e80e8wfo.jpg"
                     ,"nickName":"查思思","userId":"5583430385"
@@ -18,7 +18,7 @@
                     ,"pic_ids":["90ddd287ly1fbmmm0uvhwj20qo19kgo6"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/90ddd287ly1fbmmm0uvhwj20qo19kgo6.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.180.180.180/90ddd287jw1e8qgp5bmzyj2050050aa8.jpg"
                     ,"nickName":"Mr_Li--lLU","userId":"2430456455"
-                    ,"created_timestamp":"1484112541"},{"idstr":"4062349222461667","text":"简画，就是简单，想画就画，我骄傲#简画大师#"
+                    ,"created_timestamp":"1484112541"},{"idstr":"4062349222461667","text":"简画，就是简单，想画就画，我骄傲😄#简画大师# ​"
                     ,"pic_ids":["005XF5Kyjw1fblfh45lifj30qo1a1mzj"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/005XF5Kyjw1fblfh45lifj30qo1a1mzj.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.1002.1002.180/005XF5Kyjw8f6ww0g74lfj30ru0rudky.jpg"
                     ,"nickName":"春饼199312","userId":"5462261538"

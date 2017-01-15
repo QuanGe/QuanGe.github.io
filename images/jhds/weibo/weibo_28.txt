@@ -1,8 +1,12 @@
-[{"idstr":"4061416015227742","text":"#简画大师# 一个孩子喜欢的幼儿教师，对于孩子来说，是多么的重要！！！"
+[{"idstr":"4061754071565970","text":"#简画大师#《婚姻法》第24条，婚姻关系存续期间夫妻一方个人所负债务，按夫妻共同债务处理。应该算个人财产啊，双方签字才应该一起还嘛。 ​"
+                    ,"pic_ids":["006biWBzjw1fbjj4eyxgwj30qo19xjth"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fbjj4eyxgwj30qo19xjth.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1483881095"},{"idstr":"4061416015227742","text":"#简画大师# 一个孩子喜欢的幼儿教师，对于孩子来说，是多么的重要！！！"
                     ,"pic_ids":["9ea145c3ly1fbigai1iyqj20qo19xdjo", "9ea145c3ly1fbigairk04j20qo19xt99"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fbigai1iyqj20qo19xdjo.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1483800497"},{"idstr":"4061385040499934","text":"#简画大师#年根了，昨晚老公突然良心发现，这一年来第一次说，请我吃饭，我想的自然是海鲜盛宴、红酒牛排、五星级餐厅，结果老公接下来一句话把我拉回现实「我有一张肯德基优惠券，皮蛋瘦肉粥半价，明天早上带你去吃吧」。果不其然、毫无意外，这顿饭不了了之……今天早上喝的玉米糊。"
+                    ,"created_timestamp":"1483800497"},{"idstr":"4061385040499934","text":"#简画大师#年根了，昨晚老公突然良心发现，这一年来第一次说，请我吃饭，我想的自然是海鲜盛宴、红酒牛排、五星级餐厅，结果老公接下来一句话把我拉回现实“我有一张肯德基优惠券，皮蛋瘦肉粥半价，明天早上带你去吃吧”。果不其然、毫无意外，这顿饭不了了之……今天早上喝的玉米糊。 ​"
                     ,"pic_ids":["006biWBzjw1fbicqjqmorj30qo19xq5k"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fbicqjqmorj30qo19xq5k.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -10,7 +14,7 @@
                     ,"pic_ids":["9ea145c3ly1fbhbb0duzfj20qo19xtgc", "9ea145c3ly1fbhbb1bkrmj20qo19xt9x"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fbhbb0duzfj20qo19xtgc.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1483715467"},{"idstr":"4061023654545912","text":"#简画大师#今天，一老一小两件大喜事。第一件，先祝老爸生日快乐！健康长寿！爱您第二件，北京中小学、幼儿园试点安装空气净化设备。好事！好事！"
+                    ,"created_timestamp":"1483715467"},{"idstr":"4061023654545912","text":"#简画大师#今天，一老一小两件大喜事。第一件，先祝老爸生日快乐！健康长寿！爱您👄第二件，北京中小学、幼儿园试点安装空气净化设备。好事！好事！ ​"
                     ,"pic_ids":["006biWBzjw1fbh78h6eidj30qo19xq54"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fbh78h6eidj30qo19xq54.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -22,7 +26,7 @@
                     ,"pic_ids":["006biWBzjw1fbg2cc22ejj30qo19xjwc"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fbg2cc22ejj30qo19xjwc.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1483622138"},{"idstr":"4060605352307262","text":"举个栗子，要随时保存，不然重复工作[笑cry][飞机]#简画大师#"
+                    ,"created_timestamp":"1483622138"},{"idstr":"4060605352307262","text":"举个栗子，要随时保存，不然重复工作[笑cry][飞机]#简画大师# ​"
                     ,"pic_ids":["005ZU2fRgw1fbfv4z2mlpj30ku112mz8"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/005ZU2fRgw1fbfv4z2mlpj30ku112mz8.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.1.750.750.180/005ZU2fRjw8exrm3l33xqj30ku0kwwfl.jpg"
                     ,"nickName":"带着梦想周游世界by","userId":"5495375695"
@@ -34,7 +38,7 @@
                     ,"pic_ids":["006biWBzjw1fbewlsxjvtj30qo19xacz"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fbewlsxjvtj30qo19xacz.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1483535415"},{"idstr":"4060240427281845","text":"下班[飞机]#简画大师#"
+                    ,"created_timestamp":"1483535415"},{"idstr":"4060240427281845","text":"下班[飞机]#简画大师# ​"
                     ,"pic_ids":["005ZU2fRgw1fbep9lh1usj30ku1123zt"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/005ZU2fRgw1fbep9lh1usj30ku1123zt.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.1.750.750.180/005ZU2fRjw8exrm3l33xqj30ku0kwwfl.jpg"
                     ,"nickName":"带着梦想周游世界by","userId":"5495375695"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["006biWBzjw1fbdsak4j0qj30qo19xdh8"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fbdsak4j0qj30qo19xdh8.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1483451730"},{"idstr":"4059949175001432","text":"#简画大师#注意安全"
-                    ,"pic_ids":["9ea145c3ly1fbdrtsp3s2j20qo1be7nf", "9ea145c3ly1fbdrtt2ffcj20qo19xgp8", "9ea145c3ly1fbdrttpcylj20qo19xdkw"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fbdrtsp3s2j20qo1be7nf.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1483450775"}]
+                    ,"created_timestamp":"1483451730"}]
