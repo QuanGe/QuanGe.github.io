@@ -1,4 +1,8 @@
-[{"idstr":"4031688935568239","text":"#简画大师#神州十一号——嗖嗖嗖，威武[鼓掌]"
+[{"idstr":"4031701326216807","text":"嗖嗖嗖……走你[good]#简画大师#中国强大！！！"
+                    ,"pic_ids":["9ea145c3jw1f8vnljtp6gj20qo19xgp1", "9ea145c3jw1f8vnlksffkj20qo19x7dm"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f8vnljtp6gj20qo19xgp1.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1476715964"},{"idstr":"4031688935568239","text":"#简画大师#神州十一号——嗖嗖嗖，威武[鼓掌]"
                     ,"pic_ids":["006biWBzjw1f8vm6u0kf1j30qo19xmya"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8vm6u0kf1j30qo19xmya.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1f8qyzf88yaj20qo19xade", "9ea145c3jw1f8qyzfhuwmj20qo19xmzd"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f8qyzf88yaj20qo19xade.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1476365981"},{"idstr":"4030226750857490","text":"#简画大师#雪莱——冬天来了，春天还会远吗？"
-                    ,"pic_ids":["006biWBzjw1f8qy9d9bqpj30qo19xq5w"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8qy9d9bqpj30qo19xq5w.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1476364397"}]
+                    ,"created_timestamp":"1476365981"}]
