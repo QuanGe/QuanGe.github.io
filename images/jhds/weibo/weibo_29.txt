@@ -45,5 +45,5 @@
                     ,"created_timestamp":"1483622138"},{"idstr":"4060605352307262","text":"举个栗子，要随时保存，不然重复工作[笑cry][飞机]#简画大师# ​"
                     ,"pic_ids":["005ZU2fRgw1fbfv4z2mlpj30ku112mz8"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/005ZU2fRgw1fbfv4z2mlpj30ku112mz8.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.1.750.750.180/005ZU2fRjw8exrm3l33xqj30ku0kwwfl.jpg"
-                    ,"nickName":"带着梦想周游世界by","userId":"5495375695"
+                    ,"nickName":"花花花酱S","userId":"5495375695"
                     ,"created_timestamp":"1483607221"}]
