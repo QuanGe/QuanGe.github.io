@@ -1,4 +1,8 @@
-[{"idstr":"4025540774386263","text":"#简画大师#9.30，法定烈士纪念日，为新生活奉献青春，奉献生命的前辈们，今天的幸福生活来之不易[心]。明天享受美好假期的同时，也要学会感恩和珍惜。"
+[{"idstr":"4025838582510186","text":"#简画大师#欢聚一堂，共度国庆，亲爱的祖国生日快乐！"
+                    ,"pic_ids":["006biWBzjw1f8cyaaei6fj30qo19xais"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8cyaaei6fj30qo19xais.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1475318176"},{"idstr":"4025540774386263","text":"#简画大师#9.30，法定烈士纪念日，为新生活奉献青春，奉献生命的前辈们，今天的幸福生活来之不易[心]。明天享受美好假期的同时，也要学会感恩和珍惜。"
                     ,"pic_ids":["006biWBzjw1f8c02zuk22j30qo19xjtj"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f8c02zuk22j30qo19xjtj.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["006biWBzjw1f868ghu60dj30qo19xq5r"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f868ghu60dj30qo19xq5r.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474816156"},{"idstr":"4023699071661544","text":"#简画大师#《小气鬼》[月亮]"
-                    ,"pic_ids":["9ea145c3jw1f864k4w9ekj20qo19xq5g", "9ea145c3jw1f864k664kfj20qo19xjtt"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f864k4w9ekj20qo19xq5g.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474808078"}]
+                    ,"created_timestamp":"1474816156"}]
