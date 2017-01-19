@@ -1,4 +1,8 @@
-[{"idstr":"4009955067328833","text":"#简画大师#仰望是一种姿态，不要变成一种习惯！"
+[{"idstr":"4010304579110877","text":"#简画大师#尊重对手，就是给对手一个公正，公开，公平的比赛！"
+                    ,"pic_ids":["9ea145c3jw1f6ze7kug7ej20qo19xwlp", "9ea145c3jw1f6ze7pkxfpj20qo19xdjb"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6ze7kug7ej20qo19xwlp.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1471614582"},{"idstr":"4009955067328833","text":"#简画大师#仰望是一种姿态，不要变成一种习惯！"
                     ,"pic_ids":["9ea145c3jw1f6ya28owfxj20qo19xtbq", "9ea145c3jw1f6ya2aqg3qj20qo19xn0i"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6ya28owfxj20qo19xtbq.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1f6se3w49mdj20qo19xtbg", "9ea145c3jw1f6se3xdzbvj20qo19xn10"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6se3w49mdj20qo19xtbg.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1471091225"},{"idstr":"4007766471586930","text":"#简画大师#小手一抖，简画在手！你也来试试吧[月亮]晚安"
-                    ,"pic_ids":["9ea145c3jw1f6rapqsi11j20qo19xae6", "9ea145c3jw1f6raprkpqoj20qo19xwgy"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f6rapqsi11j20qo19xae6.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1471009450"}]
+                    ,"created_timestamp":"1471091225"}]

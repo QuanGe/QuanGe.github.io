@@ -1,4 +1,8 @@
-[{"idstr":"4051974033356418","text":"#简画大师#现在，涂涂每天早上一睁眼，第一句话就是「妈妈，你不要上班」[抱抱]「妈妈要挣钱给你上学，买好吃的，漂亮衣服啊」今天双十二，妈妈给涂涂买了好多东西呢"
+[{"idstr":"4052334776902976","text":"#简画大师#看病，对病人是天大个事，对医生司空见惯，见的多，坐诊忙，也没时间细解释。怒怼医生，医患关系不好，这个问题太大，是社会问题。反正，还是，有啥别有病，相互理解。健康最重要。"
+                    ,"pic_ids":["006biWBzjw1faphby01aej30qo19xaci"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faphby01aej30qo19xaci.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1481635362"},{"idstr":"4051974033356418","text":"#简画大师#现在，涂涂每天早上一睁眼，第一句话就是「妈妈，你不要上班」[抱抱]「妈妈要挣钱给你上学，买好吃的，漂亮衣服啊」今天双十二，妈妈给涂涂买了好多东西呢"
                     ,"pic_ids":["006biWBzjw1faobwg16bhj30qo19xmz0"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faobwg16bhj30qo19xmz0.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1faikjkrlrmj20qo19x40l", "9ea145c3jw1faikjln9caj20qo19xn21"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1faikjkrlrmj20qo19x40l.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1481118936"},{"idstr":"4050154782467994","text":"#简画大师##简画大师#生活圈——大北京，五环外，一公里的生活圈。衣食住行，我在这里生活了四年。偶尔去趟奥森，吹吹清冽的风。逢年过节回老家，风尘仆仆。在这个小小的圈子里，装满了我的青春岁月，漂泊、艰苦、奋斗、成长、友情、爱情、亲情……这就是属于我的小圈子。"
-                    ,"pic_ids":["006biWBzjw1faiiyoaqvnj30qo19xmz2"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faiiyoaqvnj30qo19xmz2.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1481115611"}]
+                    ,"created_timestamp":"1481118936"}]
