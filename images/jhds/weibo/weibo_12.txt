@@ -1,12 +1,4 @@
-[{"idstr":"4020455361169873","text":"#简画大师#下雨了，一场秋雨一场寒，秋是收获的季节，也是容易让人伤感的季节，有瓜熟蒂落，也有落叶归根，岁岁年年如此，变化的却是人心人情，终究还是境由心生。"
-                    ,"pic_ids":["006biWBzjw1f7vs15h5jzj30qo19x40p"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7vs15h5jzj30qo19x40p.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474034717"},{"idstr":"4020445991310813","text":"#简画大师#每天一幅画，每日一故事，继续《小鹿斑比⑥鹿王出现了》[月亮][亲亲]"
-                    ,"pic_ids":["9ea145c3jw1f7vqxfm96bj20qo19xq6p", "9ea145c3jw1f7vqxiatyuj20qo19x79e"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7vqxfm96bj20qo19xq6p.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474032483"},{"idstr":"4020119312861671","text":"#简画大师#月圆人团圆，愿亲人安康，关爱常伴，岁月长留"
+[{"idstr":"4020119312861671","text":"#简画大师#月圆人团圆，愿亲人安康，关爱常伴，岁月长留"
                     ,"pic_ids":["006biWBzjw1f7upfqfzyij30qo19xq4x"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7upfqfzyij30qo19xq4x.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -46,4 +38,12 @@
                     ,"pic_ids":["9ea145c3jw1f7ouekly0xj20qo19x7b9", "9ea145c3jw1f7ouemas1rj20qo1be0x1"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7ouekly0xj20qo19x7b9.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1473516525"}]
+                    ,"created_timestamp":"1473516525"},{"idstr":"4018265443392930","text":"#简画大师#祝天下所有教书育人的教师们节日快乐，辛苦了，爱老爸[樱花]"
+                    ,"pic_ids":["006biWBzgw1f7ositwe14j30qo19xq61"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzgw1f7ositwe14j30qo19xq61.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1473512600"},{"idstr":"4017924262393302","text":"#简画大师#猜得出来今天是什么故事吗？[偷笑][偷笑][偷笑][月亮][月亮][月亮]"
+                    ,"pic_ids":["9ea145c3jw1f7npbfkghlj20qo19xn40", "9ea145c3jw1f7npbiqxnqj20qo19xwic"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7npbfkghlj20qo19xn40.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1473431256"}]

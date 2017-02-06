@@ -1,12 +1,4 @@
-[{"idstr":"4000522824371206","text":"#简画大师#早睡早起身体好，小朋友都明白的道理，可随着年龄的增长，我们总是加班、应酬、沉迷于游戏、不断刷新信息、在屏幕前追星追剧追综艺，你的眼睛多久没有好好休息了？从今天开始，早点说晚安吧，愿你好梦，愿百姓安康[心]"
-                    ,"pic_ids":["006biWBzjw1f646sw0by3j30qo19xabl"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f646sw0by3j30qo19xabl.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1469282429"},{"idstr":"4000169550497382","text":"#简画大师#在这个世界上，只有真正爱你的人，才会成为你的超级英雄；或者你爱的人，让你愿意成为TA的超级英雄。是爱，让人强大，是爱，造就了超级英雄。"
-                    ,"pic_ids":["006biWBzjw1f6328ks3cmj30qo19xgnh"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f6328ks3cmj30qo19xgnh.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1469198202"},{"idstr":"4000138751899274","text":"#简画大师#生活中不免遇到磕磕绊绊，态度很重要！"
+[{"idstr":"4000138751899274","text":"#简画大师#生活中不免遇到磕磕绊绊，态度很重要！"
                     ,"pic_ids":["9ea145c3jw1f62yp8kmbbj20qo19x436", "9ea145c3jw1f62yp99j8bj20qo19xgpi"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f62yp8kmbbj20qo19x436.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
@@ -46,4 +38,12 @@
                     ,"pic_ids":["9ea145c3jw1f5x94uoudij20qo19xgoj"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f5x94uoudij20qo19xgoj.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1468764180"}]
+                    ,"created_timestamp":"1468764180"},{"idstr":"3997991746225768","text":"啥？我画的不好看？你来试试#简画大师#"
+                    ,"pic_ids":["006biWBzjw1f5w44cw0ipj30qo19xmz9"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f5w44cw0ipj30qo19xmz9.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1468678974"},{"idstr":"3997979964527152","text":"每日一画#简画大师#红色的世界[心]"
+                    ,"pic_ids":["9ea145c3jw1f5w2rclz7sj20qo19xgrh", "9ea145c3jw1f5w2rd9elcj20qo19x0w4"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f5w2rclz7sj20qo19xgrh.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1468676165"}]
