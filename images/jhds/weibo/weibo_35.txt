@@ -37,10 +37,10 @@
                     ,"created_timestamp":"1479885998"},{"idstr":"4040943646456472","text":"啥？我画的不好看？你来试试#简画大师#"
                     ,"pic_ids":["a27c2c03gw1f9p52s676oj20qo19xtba"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/a27c2c03gw1f9p52s676oj20qo19xtba.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.996.996.180/a27c2c03jw8fbzhecv9h0j20ro0ro77q.jpg"
-                    ,"nickName":"zimeizeng","userId":"2726046723"
+                    ,"nickName":"曾紫梅","userId":"2726046723"
                     ,"created_timestamp":"1478919505"},{"idstr":"4038565698621805","text":"啥？我画的不好看？你来试试#简画大师#"
                     ,"pic_ids":["6c2a4953jw1f9hjz3x3i1j20qo19x0wz"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/6c2a4953jw1f9hjz3x3i1j20qo19x0wz.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.0.996.996.180/6c2a4953jw8fahicajwh3j20ro0rogo4.jpg"
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/6c2a4953jw1f9hjz3x3i1j20qo19x0wz.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.0.996.996.180/6c2a4953jw8fcqdvlyxnpj20ro0rotb1.jpg"
                     ,"nickName":"-豌豆-001","userId":"1814710611"
                     ,"created_timestamp":"1478352558"},{"idstr":"4037693257621544","text":"一句话：不服来画给我看。#简画大师#"
                     ,"pic_ids":["5ce560fbjw1f9errzfyonj20qo19xabm"]
