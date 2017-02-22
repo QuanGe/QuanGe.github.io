@@ -1,4 +1,12 @@
-[{"idstr":"4051578057360620","text":"#简画大师#厉害了北京西客站！开启“刷脸”进站模式。旅客将本人二代身份证和蓝色磁卡车票，叠放在一起，同时放入机器插口中，面向摄像头等待机器识别(类似于手机前置摄像头)，票证人相符，闸门就会开启。脸脏，带眼镜，吃东西，化妆，整容……应该都过不去吧？"
+[{"idstr":"4051973609295979","text":"#简画大师#[爱你]"
+                    ,"pic_ids":["9ea145c3jw1faobtkvekdj20qo19x41w", "9ea145c3jw1faobtldlu5j20qo19x434", "9ea145c3jw1faobtmmbevj20qo1bdgum"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1faobtkvekdj20qo19x41w.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1481549253"},{"idstr":"4051613733701686","text":"#简画大师#送走了双十一，紧接着赶来了双十二……疯狂吧，剁手党[白眼]"
+                    ,"pic_ids":["9ea145c3jw1fan6htz600j20qo19xgpc", "9ea145c3jw1fan6huyw7rj20qo19xgwh"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1fan6htz600j20qo19xgpc.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1481463452"},{"idstr":"4051578057360620","text":"#简画大师#厉害了北京西客站！开启“刷脸”进站模式。旅客将本人二代身份证和蓝色磁卡车票，叠放在一起，同时放入机器插口中，面向摄像头等待机器识别(类似于手机前置摄像头)，票证人相符，闸门就会开启。脸脏，带眼镜，吃东西，化妆，整容……应该都过不去吧？"
                     ,"pic_ids":["006biWBzjw1fan2f9aiqgj30qo19xaf6"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fan2f9aiqgj30qo19xaf6.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -38,12 +46,4 @@
                     ,"pic_ids":["006biWBzjw1faiiwmrx5fj30qo19xmz2"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1faiiwmrx5fj30qo19xmz2.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1481115493"},{"idstr":"4049797100674324","text":"#简画大师#缘来是你[心]。人生的每一次邂逅都需要需要缘分。感谢父母赐予我生命，让我拥有最真最美的亲情。感谢路过我人生旅途的亲朋，好友，同窗，一起经历美好，丰富我的生活。感谢生命中遇到的每一个人，让我始终能经营着最美好的自己。"
-                    ,"pic_ids":["006biWBzjw1fahdvtknhaj30qo19xgni"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fahdvtknhaj30qo19xgni.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1481030333"},{"idstr":"4049436932370940","text":"#简画大师#时间，是真相，是治愈，是习惯，是成长。时间是冰冷的，总是直白地，叙述着一切。时间是温暖的，让我们亲近，让我们学会珍惜。"
-                    ,"pic_ids":["006biWBzjw1fag8iorxmjj30qo19xgn0"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fag8iorxmjj30qo19xgn0.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1480944462"}]
+                    ,"created_timestamp":"1481115493"}]
