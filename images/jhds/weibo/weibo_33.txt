@@ -31,7 +31,7 @@
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fcyb3kbzn9j30u01fomyo.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
                     ,"created_timestamp":"1487675929"},{"idstr":"4077351262337731","text":"#简画大师#[白眼][ok] ​"
-                    ,"pic_ids":["9ea145c3ly1fcxafarf85j20qo19xdhr"]
+                    ,"pic_ids":["9ea145c3ly1fcxafarf85j20qo19xdhr", "9ea145c3ly1fcxafblxs5j20qo19x3zc"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fcxafarf85j20qo19xdhr.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
                     ,"created_timestamp":"1487599757"},{"idstr":"4074080997704965","text":"#简画大师##欢喜闹元宵# 元宵节就这样结束了！「年」算是过完了…… ​"
