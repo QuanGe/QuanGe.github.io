@@ -1,4 +1,44 @@
-[{"idstr":"4021550044195812","text":"#简画大师#你第一次当宝宝，我第一次当妈妈，你总想无所拘束，我总想定各种规矩，我们之间有很多需要相互沟通和适应，好好说，行吗"
+[{"idstr":"4023699071661544","text":"#简画大师#《小气鬼》[月亮]"
+                    ,"pic_ids":["9ea145c3jw1f864k4w9ekj20qo19xq5g", "9ea145c3jw1f864k664kfj20qo19xjtt"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f864k4w9ekj20qo19xq5g.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474808078"},{"idstr":"4023355781365245","text":"#简画大师#较量——谁比谁辛苦，谁比谁值得，付出跟收获之间，放在人情世故上，两者并没有半毛钱关系，夫妻，朋友，同学之间没有天然的联系（血缘关系，即使亲人也有反目成仇的呢），人情，都是小情绪和大脾气之间的较量，人情不在了，就只剩下故事和事故了"
+                    ,"pic_ids":["006biWBzjw1f85151nkvpj30qo19xadb"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f85151nkvpj30qo19xadb.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1474726231"},{"idstr":"4023332477703449","text":"#简画大师#《向日葵[向日葵] 》[爱心] ，希望一切都会好起来"
+                    ,"pic_ids":["9ea145c3jw1f84yg85egdj20qo19xdhs", "9ea145c3jw1f84yg9ht93j20qo19xwjy"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f84yg85egdj20qo19xdhs.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474720675"},{"idstr":"4023015123418058","text":"#简画大师#匆匆——生活太琐碎，任何改变都由许多个小概率事件构成，这些个小事件莹莹绕绕纠缠在一起，然后悄悄地把时间和青春带走，它们像是密谋好了一样，一点一点改变着你，最后变成以前，现在和以后的你……困……睡着了……"
+                    ,"pic_ids":["006biWBzjw1f83y0l5m46j30qo19xdil"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f83y0l5m46j30qo19xdil.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1474645012"},{"idstr":"4022637782890236","text":"#简画大师#左手画——感受手指在屏幕上滑动，亦或聆听木彩在宣纸上摩擦，画画的心每天都不同，就如同世上没有相同的两片叶子，春去夏远秋已至，生命轮回，也无轮回，人世间只此一遭，落叶归根，感恩生命。"
+                    ,"pic_ids":["006biWBzjw1f82qogfobej30qo19xjwn"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f82qogfobej30qo19xjwn.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1474555047"},{"idstr":"4022619327946147","text":"#简画大师#《小气的大树》[月亮]福兮祸兮！珍惜之！"
+                    ,"pic_ids":["9ea145c3jw1f82oivfnc0j20qo19xjux", "9ea145c3jw1f82oiw5dvuj20qo19xgpc"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f82oivfnc0j20qo19xjux.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474550646"},{"idstr":"4022283993717367","text":"自画像——许久没有画，手有些生了，把生活放慢，再放慢，学会感恩，懂得享受，爱自己，爱生活——#简画大师#我为自己代言[挤眼]"
+                    ,"pic_ids":["006biWBzgw1f81lx28ihtj30qo145gsl", "006biWBzgw1f81lx6m6hvj30qo0zkq7i"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzgw1f81lx28ihtj30qo145gsl.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1474470697"},{"idstr":"4022270491408806","text":"#简画大师#每晚一幅画，每日一故事！坚持！[爱你]《白雪公主》[月亮]"
+                    ,"pic_ids":["9ea145c3jw1f81kg9qxa4j20qo19xwhl", "9ea145c3jw1f81kgaxa4wj20qo19x42n"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f81kg9qxa4j20qo19xwhl.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474467479"},{"idstr":"4021895106147501","text":"#简画大师#网络是一次大爆炸，它的出现不像二战原子弹令人震撼，却已像病毒深入人的血液骨髓，没有时空界限，交流的即视感令人愉悦，匿名和潜水反向满足了人们偷窥的心，以前只见七大姑八大姨饭后东家长西家短，围观评论则迎合了年轻人八卦的心，舆论的狂欢更是对内心躁动的释放，无所谓对错。让人焦"
+                    ,"pic_ids":["006biWBzjw1f80ddg2hf7j30qo19xdhj", "006biWBzjw1f80ddggsgyj30qo1betfr"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f80ddg2hf7j30qo19xdhj.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1474377979"},{"idstr":"4021894368060793","text":"#简画大师# 《城堡里的孩子话》[偷笑][月亮][月亮][月亮]"
+                    ,"pic_ids":["9ea145c3jw1f80dabk52pj20qo19xwjn", "9ea145c3jw1f80daca088j20qo19x0xg"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f80dabk52pj20qo19xwjn.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
+                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
+                    ,"created_timestamp":"1474377803"},{"idstr":"4021550044195812","text":"#简画大师#你第一次当宝宝，我第一次当妈妈，你总想无所拘束，我总想定各种规矩，我们之间有很多需要相互沟通和适应，好好说，行吗"
                     ,"pic_ids":["006biWBzjw1f7z9r5yu34j30qo19xtau"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7z9r5yu34j30qo19xtau.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -6,44 +46,4 @@
                     ,"pic_ids":["9ea145c3jw1f7z8k58empj20qo19xwjj"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7z8k58empj20qo19xwjj.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474293278"},{"idstr":"4021168161885772","text":"#简画大师#铭记于心，勿忘国耻9.18       《小鹿斑比⑧秋风秋叶》"
-                    ,"pic_ids":["9ea145c3jw1f7y1uuud0yj20qo19xq5h", "9ea145c3jw1f7y1uw5ycbj20qo19xjw1", "9ea145c3jw1f7y1uxcvrkj20qo19xq6y"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7y1uuud0yj20qo19xq5h.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474204661"},{"idstr":"4021162080347360","text":"#简画大师#九一八，勿忘国耻，振兴中华，从小事做起，强民族体魄，扬中华美德，兴华夏文明"
-                    ,"pic_ids":["006biWBzgw1f7y173vpn5j30qo19xtaa"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzgw1f7y173vpn5j30qo19xtaa.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474203212"},{"idstr":"4020816054835819","text":"#简画大师#在父母眼中，孩子总长的太快，一眨眼就上学，毕业，工作，成家，也为人父为人母；在父母眼中，孩子总长的太慢，衣食住行，操不完的心，总想着什么苦什么罪都能代劳，即使七老八十，在父母身边就仍是孩子，会撒娇，会嗔怪。这真是世界上最美好的一种情感。"
-                    ,"pic_ids":["006biWBzgw1f7wwnwxn4wj30qo19x76m"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzgw1f7wwnwxn4wj30qo19x76m.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474120713"},{"idstr":"4020813487777861","text":"#简画大师#《小鹿斑比⑦夏天的猎杀》"
-                    ,"pic_ids":["9ea145c3jw1f7wx592juuj20qo19xn1w", "9ea145c3jw1f7wx5a8usyj20qo19x0wb"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7wx592juuj20qo19xn1w.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474120101"},{"idstr":"4020455361169873","text":"#简画大师#下雨了，一场秋雨一场寒，秋是收获的季节，也是容易让人伤感的季节，有瓜熟蒂落，也有落叶归根，岁岁年年如此，变化的却是人心人情，终究还是境由心生。"
-                    ,"pic_ids":["006biWBzjw1f7vs15h5jzj30qo19x40p"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7vs15h5jzj30qo19x40p.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1474034717"},{"idstr":"4020445991310813","text":"#简画大师#每天一幅画，每日一故事，继续《小鹿斑比⑥鹿王出现了》[月亮][亲亲]"
-                    ,"pic_ids":["9ea145c3jw1f7vqxfm96bj20qo19xq6p", "9ea145c3jw1f7vqxiatyuj20qo19x79e"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7vqxfm96bj20qo19xq6p.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1474032483"},{"idstr":"4020119312861671","text":"#简画大师#月圆人团圆，愿亲人安康，关爱常伴，岁月长留"
-                    ,"pic_ids":["006biWBzjw1f7upfqfzyij30qo19xq4x"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7upfqfzyij30qo19xq4x.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1473954597"},{"idstr":"4019735974726608","text":"#简画大师#继续连载，《小鹿斑比④亲朋好友》[月亮]晚安了，亲"
-                    ,"pic_ids":["9ea145c3jw1f7thdom131j20qo19xagn", "9ea145c3jw1f7thdpjhv1j20qo19xq78"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3jw1f7thdom131j20qo19xagn.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
-                    ,"nickName":"杨家小妞儿诺","userId":"2661369283"
-                    ,"created_timestamp":"1473863201"},{"idstr":"4019711463842099","text":"#简画大师#我的新发型，游走在萌妹和大妈之间"
-                    ,"pic_ids":["006biWBzjw1f7telgawzpj30qo19xt9i"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7telgawzpj30qo19xt9i.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1473857358"},{"idstr":"4019367006198044","text":"#简画大师#心里长草了"
-                    ,"pic_ids":["006biWBzjw1f7sb1a3hm2j30qo19x75v"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1f7sb1a3hm2j30qo19x75v.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1473775232"}]
+                    ,"created_timestamp":"1474293278"}]
