@@ -2,7 +2,7 @@
                     ,"pic_ids":["006biWBzjw1fbewlsxjvtj30qo19xacz"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzjw1fbewlsxjvtj30qo19xacz.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1483535415"},{"idstr":"4060240427281845","text":"下班[飞机]#简画大师# ​"
+                    ,"created_timestamp":"1483535415"},{"idstr":"4060240427281845","text":"下班[飞机]#简画大师#"
                     ,"pic_ids":["005ZU2fRgw1fbep9lh1usj30ku1123zt"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/005ZU2fRgw1fbep9lh1usj30ku1123zt.jpg","userIcon":"http://tva3.sinaimg.cn/crop.0.1.750.750.180/005ZU2fRjw8exrm3l33xqj30ku0kwwfl.jpg"
                     ,"nickName":"一芭啦啦啦啦一","userId":"5495375695"
