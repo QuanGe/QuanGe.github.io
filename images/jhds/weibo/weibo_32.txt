@@ -23,7 +23,7 @@
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fcp7121pn4j20qo19xgse.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
                     ,"created_timestamp":"1486994838"},{"idstr":"4074437479189078","text":"#简画大师# 太阳当空照，花儿对我笑，小鸟说，早早早……假期结束！回归正途！算是对假期的一个美丽的结束！ http://t.cn/RJXWFpX . ​"
-                    ,"pic_ids":["9ea145c3ly1fcnzrfwwe3j20qo19x79k"]
+                    ,"pic_ids":["9ea145c3ly1fcnzrfwwe3j20qo19x79k", "9ea145c3ly1fcnzrgndltj20qo19x3zv"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fcnzrfwwe3j20qo19x79k.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
                     ,"created_timestamp":"1486905057"},{"idstr":"4074080997704965","text":"#简画大师##欢喜闹元宵# 元宵节就这样结束了！「年」算是过完了…… ​"
