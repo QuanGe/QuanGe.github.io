@@ -35,7 +35,7 @@
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fdc9u45xo9j30qo19xq7q.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
                     ,"created_timestamp":"1488719523"},{"idstr":"4081338443522857","text":"#简画大师# 一九二九不出手；三九四九冰上走；五九六九沿河看柳；七九河开八九雁来；九九加一九，耕牛遍地走。 ​"
-                    ,"pic_ids":["9ea145c3ly1fda0cmzg7uj20qo19xdik"]
+                    ,"pic_ids":["9ea145c3ly1fda0cmzg7uj20qo19xdik", "9ea145c3ly1fda0co79cvj20qo19xq6n"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/9ea145c3ly1fda0cmzg7uj20qo19xdik.jpg","userIcon":"http://tva3.sinaimg.cn/crop.128.0.768.768.180/9ea145c3jw8e6x5441byyj20sg0lcac3.jpg"
                     ,"nickName":"杨家小妞儿诺","userId":"2661369283"
                     ,"created_timestamp":"1488550375"},{"idstr":"4080964575249429","text":"@简画大师 #简画大师#要开两会了，不知道代表们都有什么放飞自我的惠民提议呢？ ​"
