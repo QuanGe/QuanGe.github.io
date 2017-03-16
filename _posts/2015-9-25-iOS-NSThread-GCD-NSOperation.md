@@ -7,9 +7,9 @@ title: iOS充电日记－－关于多线程
 
 个人猜测，这三种方式的代码实现 都是用了libpthread,因为我们可以从 [libdispatch](http://opensource.apple.com/tarballs/libdispatch/)的源码中可以看到`private.h`头文件中`#include <pthread.h>`,而且代码中有`pthread_create`创建线程
 
-##NSThread
+## NSThread
 
-###使用
+### 使用
 使用方法有两个
 
 {% highlight objc %}
@@ -33,7 +33,7 @@ NSThread* myThread = [[NSThread alloc] initWithTarget:self
 其效果与`NSThread`的` detachNewThreadSelector:toTarget:withObject: `是一样的
 
 
-###线程同步
+### 线程同步
 
 在这我想先提一个词`原子操作`，我们在写`@property`的时候经常有关键字`nonatomic`或`atomic`，其中atomic为原子操作，提供多线程安全，在多线程环境下，原子操作是必要的，否则有可能引起错误的结果。加了atomic，setter函数会变成下面这样
 
@@ -72,7 +72,7 @@ NSCondition ＊theCondition = [[NSCondition alloc] init];
 }
 {% endhighlight %}
 
-###线程通信
+### 线程通信
 线程在运行过程中，可能需要与其它线程进行通信。我们可以使用 NSObject 中的一些方法：
 {% highlight objc %}
 // 在应用程序主线程中做事情：
@@ -92,7 +92,7 @@ cancelPreviousPerformRequestsWithTarget:
 cancelPreviousPerformRequestsWithTarget:selector:object:
 {% endhighlight %}
 
-###其他
+### 其他
 
 1、由于需要手动处理线程同步，所以有可能造成死锁现象。
 
@@ -106,7 +106,7 @@ cancelPreviousPerformRequestsWithTarget:selector:object:
 
 7、可以用setThreadPriority来设置线程优先级
 
-##NSOperation
+## NSOperation
  
 <blockquote>
 The `NSOperation` class is an `abstract` class you use to encapsulate the code and data associated with a single task. Because it is `abstract`, you do not use this class directly but instead subclass or use one of the system-defined subclasses (`NSInvocationOperation` or `NSBlockOperation`) to perform the actual task. Despite being abstract, the base implementation of `NSOperation` does include significant logic to coordinate the safe execution of your task. The presence of this built-in logic allows you to focus on the actual implementation of your task, rather than on the glue code needed to ensure it works correctly with other system objects.
@@ -116,7 +116,7 @@ An operation object is a single-shot object—that is, it executes its task once
 If you do not want to use an operation queue, you can execute an operation yourself by calling its `start` method directly from your code. Executing operations manually does put more of a burden on your code, because starting an operation that is not in the ready state triggers an exception. The ready property reports on the operation’s readiness.
 </blockquote>
 
-###使用
+### 使用
 
 由上面的官方文档可以看到NSOperation使用的时候有三种方式：NSInvocationOperation、NSBlockOperation、继承NSOperation的子类，因为NSOperation是一个抽象类
 
@@ -168,11 +168,11 @@ If you are creating a concurrent operation, you need to override the following m
 4、iOS8用qualityOfService，iOS4至iOS7用threadPriority来设置线程优先级
  
 
-##GCD(Grand Central Dispatch) 
+## GCD(Grand Central Dispatch) 
 
 Grand Central Dispatch (GCD) 是 Apple 开发的一个多核编程的解决方法。该方法在 Mac OS X 10.6 雪豹中首次推出，并随后被引入到了 iOS4.0 中。GCD 是一个替代诸如 NSThread, NSOperationQueue, NSInvocationOperation 等技术的很高效和强大的技术。
 
-###使用
+### 使用
 我们先来说说常用的libdispatch库的一些函数
 
 {% highlight objc %}
@@ -244,7 +244,7 @@ dispatch_barrier_async中的操作，(现在就只会执行这一个操作)执�
 最后该并行队列恢复原有执行状态，继续并行执行
 
 
-###block
+### block
 
 block语法很像C里的函数指针，只不过把＊换成了^
 定义一个不带参数的block
@@ -640,7 +640,7 @@ myObj.myBlock =  ^{
 
 {% endhighlight %}
 
-###其他
+### 其他
 
 GCD会自动利用更多的CPU内核（比如双核、四核），GCD会自动管理线程的生命周期（创建线程、调度任务、销毁线程），程序员只需要告诉GCD想要执行什么任务，不需要编写任何线程管理代码
 
