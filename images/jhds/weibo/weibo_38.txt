@@ -44,6 +44,6 @@
                     ,"nickName":"神明在","userId":"5756582100"
                     ,"created_timestamp":"1479885998"},{"idstr":"4040943646456472","text":"啥？我画的不好看？你来试试#简画大师#"
                     ,"pic_ids":["a27c2c03gw1f9p52s676oj20qo19xtba"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/a27c2c03gw1f9p52s676oj20qo19xtba.jpg","userIcon":"http://tvax2.sinaimg.cn/crop.0.0.996.996.180/a27c2c03ly8fd0gkazpi4j20ro0rodiu.jpg"
-                    ,"nickName":"曾留白","userId":"2726046723"
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/a27c2c03gw1f9p52s676oj20qo19xtba.jpg","userIcon":"http://tvax3.sinaimg.cn/crop.0.0.996.996.180/a27c2c03ly8fdx4mm2xwpj20ro0romyr.jpg"
+                    ,"nickName":"曾紫梅","userId":"2726046723"
                     ,"created_timestamp":"1478919505"}]
