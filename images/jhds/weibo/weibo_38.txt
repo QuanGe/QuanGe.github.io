@@ -12,7 +12,7 @@
                     ,"nickName":"woaifengling","userId":"3583984843"
                     ,"created_timestamp":"1489057473"},{"idstr":"4083355873460381","text":"@简画大师 #简画大师#第一次画是有点丑 ​"
                     ,"pic_ids":["006fdIJ8ly1fdgg2169wij30qo19xgob"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006fdIJ8ly1fdgg2169wij30qo19xgob.jpg","userIcon":"http://tvax2.sinaimg.cn/crop.0.0.996.996.180/006fdIJ8ly8fddkjczdt9j30ro0romzz.jpg"
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006fdIJ8ly1fdgg2169wij30qo19xgob.jpg","userIcon":"http://tvax1.sinaimg.cn/crop.0.0.996.996.180/006fdIJ8ly8fdqzt8fgopj30ro0rotbs.jpg"
                     ,"nickName":"biebie的北极熊","userId":"5721712230"
                     ,"created_timestamp":"1489031369"},{"idstr":"4066857273060035","text":"#简画大师# ​"
                     ,"pic_ids":["005ZU2fRly1fbzt7trtekj30ku11240d"]
