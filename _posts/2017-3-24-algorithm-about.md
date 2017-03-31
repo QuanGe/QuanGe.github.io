@@ -676,5 +676,874 @@ void QGSort::mergeSort(QGPerson * source[],int end,int begin)
 
 # iOS中的数据结构
 
+### 关于内存那点事
+
+我的编程法则，我可以不知道我哪天花了多少钱，但是我必须知道 我开辟的内存啥时候释放。
+
+```
+#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+
+int main(int argc, char * argv[]) {
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
+}
+```
+上面代码是我们任意建一个RAC项目的main.m的代码。对于main.m有人喜欢转化为cpp，可以先通过终端cd到你的代码目录，然后在在终端输入
+
+```
+clang -x objective-c -rewrite-objc -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk main.m 
+```
+执行完你就可以看到main.cpp了,然后搜索`int main(int argc, const char * argv[])`可以看到
+
+```
+int main(int argc, const char * argv[]) {
+    /* @autoreleasepool */ { __AtAutoreleasePool __autoreleasepool; 
+
+        NSString *s = (NSString *)&__NSConstantStringImpl__var_folders_tn_2kfn1ddx3hn1_4p9kwrrkwvc0000gp_T_main_961bfb_mi_0;
+        ((NSString *(*)(id, SEL, NSString *))(void *)objc_msgSend)((id)s, sel_registerName("stringByAppendingString:"), (NSString *)&__NSConstantStringImpl__var_folders_tn_2kfn1ddx3hn1_4p9kwrrkwvc0000gp_T_main_961bfb_mi_1);
+
+    }
+    return 0;
+}
+```
+
+然后再搜索`__AtAutoreleasePool`
+
+```
+struct __AtAutoreleasePool {
+  __AtAutoreleasePool() {atautoreleasepoolobj = objc_autoreleasePoolPush();}
+  ~__AtAutoreleasePool() {objc_autoreleasePoolPop(atautoreleasepoolobj);}
+  void * atautoreleasepoolobj;
+};
+```
+综上所述，现在代码放在一个域里{}这样__autoreleasepool变量就会在这个域结束时释放掉。我们可以看到__AtAutoreleasePool这个类的构造函数是调用了objc_autoreleasePoolPush，析构函数调用了objc_autoreleasePoolPop，
+
+所以以上代码等同于
+
+```
+atautoreleasepoolobj = objc_autoreleasePoolPush();
+
+//这里进行代码处理
+
+
+objc_autoreleasePoolPop(atautoreleasepoolobj);
+```
+
+另外我们也可以查看汇编代码呀。
+
+```
+_main:                                  ; @main
+Lfunc_begin0:
+; BB#0:
+    stp x29, x30, [sp, #-16]!
+    mov  x29, sp
+    sub sp, sp, #48             ; =48
+Ltmp0:
+    .cfi_def_cfa w29, 16
+Ltmp1:
+    .cfi_offset w30, -8
+Ltmp2:
+    .cfi_offset w29, -16
+    stur    wzr, [x29, #-4]
+    stur    w0, [x29, #-8]
+    stur    x1, [x29, #-16]
+Ltmp3:
+    bl  _objc_autoreleasePoolPush
+    adrp    x1, L_OBJC_SELECTOR_REFERENCES_@PAGE
+    add x1, x1, L_OBJC_SELECTOR_REFERENCES_@PAGEOFF
+    adrp    x30, L_OBJC_CLASSLIST_REFERENCES_$_@PAGE
+    add x30, x30, L_OBJC_CLASSLIST_REFERENCES_$_@PAGEOFF
+Ltmp4:
+    ldur    w8, [x29, #-8]
+    ldur    x9, [x29, #-16]
+    ldr     x30, [x30]
+    ldr     x1, [x1]
+    str x0, [sp, #24]           ; 8-byte Folded Spill
+    mov  x0, x30
+    str w8, [sp, #20]           ; 4-byte Folded Spill
+    str x9, [sp, #8]            ; 8-byte Folded Spill
+    bl  _objc_msgSend
+    bl  _NSStringFromClass
+    ; InlineAsm Start
+    mov  x29, x29
+    ; InlineAsm End
+    bl  _objc_retainAutoreleasedReturnValue
+    movz    x9, #0
+    ldr w8, [sp, #20]           ; 4-byte Folded Reload
+    str     x0, [sp]        ; 8-byte Folded Spill
+    mov  x0, x8
+    ldr x1, [sp, #8]            ; 8-byte Folded Reload
+    mov  x2, x9
+    ldr     x3, [sp]        ; 8-byte Folded Reload
+    bl  _UIApplicationMain
+    stur    w0, [x29, #-4]
+    ldr     x1, [sp]        ; 8-byte Folded Reload
+    mov  x0, x1
+    bl  _objc_release
+    ldr x0, [sp, #24]           ; 8-byte Folded Reload
+    bl  _objc_autoreleasePoolPop
+Ltmp5:
+    ldur    w0, [x29, #-4]
+    mov  sp, x29
+    ldp x29, x30, [sp], #16
+    ret
+Ltmp6:
+Lfunc_end0:
+```
+
+是不是又看的一脸懵逼，这是用在iPhone6上的，ARM64的汇编。原先的push pop 用stp、ldp代替，相应的call 也变成了bl 。另外寄存器也发生了变化。不过原理都是一样的。直接看bl了哪些函数吧，看开头和结尾_objc_autoreleasePoolPush、_objc_autoreleasePoolPop。
+
+好了，继续看objc的源码，在NSObject.mm找到
+
+```
+void *
+objc_autoreleasePoolPush(void)
+{
+    if (UseGC) return nil;
+    return AutoreleasePoolPage::push();
+}
+```
+
+发现了一个`AutoreleasePoolPage`类，直译为自动释放池页，看来起起名字的哥们计算机知识也是相当扎实的，采用了分页，跟操作系统处理内存是一样样的，当程序加载到内存中也是通过虚拟内存空间（VMA）进行了分页处理。
+好了上代码吧 由于代码太长，所以索性在代码写注释了
+
+```
+/***********************************************************************
+   Autorelease pool implementation
+
+   A thread's autorelease pool is a stack of pointers. 
+   Each pointer is either an object to release, or POOL_SENTINEL which is 
+     an autorelease pool boundary.
+   A pool token is a pointer to the POOL_SENTINEL for that pool. When 
+     the pool is popped, every object hotter than the sentinel is released.
+   The stack is divided into a doubly-linked list of pages. Pages are added 
+     and deleted as necessary. 
+   Thread-local storage points to the hot page, where newly autoreleased 
+     objects are stored. 
+
+  自动释放池的实现
+
+  一个线程的自动释放池是一个用指针来实现的栈
+  每个指针指向一个由自动释放池来释放的对象，或者一个栈底指针，就跟ebp或rbp类似
+  就跟函数栈一样，在返回函数的时候所有栈底指针之前都要pop掉，即所有对象都要释放
+  由于栈可能很大，所以拆分为双向链表的页，根据需要增删页
+  TLS指向当前hot页，当有新的对象添加的时候放到hot页里
+**********************************************************************/
+
+BREAKPOINT_FUNCTION(void objc_autoreleaseNoPool(id obj));
+
+namespace {
+
+struct magic_t {
+    static const uint32_t M0 = 0xA1A1A1A1;
+#   define M1 "AUTORELEASE!"
+    static const size_t M1_len = 12;
+    uint32_t m[4];
+    
+    magic_t() {
+        assert(M1_len == strlen(M1));
+        assert(M1_len == 3 * sizeof(m[1]));
+
+        m[0] = M0;
+        strncpy((char *)&m[1], M1, M1_len);
+    }
+
+    ~magic_t() {
+        m[0] = m[1] = m[2] = m[3] = 0;
+    }
+
+    bool check() const {
+        return (m[0] == M0 && 0 == strncmp((char *)&m[1], M1, M1_len));
+    }
+
+    bool fastcheck() const {
+#if DEBUG
+        return check();
+#else
+        return (m[0] == M0);
+#endif
+    }
+
+#   undef M1
+};
+    
+//设置为1 就可以实现mprotect() 来保护自动释放池的内容，当有其他线程的非法修改的话就会打印出相关信息
+// Set this to 1 to mprotect() autorelease pool contents
+#define PROTECT_AUTORELEASEPOOL 0
+
+class AutoreleasePoolPage 
+{
+
+//设置了栈底指针的值为nil
+#define POOL_SENTINEL nil
+    
+    //线程相关的key
+    static pthread_key_t const key = AUTORELEASE_POOL_KEY;
+    //当清空内存后将内存的内容设置为0xA3
+    static uint8_t const SCRIBBLE = 0xA3;  // 0xA3A3A3A3 after releasing
+    //页的大小 当为保护模式时必须为 虚拟内容空间页的大小的倍数 否则为4096个字节即4kB
+    static size_t const SIZE = 
+#if PROTECT_AUTORELEASEPOOL
+        PAGE_MAX_SIZE;  // must be multiple of vm page size
+#else
+        PAGE_MAX_SIZE;  // size and alignment, power of 2
+#endif
+    static size_t const COUNT = SIZE / sizeof(id);
+
+    magic_t const magic;
+    //指针栈
+    id *next;
+    //线程
+    pthread_t const thread;
+    //父指针
+    AutoreleasePoolPage * const parent;
+    //子指针
+    AutoreleasePoolPage *child;
+
+    uint32_t const depth;
+    uint32_t hiwat;
+
+    // SIZE-sizeof(*this) bytes of contents follow
+
+    //new的时候从堆上开辟一块一页的内从 当栈使
+    static void * operator new(size_t size) {
+        return malloc_zone_memalign(malloc_default_zone(), SIZE, SIZE);
+    }
+    //delete的时候释放内存
+    static void operator delete(void * p) {
+        return free(p);
+    }
+    //保护
+    inline void protect() {
+#if PROTECT_AUTORELEASEPOOL
+        mprotect(this, SIZE, PROT_READ);
+        check();
+#endif
+    }
+    //取消保护
+    inline void unprotect() {
+#if PROTECT_AUTORELEASEPOOL
+        check();
+        mprotect(this, SIZE, PROT_READ | PROT_WRITE);
+#endif
+    }
+    //构造函数 参数需要父指针
+    AutoreleasePoolPage(AutoreleasePoolPage *newParent) 
+        : magic(), next(begin()), thread(pthread_self()),
+          parent(newParent), child(nil), 
+          depth(parent ? 1+parent->depth : 0), 
+          hiwat(parent ? parent->hiwat : 0)
+    { 
+        if (parent) {
+            parent->check();
+            assert(!parent->child);
+            parent->unprotect();
+            parent->child = this;
+            parent->protect();
+        }
+        protect();
+    }
+
+    //析构函数
+    ~AutoreleasePoolPage() 
+    {
+        check();
+        unprotect();
+        assert(empty());
+
+        // Not recursive: we don't want to blow out the stack 
+        // if a thread accumulates a stupendous amount of garbage
+        assert(!child);
+    }
+
+
+    void busted(bool die = true) 
+    {
+        magic_t right;
+        (die ? _objc_fatal : _objc_inform)
+            ("autorelease pool page %p corrupted\n"
+             "  magic     0x%08x 0x%08x 0x%08x 0x%08x\n"
+             "  should be 0x%08x 0x%08x 0x%08x 0x%08x\n"
+             "  pthread   %p\n"
+             "  should be %p\n", 
+             this, 
+             magic.m[0], magic.m[1], magic.m[2], magic.m[3], 
+             right.m[0], right.m[1], right.m[2], right.m[3], 
+             this->thread, pthread_self());
+    }
+
+    void check(bool die = true) 
+    {
+        if (!magic.check() || !pthread_equal(thread, pthread_self())) {
+            busted(die);
+        }
+    }
+
+    void fastcheck(bool die = true) 
+    {
+        if (! magic.fastcheck()) {
+            busted(die);
+        }
+    }
+
+    //通过内存地址计算出本页从哪个对象开始
+    id * begin() {
+        return (id *) ((uint8_t *)this+sizeof(*this));
+    }
+    //通过内存地址计算出本页从哪个对象结束
+    id * end() {
+        return (id *) ((uint8_t *)this+SIZE);
+    }
+    //是否为空
+    bool empty() {
+        return next == begin();
+    }
+    //本页是否已经满了
+    bool full() { 
+        return next == end();
+    }
+    //还早着满呢
+    bool lessThanHalfFull() {
+        return (next - begin() < (end() - begin()) / 2);
+    }
+    //在栈中压入一个对象
+    id *add(id obj)
+    {
+        assert(!full());
+        unprotect();
+        id *ret = next;  // faster than `return next-1` because of aliasing
+        *next++ = obj;
+        protect();
+        return ret;
+    }
+    //pop所有对象并释放
+    void releaseAll() 
+    {
+        releaseUntil(begin());
+    }
+    //释放某个之前所有对象
+    void releaseUntil(id *stop) 
+    {
+        // Not recursive: we don't want to blow out the stack 
+        // if a thread accumulates a stupendous amount of garbage
+        
+        //如果当前页的栈指针指向不是stop对象则循环
+        while (this->next != stop) {
+            // Restart from hotPage() every time, in case -release 
+            // autoreleased more objects
+            //当前页
+            AutoreleasePoolPage *page = hotPage();
+
+            // fixme I think this `while` can be `if`, but I can't prove it
+            //如果当前页为空查找父结点的页 并设为当前页
+            while (page->empty()) {
+                page = page->parent;
+                setHotPage(page);
+            }
+
+            page->unprotect();
+            //取出栈顶指针的对象，并且栈顶指针--
+            id obj = *--page->next;
+            //用memset释放该对象在栈中的内存
+            memset((void*)page->next, SCRIBBLE, sizeof(*page->next));
+            page->protect();
+            //如果不是栈底指针则调用objc_release
+            if (obj != POOL_SENTINEL) {
+                objc_release(obj);
+            }
+        }
+        //设置当前对象为当前页
+        setHotPage(this);
+
+#if DEBUG
+        // we expect any children to be completely empty
+        for (AutoreleasePoolPage *page = child; page; page = page->child) {
+            assert(page->empty());
+        }
+#endif
+    }
+
+    void kill() 
+    {
+        // Not recursive: we don't want to blow out the stack 
+        // if a thread accumulates a stupendous amount of garbage
+        AutoreleasePoolPage *page = this;
+        while (page->child) page = page->child;
+
+        AutoreleasePoolPage *deathptr;
+        do {
+            deathptr = page;
+            page = page->parent;
+            if (page) {
+                page->unprotect();
+                page->child = nil;
+                page->protect();
+            }
+            delete deathptr;
+        } while (deathptr != this);
+    }
+
+    static void tls_dealloc(void *p) 
+    {
+        // reinstate TLS value while we work
+        setHotPage((AutoreleasePoolPage *)p);
+
+        if (AutoreleasePoolPage *page = coldPage()) {
+            if (!page->empty()) pop(page->begin());  // pop all of the pools
+            if (DebugMissingPools || DebugPoolAllocation) {
+                // pop() killed the pages already
+            } else {
+                page->kill();  // free all of the pages
+            }
+        }
+        
+        // clear TLS value so TLS destruction doesn't loop
+        setHotPage(nil);
+    }
+
+    static AutoreleasePoolPage *pageForPointer(const void *p) 
+    {
+        return pageForPointer((uintptr_t)p);
+    }
+
+    static AutoreleasePoolPage *pageForPointer(uintptr_t p) 
+    {
+        AutoreleasePoolPage *result;
+        uintptr_t offset = p % SIZE;
+
+        assert(offset >= sizeof(AutoreleasePoolPage));
+
+        result = (AutoreleasePoolPage *)(p - offset);
+        result->fastcheck();
+
+        return result;
+    }
+
+
+    static inline AutoreleasePoolPage *hotPage() 
+    {
+        AutoreleasePoolPage *result = (AutoreleasePoolPage *)
+            tls_get_direct(key);
+        if (result) result->fastcheck();
+        return result;
+    }
+
+    static inline void setHotPage(AutoreleasePoolPage *page) 
+    {
+        if (page) page->fastcheck();
+        tls_set_direct(key, (void *)page);
+    }
+
+    static inline AutoreleasePoolPage *coldPage() 
+    {
+        AutoreleasePoolPage *result = hotPage();
+        if (result) {
+            while (result->parent) {
+                result = result->parent;
+                result->fastcheck();
+            }
+        }
+        return result;
+    }
+
+    //push后执行这里参数为栈底指针nil
+    static inline id *autoreleaseFast(id obj)
+    {
+        //获取当前页
+        AutoreleasePoolPage *page = hotPage();
+        //如果当前页存在并页不满则add操作
+        if (page && !page->full()) {
+            return page->add(obj);
+        } else if (page) { //如果存在当前页 并且满了 执行autoreleaseFullPage
+            return autoreleaseFullPage(obj, page);
+        } else {//如果不存在当前页执行autoreleaseNoPage
+            return autoreleaseNoPage(obj);
+        }
+    }
+
+    //如果当前页满了走这里
+    static __attribute__((noinline))
+    id *autoreleaseFullPage(id obj, AutoreleasePoolPage *page)
+    {
+        // The hot page is full. 
+        // Step to the next non-full page, adding a new page if necessary.
+        // Then add the object to that page.
+        assert(page == hotPage());
+        assert(page->full()  ||  DebugPoolAllocation);
+
+        //如果满了就创建一个页呗，并将新页赋值给page
+        do {
+            if (page->child) page = page->child;
+            else page = new AutoreleasePoolPage(page);
+        } while (page->full());
+
+        //设置新创建的页为当前页
+        setHotPage(page);
+        //将对象压入栈中
+        return page->add(obj);
+    }
+
+    //如果当前页不存在
+    static __attribute__((noinline))
+    id *autoreleaseNoPage(id obj)
+    {
+        // No pool in place.
+        assert(!hotPage());
+
+        if (obj != POOL_SENTINEL  &&  DebugMissingPools) {
+            // We are pushing an object with no pool in place, 
+            // and no-pool debugging was requested by environment.
+            _objc_inform("MISSING POOLS: Object %p of class %s "
+                         "autoreleased with no pool in place - "
+                         "just leaking - break on "
+                         "objc_autoreleaseNoPool() to debug", 
+                         (void*)obj, object_getClassName(obj));
+            objc_autoreleaseNoPool(obj);
+            return nil;
+        }
+
+        // Install the first page.
+        AutoreleasePoolPage *page = new AutoreleasePoolPage(nil);
+        setHotPage(page);
+
+        // Push an autorelease pool boundary if it wasn't already requested.
+        if (obj != POOL_SENTINEL) {
+            page->add(POOL_SENTINEL);
+        }
+
+        // Push the requested object.
+        return page->add(obj);
+    }
+
+
+    static __attribute__((noinline))
+    id *autoreleaseNewPage(id obj)
+    {
+        AutoreleasePoolPage *page = hotPage();
+        if (page) return autoreleaseFullPage(obj, page);
+        else return autoreleaseNoPage(obj);
+    }
+
+public:
+    static inline id autorelease(id obj)
+    {
+        assert(obj);
+        assert(!obj->isTaggedPointer());
+        id *dest __unused = autoreleaseFast(obj);
+        assert(!dest  ||  *dest == obj);
+        return obj;
+    }
+
+    //main.m中执行了push就是这里实际执行了autoreleaseFast
+    static inline void *push() 
+    {
+        id *dest;
+        if (DebugPoolAllocation) {
+            // Each autorelease pool starts on a new pool page.
+            dest = autoreleaseNewPage(POOL_SENTINEL);
+        } else {
+            dest = autoreleaseFast(POOL_SENTINEL);
+        }
+        assert(*dest == POOL_SENTINEL);
+        return dest;
+    }
+
+    //释放某个对象之前所有的对象
+    static inline void pop(void *token) 
+    {
+        AutoreleasePoolPage *page;
+        id *stop;
+        //获取这个对象在哪个页中
+        page = pageForPointer(token);
+        stop = (id *)token;
+        if (DebugPoolAllocation  &&  *stop != POOL_SENTINEL) {
+            // This check is not valid with DebugPoolAllocation off
+            // after an autorelease with a pool page but no pool in place.
+            _objc_fatal("invalid or prematurely-freed autorelease pool %p; ", 
+                        token);
+        }
+
+        if (PrintPoolHiwat) printHiwat();
+        //释放这个对象之前所有对象，移步到releaseUntil，注意这里只是释放了对象，并没有删除页
+        page->releaseUntil(stop);
+
+        //删除页
+        // memory: delete empty children
+        if (DebugPoolAllocation  &&  page->empty()) {
+            // special case: delete everything during page-per-pool debugging
+            AutoreleasePoolPage *parent = page->parent;
+            page->kill();
+            setHotPage(parent);
+        } else if (DebugMissingPools  &&  page->empty()  &&  !page->parent) {
+            // special case: delete everything for pop(top) 
+            // when debugging missing autorelease pools
+            page->kill();
+            setHotPage(nil);
+        } 
+        else if (page->child) {
+            // hysteresis: keep one empty child if page is more than half full
+            if (page->lessThanHalfFull()) {
+                page->child->kill();
+            }
+            else if (page->child->child) {
+                page->child->child->kill();
+            }
+        }
+    }
+
+    static void init()
+    {
+        int r __unused = pthread_key_init_np(AutoreleasePoolPage::key, 
+                                             AutoreleasePoolPage::tls_dealloc);
+        assert(r == 0);
+    }
+
+    void print() 
+    {
+        _objc_inform("[%p]  ................  PAGE %s %s %s", this, 
+                     full() ? "(full)" : "", 
+                     this == hotPage() ? "(hot)" : "", 
+                     this == coldPage() ? "(cold)" : "");
+        check(false);
+        for (id *p = begin(); p < next; p++) {
+            if (*p == POOL_SENTINEL) {
+                _objc_inform("[%p]  ################  POOL %p", p, p);
+            } else {
+                _objc_inform("[%p]  %#16lx  %s", 
+                             p, (unsigned long)*p, object_getClassName(*p));
+            }
+        }
+    }
+
+    static void printAll()
+    {        
+        _objc_inform("##############");
+        _objc_inform("AUTORELEASE POOLS for thread %p", pthread_self());
+
+        AutoreleasePoolPage *page;
+        ptrdiff_t objects = 0;
+        for (page = coldPage(); page; page = page->child) {
+            objects += page->next - page->begin();
+        }
+        _objc_inform("%llu releases pending.", (unsigned long long)objects);
+
+        for (page = coldPage(); page; page = page->child) {
+            page->print();
+        }
+
+        _objc_inform("##############");
+    }
+
+    static void printHiwat()
+    {
+        // Check and propagate high water mark
+        // Ignore high water marks under 256 to suppress noise.
+        AutoreleasePoolPage *p = hotPage();
+        uint32_t mark = p->depth*COUNT + (uint32_t)(p->next - p->begin());
+        if (mark > p->hiwat  &&  mark > 256) {
+            for( ; p; p = p->parent) {
+                p->unprotect();
+                p->hiwat = mark;
+                p->protect();
+            }
+            
+            _objc_inform("POOL HIGHWATER: new high water mark of %u "
+                         "pending autoreleases for thread %p:", 
+                         mark, pthread_self());
+            
+            void *stack[128];
+            int count = backtrace(stack, sizeof(stack)/sizeof(stack[0]));
+            char **sym = backtrace_symbols(stack, count);
+            for (int i = 0; i < count; i++) {
+                _objc_inform("POOL HIGHWATER:     %s", sym[i]);
+            }
+            free(sym);
+        }
+    }
+
+#undef POOL_SENTINEL
+};
+
+// anonymous namespace
+};
+
+
+
+```
+
+从上面代码可以看到，自动释放池其实是在objc_autoreleasePoolPop的时候将对象之前的对象都执行了一遍objc_release(obj)，当然如果你看objc_release这里面的实现也会发现，其中还会查看计数，如果不为0不会执行dealloc。好吧我们还是看看吧
+
+```
+void objc_release(id obj) { [obj release]; }
+
+- (oneway void)release {
+    ((id)self)->rootRelease();
+}
+
+inline bool 
+objc_object::rootRelease()
+{
+    assert(!UseGC);
+
+    if (isTaggedPointer()) return false;
+    return sidetable_release(true);
+}
+
+
+uintptr_t 
+objc_object::sidetable_release(bool performDealloc)
+{
+#if SUPPORT_NONPOINTER_ISA
+    assert(!isa.indexed);
+#endif
+    SideTable& table = SideTables()[this];
+
+    bool do_dealloc = false;
+
+    if (table.trylock()) {
+        RefcountMap::iterator it = table.refcnts.find(this);
+        if (it == table.refcnts.end()) {
+            do_dealloc = true;
+            table.refcnts[this] = SIDE_TABLE_DEALLOCATING;
+        } else if (it->second < SIDE_TABLE_DEALLOCATING) {
+            // SIDE_TABLE_WEAKLY_REFERENCED may be set. Don't change it.
+            do_dealloc = true;
+            it->second |= SIDE_TABLE_DEALLOCATING;
+        } else if (! (it->second & SIDE_TABLE_RC_PINNED)) {
+            it->second -= SIDE_TABLE_RC_ONE;
+        }
+        table.unlock();
+        if (do_dealloc  &&  performDealloc) {
+            ((void(*)(objc_object *, SEL))objc_msgSend)(this, SEL_dealloc);
+        }
+        return do_dealloc;
+    }
+
+    return sidetable_release_slow(table, performDealloc);
+}
+
+
+```
+
+看到没上面通过objc_msgSend 发送SEL_dealloc ，前提do_dealloc == true。
+
+好了 ，我们知道哪里释放的，可是对象啥时候放入AutoreleasePoolPage的指针栈的呀，让我们来看看都在哪里进行了压入的动作，在objc开源代码中搜一下`->add(`，一共找到四处，分别是AutoreleasePoolPage的autoreleaseFast、autoreleaseFullPage、autoreleaseNoPage。咦这不是上面我们看过的代码么？回去瞅瞅，在上面`push`函数里有用过，可是这个函数没参数啊，显然不是这个，再往上看还有个`autorelease`这个带参数obj，但是不确认。好吧让我们分别搜搜autoreleaseFast、autoreleaseFullPage、autoreleaseNoPage。搜索结果可以看出就是autorelease是入口，这里我就不列搜索结果，大家可以自行搜索。autorelease是个public类函数，调用的时候应该这样AutoreleasePoolPage::autorelease(对象)，好了继续搜AutoreleasePoolPage::autorelease(。可以在下列代码中搜到
+
+```
+id 
+objc_object::rootAutorelease2()
+{
+    assert(!isTaggedPointer());
+    return AutoreleasePoolPage::autorelease((id)this);
+}
+```
+ok，再来搜搜rootAutorelease2，在objc项目中搜了一遍，居然没有调用的地。别着急，我也不知道苹果是不是故意的，项目目录里还有一个objc-object.h的文件，没包含在目录中，看到.h大家以为是头文件，你错了，你来看
+
+```
+// Base autorelease implementation, ignoring overrides.
+inline id 
+objc_object::rootAutorelease()
+{
+    assert(!UseGC);
+
+    if (isTaggedPointer()) return (id)this;
+    if (prepareOptimizedReturn(ReturnAtPlus1)) return (id)this;
+
+    return rootAutorelease2();
+}
+
+```
+好了，我们看到rootAutorelease是objc_object的public的对象的方法，调用的时候肯定是`->rootAutorelease`或者`rootAutorelease`，先让我们来搜一下前者，一共有两个
+
+```
+id
+_objc_rootAutorelease(id obj)
+{
+    assert(obj);
+    // assert(!UseGC);
+    if (UseGC) return obj;  // fixme CF calls this when GC is on
+
+    return obj->rootAutorelease();
+}
+
+
+// Replaced by ObjectAlloc
+- (id)autorelease {
+    return ((id)self)->rootAutorelease();
+}
+
+``
+
+下面的autorelease就是我们在MRC中手动调用的autorelease，上面的_objc_rootAutorelease在Object.m中的
+
+```
+-(id) autorelease
+{
+    return _objc_rootAutorelease(self);
+}
+```
+
+那是不是，在其他地方也有类似[对象 autorelease]的代码呢搜索一下`autorelease]`
+
+```
+id objc_autorelease(id obj) { return [obj autorelease]; }
+```
+搜索一下`objc_autorelease(`
+
+```
+id
+objc_retain_autorelease(id obj)
+{
+    return objc_autorelease(objc_retain(obj));
+}
+
+id
+objc_loadWeak(id *location)
+{
+    if (!*location) return nil;
+    return objc_autorelease(objc_loadWeakRetained(location));
+}
+id
+objc_autorelease(id obj)
+{
+    if (!obj) return obj;
+    if (obj->isTaggedPointer()) return obj;
+    return obj->autorelease();
+}
+id 
+objc_autoreleaseReturnValue(id obj)
+{
+    if (prepareOptimizedReturn(ReturnAtPlus1)) return obj;
+
+    return objc_autorelease(obj);
+}
+id
+objc_retainAutorelease(id obj)
+{
+    return objc_autorelease(objc_retain(obj));
+}
+
+```
+
+好了，这几个方法都可以在oc中直接调用将对象放入AutoreleasePoolPage。也就是可以通过在汇编中调用以上方法可以。
+
+首先来看看ARC的[官方介绍](https://developer.apple.com/library/content/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html)
+
+> Automatic Reference Counting (ARC) is a compiler feature that provides automatic memory management of Objective-C objects
+
+可以看到ARC是编译属性，本质上不用你写etain 、release、autorelease 这些代码，等你编译的时候，编译器自动为你加上。它没有改变 Objective-C 引用计数式内存管理的本质，更不是 GC（垃圾回收）。
+
+
+
+
+
+
+先来看看 iOS都有哪些数据结构可以供我们使用。NSArray、NSMutableArray、NSDictionary、NSMutableDictionary、NSSet、NSMutableSet、NSHashTable、NSMapTable。
+
+个人经验你只知道前面四个已经可以胜任工作了，但是，我们的目标不仅仅是完成任务，而是如何提高自己，挣更多的工资。
+
+### NSArray
 
 
