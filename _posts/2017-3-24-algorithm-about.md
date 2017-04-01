@@ -1535,6 +1535,737 @@ objc_retainAutorelease(id obj)
 
 可以看到ARC是编译属性，本质上不用你写etain 、release、autorelease 这些代码，等你编译的时候，编译器自动为你加上。它没有改变 Objective-C 引用计数式内存管理的本质，更不是 GC（垃圾回收）。
 
+好了，我现在有个需求哎，我想知道在ARC下，哪些变量能通过编译器添加代码放到AutoreleasePoolPage里了？哪些又没有。最直观的方式就是打印一下AutoreleasePoolPage，通过_objc_autoreleasePoolPrint和_CFAutoreleasePoolPrintPools方法可以打印。调用的方式又有两种
+
+```
+extern void _objc_autoreleasePoolPrint();//先声明一下
+
+//然后在需要的地方执行一下
+_objc_autoreleasePoolPrint();
+
+
+```
+另外一种是通过汇编直接调用，请注意使用真机来调试，否则会报错哦。
+```
+__asm__ ("bl __objc_autoreleasePoolPrint");
+```
+
+--------------------插叙---------------
+
+xcode里有内置的Debugger，老版使用的是GDB，xcode自4.3之后默认使用的就是LLDB了。GDB是UNIX及UNIX-like下的调试工具。LLDB是个开源的内置于XCode的具有REPL(read-eval-print-loop)特征的Debugger，其可以安装C++或者Python插件。
+
+---------------------------------------
+
+好了，还可以在lldp中通过`po _CFAutoreleasePoolPrintPools()` 和`po _objc_autoreleasePoolPrint()`来打印哦，前提加上断点
+
+好了上实验代码
+
+```
+int main(int argc, char * argv[]) {
+
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    NSArray *hh = @[@(2)];
+    NSLog(@" %p",hh);
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    
+    
+    return 0;
+}
+
+```
+打印结果如下：
+```
+objc[4036]: ##############
+objc[4036]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4036]: 0 releases pending.
+objc[4036]: [0x100a44000]  ................  PAGE  (hot) (cold)
+objc[4036]: ##############
+warning: could not load any Objective-C class information. This will significantly reduce the quality of type information available.
+2017-03-31 15:07:53.458103 DrawMaster[4036:1358804]  0x170013af0
+objc[4036]: ##############
+objc[4036]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4036]: 0 releases pending.
+objc[4036]: [0x100a44000]  ................  PAGE  (hot) (cold)
+objc[4036]: ##############
+```
+然而并没有加入到AutoreleasePoolPage,再看这种
+```
+int main(int argc, char * argv[]) {
+
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    NSArray *hh = [NSArray arrayWithObjects:@(2), nil];
+    NSLog(@" %p",hh);
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    
+    
+    return 0;
+}
+
+```
+
+打印结果如下：
+
+```
+objc[4041]: ##############
+objc[4041]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4041]: 0 releases pending.
+objc[4041]: [0x1009f8000]  ................  PAGE  (hot) (cold)
+objc[4041]: ##############
+2017-03-31 15:10:59.070827 DrawMaster[4041:1359726]  0x1700165f0
+objc[4041]: ##############
+objc[4041]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4041]: 1 releases pending.
+objc[4041]: [0x1009f8000]  ................  PAGE  (hot) (cold)
+objc[4041]: [0x1009f8038]       0x1700165f0  __NSSingleObjectArrayI
+objc[4041]: ##############
+
+```
+哇塞，看到没page里有个0x1700165f0，这说明已经添加到page里面了。
+
+再来看
+
+```
+int main(int argc, char * argv[]) {
+
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    NSArray *hh = [[NSArray alloc] init];
+    NSLog(@" %p",hh);
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    
+    
+    return 0;
+}
+```
+
+打印结果
+
+```
+objc[4045]: ##############
+objc[4045]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4045]: 0 releases pending.
+objc[4045]: [0x100c00000]  ................  PAGE  (hot) (cold)
+objc[4045]: ##############
+2017-03-31 15:18:06.151023 DrawMaster[4045:1360848]  0x170015dd0
+objc[4045]: ##############
+objc[4045]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4045]: 0 releases pending.
+objc[4045]: [0x100c00000]  ................  PAGE  (hot) (cold)
+objc[4045]: ##############
+```
+这里也没有，上面例子说明除了，用符号\alloc\new\copy\mutableCopy生成的对象都不会被添加到page中，只有除此之外生成的对象才被添加到page中.
+
+我们只知道结果，却不知道为什么，那下面我们就来分析一下。自己创建一个类QGObject
+
+```
+@interface QGObject : NSObject
+- (QGObject*) getOne;
+@end
+```
+
+```
+#import "QGObject.h"
+
+@implementation QGObject
+- (QGObject*) getOne
+{
+    return [[QGObject alloc] init];
+}
+@end
+```
+然后将QGObject执行汇编操作
+
+```
+"-[QGObject getOne]":                   ; @"\01-[QGObject getOne]"
+Lfunc_begin0:
+    .cfi_startproc
+; BB#0:
+    stp x29, x30, [sp, #-16]!
+    mov  x29, sp
+    sub sp, sp, #16             ; =16
+Ltmp0:
+    .cfi_def_cfa w29, 16
+Ltmp1:
+    .cfi_offset w30, -8
+Ltmp2:
+    .cfi_offset w29, -16
+    ;DEBUG_VALUE: -[QGObject getOne]:self <- [%SP+8]
+    ;DEBUG_VALUE: -[QGObject getOne]:_cmd <- [%SP+0]
+    str x0, [sp, #8]
+    str     x1, [sp]
+Ltmp3:
+    adrp    x0, L_OBJC_CLASSLIST_REFERENCES_$_@PAGE
+    ldr x0, [x0, L_OBJC_CLASSLIST_REFERENCES_$_@PAGEOFF]
+    adrp    x1, L_OBJC_SELECTOR_REFERENCES_@PAGE
+    ldr x1, [x1, L_OBJC_SELECTOR_REFERENCES_@PAGEOFF]
+    bl  _objc_msgSend
+Ltmp4:
+    adrp    x1, L_OBJC_SELECTOR_REFERENCES_.2@PAGE
+    ldr x1, [x1, L_OBJC_SELECTOR_REFERENCES_.2@PAGEOFF]
+    bl  _objc_msgSend
+    mov  sp, x29
+    ldp x29, x30, [sp], #16
+    b   _objc_autoreleaseReturnValue
+Ltmp5:
+Lfunc_end0:
+```
+看到了_objc_autoreleaseReturnValue么？我们上面介绍过，这个函数最终执行到page的add里。好了，到这里就回答上面那个问题了，就是什么样的变量才会放到page里。
+
+等等，我们是不是忘了一件事，就是变量修饰符，诸如__strong、__weak、__autoreleasing、__unsafe_unretained之类的。
+
+#### 变量修饰符
+##### __strong 
+
+对应定义 property 时用到的 strong。当对象没有任何一个强引用指向它时，它才会被释放。如果在声明引用时不加修饰符，那么引用将默认是强引用。当需要释放强引用指向的对象时，需要保证所有指向对象强引用置为 nil。__strong 修饰符是 id 类型和对象类型默认的所有权修饰符。
+
+##### __weak  
+表示弱引用，对应定义 property 时用到的 weak。弱引用不会影响对象的释放，而当对象被释放时，所有指向它的弱引用都会自定被置为 nil，这样可以防止野指针。__weak 最常见的一个作用就是用来避免强引用循环。但是需要注意的是，__weak 修饰符只能用于 iOS5 以上的版本，在 iOS4 及更低的版本中使用 __unsafe_unretained 修饰符来代替。
+
+__weak 的几个使用场景：
+
+###### 在 Delegate 关系中防止强引用循环。在 ARC 特性下，通常我们应该设置 Delegate 属性为 weak 的。但是这里有一个疑问，我们常用到的 UITableView 的 delegate 属性是这样定义的： @property (nonatomic, assign) id<UITableViewDelegate> delegate;，为什么用的修饰符是 assign 而不是 weak？其实这个 assign 在 ARC 中意义等同于 __unsafe_unretaied（后面会讲到），它是为了在 ARC 特性下兼容 iOS4 及更低版本来实现弱引用机制。一般情况下，你应该尽量使用 weak。
+
+###### 在 Block 中防止强引用循环。
+
+###### 用来修饰指向由 Interface Builder 创建的控件。比如：@property (weak, nonatomic) IBOutlet UIButton *testButton;
+
+#### __autoreleasing 
+
+在 ARC 模式下，我们不能显示的使用 autorelease 方法了，但是 autorelease 的机制还是有效的，通过将对象赋给 __autoreleasing 修饰的变量就能达到在 MRC 模式下调用对象的 autorelease 方法同样的效果。其实与objc_autoreleaseReturnValue效果一样，因为比如你用__autoreleasing修饰符，汇编后可以看到编译器会调用
+_objc_autorelease,而objc_autoreleaseReturnValue里面就是调用的objc_autorelease
+
+
+#### __unsafe_unretained
+
+ARC 是在 iOS5 引入的，而 __unsafe_unretained 这个修饰符主要是为了在 ARC 刚发布时兼容 iOS4 以及版本更低的系统，因为这些版本没有弱引用机制。这个修饰符在定义 property 时对应的是 unsafe_unretained。__unsafe_unretained 修饰的指针纯粹只是指向对象，没有任何额外的操作，不会去持有对象使得对象的 retainCount +1。而在指向的对象被释放时依然原原本本地指向原来的对象地址，不会被自动置为 nil，所以成为了野指针，非常不安全。在 ARC 环境下但是要兼容 iOS4.x 的版本，用 __unsafe_unretained 替代 __weak 解决强引用循环的问题。
+
+
+
+好吧，继续看上面的问题，由上面看出只有__autoreleasing修饰的变量才会添加到page中，那好试试吧
+
+```
+int main(int argc, char * argv[]) {
+
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    __autoreleasing NSArray *hh = [[NSArray alloc] init];
+    NSLog(@" %p",hh);
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    
+    
+    return 0;
+}
+```
+
+结果
+
+```
+objc[4115]: ##############
+objc[4115]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4115]: 0 releases pending.
+objc[4115]: [0x1009c8000]  ................  PAGE  (hot) (cold)
+objc[4115]: ##############
+2017-03-31 16:43:33.533737 DrawMaster[4115:1381467]  0x17400cde0
+warning: could not load any Objective-C class information. This will significantly reduce the quality of type information available.
+objc[4115]: ##############
+objc[4115]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4115]: 0 releases pending.
+objc[4115]: [0x1009c8000]  ................  PAGE  (hot) (cold)
+objc[4115]: ##############
+```
+
+什么还是没有？发生了什么情况，太捉急了，汇编一下
+
+```
+_main:                                  ; @main
+Lfunc_begin0:
+    .cfi_startproc
+; BB#0:
+    stp x29, x30, [sp, #-16]!
+    mov  x29, sp
+    sub sp, sp, #32             ; =32
+Ltmp0:
+    .cfi_def_cfa w29, 16
+Ltmp1:
+    .cfi_offset w30, -8
+Ltmp2:
+    .cfi_offset w29, -16
+    stur    wzr, [x29, #-4]
+    stur    w0, [x29, #-8]
+    str x1, [sp, #16]
+Ltmp3:
+    ; InlineAsm Start
+    bl  __objc_autoreleasePoolPrint
+    ; InlineAsm End
+    adrp    x1, L_OBJC_SELECTOR_REFERENCES_@PAGE
+    add x1, x1, L_OBJC_SELECTOR_REFERENCES_@PAGEOFF
+    adrp    x8, L_OBJC_CLASSLIST_REFERENCES_$_@PAGE
+    add x8, x8, L_OBJC_CLASSLIST_REFERENCES_$_@PAGEOFF
+    ldr     x8, [x8]
+    ldr     x1, [x1]
+    mov  x0, x8
+    bl  _objc_msgSend
+    adrp    x8, L_OBJC_SELECTOR_REFERENCES_.2@PAGE
+    add x8, x8, L_OBJC_SELECTOR_REFERENCES_.2@PAGEOFF
+    ldr     x1, [x8]
+    bl  _objc_msgSend
+    bl  _objc_autorelease
+    str x0, [sp, #8]
+    ldr x8, [sp, #8]
+    mov  x0, sp
+    str     x8, [x0]
+    adrp    x0, L__unnamed_cfstring_.4@PAGE
+    add x0, x0, L__unnamed_cfstring_.4@PAGEOFF
+    bl  _NSLog
+    ; InlineAsm Start
+    bl  __objc_autoreleasePoolPrint
+    ; InlineAsm End
+    movz    w9, #0
+    mov  x0, x9
+    mov  sp, x29
+    ldp x29, x30, [sp], #16
+    ret
+Ltmp4:
+Lfunc_end0:
+```
+可以看到已经调用了objc_autorelease了啊 。打印一下此时hh的类型，发现是_NSArray0，这是什么鬼,又回去看代码发现有isTaggedPointer的判断。难道NSArray0会是tagged类型的么。
+
+
+-------------------Tagged Pointer-------------------
+Tagged Pointer特点的介绍：
+
+Tagged Pointer专门用来存储小的对象，例如NSNumber和NSDate
+
+Tagged Pointer指针的值不再是地址了，而是真正的值。所以，实际上它不再是一个对象了，它只是一个披着对象皮的普通变量而已。所以，它的内存并不存储在堆中，也不需要malloc和free。
+
+在内存读取上有着3倍的效率，创建时比以前快106倍。
+
+由此可见，苹果引入Tagged Pointer，不但减少了64位机器下程序的内存占用，还提高了运行效率。
+
+诸如：@(2) 这就是Tagged Pointer，虽然是个对象，但是是个伪对象，如果你要@(2)->isa 会报错。
+----------------------------------------------------
+
+ok，让我们来访问一下hh的isa吧，在lldb中打印`po hh->isa` 居然有值。好吧这是个坑，目前还填不了，以后再来填。
+
+什么这么快就放弃了么 ？那么高的工资领着不羞愧么？好吧祭出我们的法宝吧，啥法宝？看内存地址。有人问我去，这有啥好看的。难道你忘了内存里是啥样的了？栈中的内存是自上往下生长，堆内的内存是自下往上生长，数据区单独放在一起。那这个[[NSArray alloc] init]会不会放在数据区，也就是一个常量啥的。在此，我们普及一个小知识：指针常量、常量指针的区别。请在中间加上的，就能分清楚了，指针的常量说明这个指针是常量，常量const放*的右边。常量的指针，说明这个是常量的指针，也就是有个指针指向的常量，常量const放在*的左边。那么这个const是干啥的到底，是防谁的，防止谁改变？呵呵，其实是防止程序员的，比如，我写了一个变量，这个变量是我自己定的，我不想让其他程序员改变，或者不想让自己不小心改变，就用const，它是个编译属性，在编译的时候编译会进行校对，如果改变了，就会编译不成功。我们知道内存中的数据区是存放静态数据和常量的，那么这数据区的常量是指的常量指针的常量么？非也非也，数据区的常量指的是字符串常量。另外还有`static`，也是编译属性，也就是编译的时候我就需要知道static变量的值，如果你这么写 `static NSArray *b = [NSArray arrayWithObjects:@(2), nil];`编译器直接就报错了。看实验。
+
+
+```
+int main(int argc, char * argv[]) {
+    NSArray *a = [NSArray arrayWithObjects:@(3), nil];
+    NSArray *b = [NSArray arrayWithObjects:@(2), nil];
+    const NSArray * c = [NSArray arrayWithObjects:@(1), nil];
+    NSArray *d = @[];
+    NSArray *e = @[];
+    NSArray *f = [NSArray alloc];
+    NSArray *g = [NSArray alloc];
+    NSArray *m = [[NSArray alloc] init];
+    NSArray *n = [[NSArray alloc] init];
+    NSArray *o = [NSArray new];
+    NSArray *s = [NSArray new];
+    NSArray *x = [NSArray array];
+    NSArray *y = [NSArray array];
+    NSDictionary *h = @{};
+    NSNumber * k = @(2);
+    NSString * str = @"sss";
+    static int i = 0;
+    NSLog(@"指针a的地址：%p 指针a指向的地址%p",&a,a);
+    NSLog(@"指针b的地址：%p 指针b指向的地址%p",&b,b);
+    NSLog(@"指针c的地址：%p 指针c指向的地址%p",&c,c);
+    NSLog(@"指针d的地址：%p 指针d指向的地址%p",&d,d);
+    NSLog(@"指针e的地址：%p 指针e指向的地址%p",&e,e);
+    NSLog(@"指针f的地址：%p 指针f指向的地址%p",&f,f);
+    NSLog(@"指针g的地址：%p 指针g指向的地址%p",&g,g);
+    NSLog(@"指针m的地址：%p 指针m指向的地址%p",&m,m);
+    NSLog(@"指针n的地址：%p 指针n指向的地址%p",&n,n);
+    NSLog(@"指针o的地址：%p 指针o指向的地址%p",&o,o);
+    NSLog(@"指针s的地址：%p 指针s指向的地址%p",&s,s);
+    NSLog(@"指针x的地址：%p 指针x指向的地址%p",&x,x);
+    NSLog(@"指针y的地址：%p 指针y指向的地址%p",&y,y);
+    NSLog(@"指针h的地址：%p 指针h指向的地址%p",&h,h);
+    NSLog(@"指针k的地址：%p 指针k指向的地址%p",&k,k);
+    NSLog(@"指针str的地址：%p 指针str指向的地址%p",&str,str);
+    NSLog(@"i的地址：%p ",&i);
+    
+    
+    return 0;
+}
+```
+
+执行结果 
+
+```
+2017-04-01 12:26:51.170228 DrawMaster[4740:1534203] 指针a的地址：0x16fd9fa58 指针a指向的地址0x170012090
+2017-04-01 12:26:51.170331 DrawMaster[4740:1534203] 指针b的地址：0x16fd9fa50 指针b指向的地址0x1700120a0
+2017-04-01 12:26:51.170396 DrawMaster[4740:1534203] 指针c的地址：0x16fd9fa48 指针c指向的地址0x1700120c0
+2017-04-01 12:26:51.170439 DrawMaster[4740:1534203] 指针d的地址：0x16fd9fa40 指针d指向的地址0x170011bb0
+2017-04-01 12:26:51.170479 DrawMaster[4740:1534203] 指针e的地址：0x16fd9fa30 指针e指向的地址0x170011bb0
+2017-04-01 12:26:51.170522 DrawMaster[4740:1534203] 指针f的地址：0x16fd9fa20 指针f指向的地址0x170011b80
+2017-04-01 12:26:51.170565 DrawMaster[4740:1534203] 指针g的地址：0x16fd9fa18 指针g指向的地址0x170011b80
+2017-04-01 12:26:51.170613 DrawMaster[4740:1534203] 指针m的地址：0x16fd9fa10 指针m指向的地址0x170011bb0
+2017-04-01 12:26:51.170654 DrawMaster[4740:1534203] 指针n的地址：0x16fd9fa08 指针n指向的地址0x170011bb0
+2017-04-01 12:26:51.170731 DrawMaster[4740:1534203] 指针o的地址：0x16fd9fa00 指针o指向的地址0x170011bb0
+2017-04-01 12:26:51.170796 DrawMaster[4740:1534203] 指针s的地址：0x16fd9f9f8 指针s指向的地址0x170011bb0
+2017-04-01 12:26:51.170868 DrawMaster[4740:1534203] 指针x的地址：0x16fd9f9f0 指针x指向的地址0x170011bb0
+2017-04-01 12:26:51.170927 DrawMaster[4740:1534203] 指针y的地址：0x16fd9f9e8 指针y指向的地址0x170011bb0
+2017-04-01 12:26:51.170967 DrawMaster[4740:1534203] 指针h的地址：0x16fd9f9e0 指针h指向的地址0x170011ba0
+2017-04-01 12:26:51.171007 DrawMaster[4740:1534203] 指针k的地址：0x16fd9f9c8 指针k指向的地址0xb000000000000022
+2017-04-01 12:26:51.171047 DrawMaster[4740:1534203] 指针str的地址：0x16fd9f9c0 指针str指向的地址0x100463000
+2017-04-01 12:26:51.171086 DrawMaster[4740:1534203] i的地址：0x100519cc0
+```
+从上面结果可以看出
+
+1、栈指针的地址是从高到低
+
+2、数据区保存的是字符串常量和静态数据
+
+3、@[]和[NSArray alloc]和@{}等等类似的也放在堆中，但是是常量，无论多少个指针指向它，地址都不会变，但是[NSArray alloc]与其他方式生成的对象地址是不一样的，我们可以从这入手。
+
+4、@(1)这样的是Tagged指针（伪对象）内存地址以0xb开头，iOS会对它特殊对待
+
+5、但是堆中是无序的，以上代码执行10次，内存中的增长方向是不固定的。
+
+
+按照上面的结论 `__autoreleasing`对常量、字符串常量、静态变量、tagged指针应该是无效的，经测试确实如此，这里就不列代码了，但是[NSArray alloc]例外，虽然是常量，但是还是可以起作用
+
+```
+int main(int argc, char * argv[]) {
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    __autoreleasing NSArray *hh = [NSArray alloc];
+    NSLog(@" %p",hh);
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    
+    return 0;
+}
+```
+
+```
+objc[4747]: ##############
+objc[4747]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4747]: 0 releases pending.
+objc[4747]: [0x1009f4000]  ................  PAGE  (hot) (cold)
+objc[4747]: ##############
+2017-04-01 12:37:08.352556 DrawMaster[4747:1536437]  0x17000e1e0
+objc[4747]: ##############
+objc[4747]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4747]: 1 releases pending.
+objc[4747]: [0x1009f4000]  ................  PAGE  (hot) (cold)
+objc[4747]: [0x1009f4038]       0x17000e1e0  __NSPlaceholderArray
+objc[4747]: ##############
+```
+
+
+##### 请注意以上如果换成NSObject是没问题的
+
+```
+int main(int argc, char * argv[]) {
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    __autoreleasing NSObject *hh = [[NSObject alloc] init];
+    __autoreleasing NSObject *ii = [NSObject alloc] ;
+    __autoreleasing NSObject *ss = [NSObject alloc] ;
+    NSLog(@"hh指向的内存地址为： %p ii指向的内存地址为：%p ss指向的内存地址为： %p",hh,ii,ss);
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    
+    return 0;
+}
+```
+
+结果为
+
+```
+objc[4764]: ##############
+objc[4764]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4764]: 0 releases pending.
+objc[4764]: [0x1009e4000]  ................  PAGE  (hot) (cold)
+objc[4764]: ##############
+2017-04-01 13:15:00.696983 DrawMaster[4764:1543682] hh指向的内存地址为： 0x1700004a0 ii指向的内存地址为：0x1700004b0 ss指向的内存地址为： 0x1700004d0
+objc[4764]: ##############
+objc[4764]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[4764]: 3 releases pending.
+objc[4764]: [0x1009e4000]  ................  PAGE  (hot) (cold)
+objc[4764]: [0x1009e4038]       0x1700004a0  NSObject
+objc[4764]: [0x1009e4040]       0x1700004b0  NSObject
+objc[4764]: [0x1009e4048]       0x1700004d0  NSObject
+objc[4764]: ##############
+```
+
+说明oc对NSArray和 NSDictionary进行了优化，具体细节，没有代码就没办法深究了
+
+#### 临时变量的释放
+
+临时变量的释放有以下几种方式
+
+##### 设置变量为nil
+
+该方式会释放该变量指向的内存，但是前提有几个：
+
+1、没有变量再对此变量进行强引用
+
+2、该变量没有被`__autoreleasing`修饰符修饰
+
+3、该变量不是NSMutableArray、NSArray
+
+4、该变量不是字符串类型的变量
+
+实验：注意在return 0那加断点
+
+```
+int main(int argc, char * argv[]) {
+    NSObject *a = [NSObject alloc];
+    NSObject *b =a;
+    NSLog(@"在lldb输入:po %p",a);
+    a = nil;
+    
+    __autoreleasing NSObject *c = [NSObject alloc];
+    NSLog(@"在lldb输入:po %p",c);
+    c = nil;
+    
+    NSArray *d = [NSArray arrayWithObjects:@(1),@(2), nil];
+    NSLog(@"在lldb输入:po %p",d);
+    d = nil;
+    
+    NSMutableArray *e = [NSMutableArray arrayWithObjects:@(1),@(2), nil];
+    NSLog(@"在lldb输入:po %p",e);
+    e = nil;
+    
+    NSString *f = [[NSString alloc] initWithFormat:@"QuanGe"];
+    NSLog(@"在lldb输入:po %p",f);
+    f = nil;
+    
+    return 0;
+}
+
+```
+
+结果
+
+```
+2017-04-01 16:20:36.266034 DrawMaster[5041:1596867] 在lldb输入:po 0x1700044c0
+2017-04-01 16:20:36.266142 DrawMaster[5041:1596867] 在lldb输入:po 0x1700044b0
+2017-04-01 16:20:36.266213 DrawMaster[5041:1596867] 在lldb输入:po 0x17002a680
+2017-04-01 16:20:36.266267 DrawMaster[5041:1596867] 在lldb输入:po 0x170044230
+2017-04-01 16:20:36.266333 DrawMaster[5041:1596867] 在lldb输入:po 0xa0065476e6175516
+(lldb) po 0x1700044c0
+<NSObject: 0x1700044c0>
+
+(lldb) po 0x1700044b0
+<NSObject: 0x1700044b0>
+
+(lldb) po 0x17002a680
+<__NSArrayI 0x17002a680>(
+1,
+2
+)
+
+
+(lldb) po 0xa0065476e6175516
+QuanGe
+
+(lldb) 
+
+```
+
+##### _objc_rootRelease
+
+像以前一样 先声明 `extern void _objc_rootRelease(id obj);`
+
+将上面的代码修改一下
+
+实验：注意在return 0那加断点
+
+```
+extern void _objc_rootRelease(id obj);
+int main(int argc, char * argv[]) {
+    NSObject *a = [NSObject alloc];
+    NSObject *b =a;
+    NSLog(@"在lldb输入:po %p",a);
+    _objc_rootRelease(a);
+    
+    __autoreleasing NSObject *c = [NSObject alloc];
+    NSLog(@"在lldb输入:po %p",c);
+    _objc_rootRelease(c);
+    
+    NSArray *d = [NSArray arrayWithObjects:@(1),@(2), nil];
+    NSLog(@"在lldb输入:po %p",d);
+    _objc_rootRelease(d);
+    
+    NSMutableArray *e = [NSMutableArray arrayWithObjects:@(1),@(2), nil];
+    NSLog(@"在lldb输入:po %p",e);
+    _objc_rootRelease(e);
+    
+    NSString *f = [[NSString alloc] initWithFormat:@"QuanGe"];
+    NSLog(@"在lldb输入:po %p",f);
+    _objc_rootRelease(f);
+    
+    return 0;
+}
+```
+
+结果
+
+```
+2017-04-01 16:25:56.426322 DrawMaster[5048:1598342] 在lldb输入:po 0x170010320
+2017-04-01 16:25:56.426436 DrawMaster[5048:1598342] 在lldb输入:po 0x174010600
+2017-04-01 16:25:56.426509 DrawMaster[5048:1598342] 在lldb输入:po 0x174021be0
+2017-04-01 16:25:56.426572 DrawMaster[5048:1598342] 在lldb输入:po 0x174055090
+2017-04-01 16:25:56.426653 DrawMaster[5048:1598342] 在lldb输入:po 0xa0065476e6175516
+(lldb) po 0x170010320
+<NSObject: 0x170010320>
+
+(lldb) po 0x174010600
+6241191424
+
+(lldb) po 0x174021be0
+<__NSArrayI 0x174021be0>(
+1,
+2
+)
+
+
+(lldb) po 0x174055090
+<__NSArrayM 0x174055090>(
+1,
+2
+)
+
+
+(lldb) po 0xa0065476e6175516
+QuanGe
+
+```
+
+哈哈，__autoreleasing修饰的居然释放掉了。注意，这种方法不适用于真实项目中，但是有一个很重要作用，测试哪里会自带@autoreleasepool，因为你一调用该方法就会在哪闪退，这样就知道哪里有@autoreleasepool不用自己写了。
+
+
+
+##### memset 直接操作内存
+
+在这需要补充点新知识，ARC下OC对象和CF对象之间的桥接(bridge)
+
+在开发iOS应用程序时我们有时会用到Core Foundation对象简称CF，例如Core Graphics、Core Text，并且我们可能需要将CF对象和OC对象进行互相转化，我们知道，ARC环境下编译器不会自动管理CF对象的内存，所以当我们创建了一个CF对象以后就需要我们使用CFRelease将其手动释放，那么CF和OC相互转化的时候该如何管理内存呢？答案就是我们在需要时可以使用__bridge,__bridge_transfer,__bridge_retained，具体介绍和用法如下
+
+1、__bridge:CF和OC对象转化时只涉及对象类型不涉及对象所有权的转化；
+
+```
+NSArray * a = [NSArray arrayWithObjects:@(1), nil];
+CFArrayRef ap = (__bridge CFArrayRef) a;
+```
+
+2、__bridge_transfer:常用在讲CF对象转换成OC对象时，将CF对象的所有权交给OC对象，此时ARC就能自动管理该内存；
+
+3、__bridge_retained:（与__bridge_transfer相反）常用在将OC对象转换成CF对象时，将OC对象的所有权交给CF对象来管理；
+
+```
+NSArray * a = [NSArray arrayWithObjects:@(1), nil];
+CFArrayRef ap = (__bridge CFArrayRef) a;
+CFRelease(ap);
+```
+
+但并不是多有的CF对象都支持 Toll-Free Bridging.
+
+所以试验只列一个吧
+
+```
+int main(int argc, char * argv[]) {
+    
+    NSArray *d = [NSArray arrayWithObjects:@(1),@(2), nil];
+    NSLog(@"在lldb输入:po %p",d);
+    CFArrayRef ap = (__bridge CFArrayRef) d;
+    memset((void*)ap, 0, sizeof(ap));
+    
+    
+    return 0;
+}
+```
+结果
+
+```
+2017-04-01 16:43:05.696882 DrawMaster[5052:1600368] 在lldb输入:po 0x17403adc0
+(lldb) po 0x17403adc0
+6241365440
+
+```
+
+我去，居然真的释放了啊，不过由于直接处理内存，没有对引用计数操作，所以实际上真实项目中也不适用，和上面一样，可以测试哪些代码里带@autoreleasepool
+
+##### CFRelease
+
+上面已经有介绍了 直接上代码吧
+
+```
+int main(int argc, char * argv[]) {
+    
+    NSArray *d = [NSArray arrayWithObjects:@(1),@(2), nil];
+    NSLog(@"在lldb输入:po %p",d);
+    CFArrayRef ap = (__bridge_retained CFArrayRef) d;
+    CFRelease(ap);
+    
+    
+    return 0;
+}
+```
+
+结果
+
+```
+2017-04-01 16:46:44.847973 DrawMaster[5056:1601094] 在lldb输入:po 0x17003f5e0
+(lldb) po 0x17003f5e0
+<__NSArrayI 0x17003f5e0>(
+1,
+2
+)
+```
+
+
+好吧，失败，没有释放掉。
+
+##### @autoreleasepool 
+还客气啥直接上代码吧。
+
+```
+int main(int argc, char * argv[]) {
+    @autoreleasepool {
+        NSObject *a = [NSObject alloc];
+        NSObject *b =a;
+        NSLog(@"在lldb输入:po %p",a);
+    
+        __autoreleasing NSObject *c = [NSObject alloc];
+        NSLog(@"在lldb输入:po %p",c);
+        
+        NSArray *d = [NSArray arrayWithObjects:@(1),@(2), nil];
+        NSLog(@"在lldb输入:po %p",d);
+        
+        NSMutableArray *e = [NSMutableArray arrayWithObjects:@(1),@(2), nil];
+        NSLog(@"在lldb输入:po %p",e);
+        
+        NSString *f = [[NSString alloc] initWithFormat:@"QuanGe"];
+        NSLog(@"在lldb输入:po %p",f);
+    }
+    return 0;
+}
+```
+结果
+
+```
+2017-04-01 16:51:02.180957 DrawMaster[5066:1602412] 在lldb输入:po 0x174018580
+2017-04-01 16:51:02.181058 DrawMaster[5066:1602412] 在lldb输入:po 0x1740186d0
+2017-04-01 16:51:02.181121 DrawMaster[5066:1602412] 在lldb输入:po 0x1740324a0
+2017-04-01 16:51:02.181222 DrawMaster[5066:1602412] 在lldb输入:po 0x174053020
+2017-04-01 16:51:02.181380 DrawMaster[5066:1602412] 在lldb输入:po 0xa0065476e6175516
+(lldb) po 0x174018580
+6241224064
+
+(lldb) po 0x1740186d0
+6241224400
+
+(lldb) po 0x1740324a0
+6241330336
+
+(lldb) po 0x174053020
+6241464352
+
+(lldb) po 0xa0065476e6175516
+QuanGe
+```
+哇塞，简直ko了其他任何方法，有没有，有没有。最简单的，最懒的代码才是好代码啊。
 
 
 
