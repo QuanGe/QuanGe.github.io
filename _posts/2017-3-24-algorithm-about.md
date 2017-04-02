@@ -1652,13 +1652,14 @@ objc[4045]: 0 releases pending.
 objc[4045]: [0x100c00000]  ................  PAGE  (hot) (cold)
 objc[4045]: ##############
 ```
-这里也没有，上面例子说明除了，用符号\alloc\new\copy\mutableCopy生成的对象都不会被添加到page中，只有除此之外生成的对象才被添加到page中.
+这里也没有，上面例子说明除了，以\alloc\new\copy\mutableCopy开头的方法生成的对象都不会被添加到page中，只有除此之外生成的对象才被添加到page中.
 
 我们只知道结果，却不知道为什么，那下面我们就来分析一下。自己创建一个类QGObject
 
 ```
 @interface QGObject : NSObject
-- (QGObject*) getOne;
++ (QGObject*) allocOne;
++ (QGObject*) getOne;
 @end
 ```
 
@@ -1666,7 +1667,12 @@ objc[4045]: ##############
 #import "QGObject.h"
 
 @implementation QGObject
-- (QGObject*) getOne
++ (QGObject*) allocOne
+{
+    QGObject *qgobj = [[QGObject alloc] init];
+    return qgobj;
+}
++ (QGObject*) getOne
 {
     return [[QGObject alloc] init];
 }
@@ -1675,6 +1681,49 @@ objc[4045]: ##############
 然后将QGObject执行汇编操作
 
 ```
+"+[QGObject allocOne]":                 ; @"\01+[QGObject allocOne]"
+Lfunc_begin1:
+; BB#0:
+    stp x29, x30, [sp, #-16]!
+    mov  x29, sp
+    sub sp, sp, #32             ; =32
+Ltmp5:
+    .cfi_def_cfa w29, 16
+Ltmp6:
+    .cfi_offset w30, -8
+Ltmp7:
+    .cfi_offset w29, -16
+    adrp    x8, L_OBJC_SELECTOR_REFERENCES_.4@PAGE
+    add x8, x8, L_OBJC_SELECTOR_REFERENCES_.4@PAGEOFF
+    adrp    x9, L_OBJC_CLASSLIST_REFERENCES_$_@PAGE
+    add x9, x9, L_OBJC_CLASSLIST_REFERENCES_$_@PAGEOFF
+    stur    x0, [x29, #-8]
+    str x1, [sp, #16]
+Ltmp8:
+    ldr     x9, [x9]
+    ldr     x1, [x8]
+    mov  x0, x9
+    bl  _objc_msgSend
+    adrp    x8, L_OBJC_SELECTOR_REFERENCES_.6@PAGE
+    add x8, x8, L_OBJC_SELECTOR_REFERENCES_.6@PAGEOFF
+    ldr     x1, [x8]
+    bl  _objc_msgSend
+    str x0, [sp, #8]
+    ldr x8, [sp, #8]
+    mov  x0, x8
+    bl  _objc_retain
+    movz    x8, #0
+    add x9, sp, #8              ; =8
+    str     x0, [sp]        ; 8-byte Folded Spill
+    mov  x0, x9
+    mov  x1, x8
+    bl  _objc_storeStrong
+    ldr     x0, [sp]        ; 8-byte Folded Reload
+    mov  sp, x29
+    ldp x29, x30, [sp], #16
+    ret
+Ltmp9:
+Lfunc_end1:
 "-[QGObject getOne]":                   ; @"\01-[QGObject getOne]"
 Lfunc_begin0:
     .cfi_startproc
@@ -1708,7 +1757,7 @@ Ltmp4:
 Ltmp5:
 Lfunc_end0:
 ```
-看到了_objc_autoreleaseReturnValue么？我们上面介绍过，这个函数最终执行到page的add里。好了，到这里就回答上面那个问题了，就是什么样的变量才会放到page里。
+由上面汇编代码可以看出以alloc开头的驼峰式方法allocOne是调用的_objc_retain，而getOne方法汇编代码中调用的是_objc_autoreleaseReturnValue。我们上面介绍过，这个函数最终执行到page的add里。好了，到这里就回答上面那个问题了，就是什么样的变量才会放到page里。
 
 等等，我们是不是忘了一件事，就是变量修饰符，诸如__strong、__weak、__autoreleasing、__unsafe_unretained之类的。
 
@@ -2267,14 +2316,131 @@ QuanGe
 ```
 哇塞，简直ko了其他任何方法，有没有，有没有。最简单的，最懒的代码才是好代码啊。
 
+###### @autoreleasepool 在哪里会自动创建？
+
+上面的代码再拿来用一下
+
+```
+int main(int argc, char * argv[]) {
+
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    NSArray *hh = [NSArray arrayWithObjects:@(2), nil];
+    NSLog(@" %p",hh);
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    
+    
+    return 0;
+}
+```
+注意看打印结果
+
+```
+objc[5072]: ##############
+objc[5072]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[5072]: 0 releases pending.
+objc[5072]: [0x1009f8000]  ................  PAGE  (hot) (cold)
+objc[5072]: ##############
+2017-04-01 17:08:48.870601 DrawMaster[5072:1604981]  0x17001b910
+objc[5072]: ##############
+objc[5072]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[5072]: 1 releases pending.
+objc[5072]: [0x1009f8000]  ................  PAGE  (hot) (cold)
+objc[5072]: [0x1009f8038]       0x17001b910  __NSSingleObjectArrayI
+objc[5072]: ##############
+```
+
+打印结果中写的是自动释放池是线程0x1a92c0c40。也就是，当前main函数是在主线程中，我们并没有创建写@autoreleasepool{},其实已经有了。那么我自己创建的线程有么？来试一下：注意在`NSLog(@"QuanGe ");`打断点
+
+```
+@interface QGObject : NSObject
++ (QGObject*) allocOne;
++ (QGObject*) getOne;
+@end
+
+@implementation QGObject
+- (void)dealloc
+{
+    NSLog(@"这里会释放内存");
+}
+
++ (QGObject*) allocOne
+{
+    QGObject *qgobj = [[QGObject alloc] init];
+    return qgobj;
+}
+
++ (QGObject*) getOne
+{
+    QGObject *qgobj = [[QGObject alloc] init];
+    return qgobj;
+}
+int main(int argc, char * argv[]) {
+    __asm__ ("bl __objc_autoreleasePoolPrint");
+    
+    NSThread * thread = [[NSThread alloc] initWithBlock:^{
+        __asm__ ("bl __objc_autoreleasePoolPrint");
+        __weak QGObject * qg;
+        qg = [QGObject getOne];
+        NSLog(@"\n==========================================");
+        NSLog(@"\n=====QuanGe object memeory adress %p======",qg);
+        NSLog(@"\n==========================================");
+        __asm__ ("bl __objc_autoreleasePoolPrint");
+        NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+        [runLoop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+        [runLoop runUntilDate: [NSDate dateWithTimeIntervalSinceNow:10.0]];
+    }];
+    [thread setName:@"Thread-QuanGe"];
+    [thread start];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(12 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"QuanGe ");
+    });
+    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+    [runLoop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+    [runLoop run];
+    return 0;
+}
+
+```
+断点以后在llpd打印上面输出的内存地址中的内容
+
+```
+objc[5458]: ##############
+objc[5458]: AUTORELEASE POOLS for thread 0x1a92c0c40
+objc[5458]: 0 releases pending.
+objc[5458]: [0x100a50000]  ................  PAGE  (hot) (cold)
+objc[5458]: ##############
+objc[5458]: ##############
+objc[5458]: AUTORELEASE POOLS for thread 0x16e0b3000
+objc[5458]: 0 releases pending.
+objc[5458]: [0x1023f4000]  ................  PAGE  (hot) (cold)
+objc[5458]: ##############
+2017-04-01 21:44:54.857499 DrawMaster[5458:1672309] 
+==========================================
+2017-04-01 21:44:54.857843 DrawMaster[5458:1672309] 
+=====QuanGe object memeory adress 0x174019700======
+2017-04-01 21:44:54.857881 DrawMaster[5458:1672309] 
+==========================================
+objc[5458]: ##############
+objc[5458]: AUTORELEASE POOLS for thread 0x16e0b3000
+objc[5458]: 1 releases pending.
+objc[5458]: [0x1023f4000]  ................  PAGE  (hot) (cold)
+objc[5458]: [0x1023f4038]       0x174019700  QGObject
+objc[5458]: ##############
+2017-04-01 21:45:04.860405 DrawMaster[5458:1672309] 这里会释放内存
+(lldb) po 0x174019700
+6241228544
+```
+实验表明 任何一个线程中都会有@autoreleasepool，而且在线程退出的时候会自动清理自动释放池里的对象。但是如果这个线程通过runloop来保持长久的等待，那么这个线程就不会结束，也就不会释放里面的对象，所以需要手动加上@autoreleasepool{}.例如main.m中就是手动加上的，如果不写的，里面的对象释放要等main线程的runloop结束也就是主线程结束也就是app退出，这不是太扯了么。
 
 
 
+### 来看看哪些存放对象的数据结构
 
-先来看看 iOS都有哪些数据结构可以供我们使用。NSArray、NSMutableArray、NSDictionary、NSMutableDictionary、NSSet、NSMutableSet、NSHashTable、NSMapTable。
+iOS都有哪些数据结构可以供我们使用：NSArray、NSMutableArray、NSDictionary、NSMutableDictionary、NSSet、NSMutableSet、NSHashTable、NSMapTable。
 
 个人经验你只知道前面四个已经可以胜任工作了，但是，我们的目标不仅仅是完成任务，而是如何提高自己，挣更多的工资。
 
-### NSArray
+#### NSArray
+
 
 
