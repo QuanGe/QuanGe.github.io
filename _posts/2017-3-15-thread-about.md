@@ -41,13 +41,12 @@ title: iOS装13-之多线程
 
 [官方文档中TLS](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/Multithreading/CreatingThreads/CreatingThreads.html#//apple_ref/doc/uid/10000057i-CH15-SW2)
 
-<blockquote>
+
 > Configuring Thread-Local Storage
 > Each thread maintains a dictionary of key-value pairs that can be accessed from anywhere in the thread. You can use this dictionary to store information that you want to persist throughout the execution of your thread. For example, you could use it to store state information that you want to persist through multiple iterations of your thread’s run loop.
 
 > Cocoa and POSIX store the thread dictionary in different ways, so you cannot mix and match calls to the two technologies. As long as you stick with one technology inside your thread code, however, the end results should be similar. In Cocoa, you use the threadDictionary method of an NSThread object to retrieve an NSMutableDictionary object, to which you can add any keys required by your thread. In POSIX, you use the pthread_setspecific and pthread_getspecific functions to set and get the keys and values of your thread.
 
-</blockquote>
 ### 线程同步 都有哪几种锁
 
 ##### 信号量 (Semaphore)
@@ -94,7 +93,7 @@ title: iOS装13-之多线程
 
 需要重载`start` `isReady` `isExecuting` `isFinished` `isConcurrent` ，现在是上代码的时候了。
 
-{% highlight objc %}
+```
 
 - (BOOL)isReady {
     return self.state == AFOperationReadyState && [super isReady];
@@ -126,11 +125,11 @@ title: iOS装13-之多线程
 
 
 
-{% endhighlight %}
+```
 
 由上面的代码我们可以看到在start又通过performSelector与其它线程进行通信。而这个线程又是怎么来的呢。继续看代码
 
-{% highlight objc %}
+```
 + (void)networkRequestThreadEntryPoint:(id)__unused object {
     @autoreleasepool {
         [[NSThread currentThread] setName:@"AFNetworking"];
@@ -152,12 +151,12 @@ title: iOS装13-之多线程
     return _networkRequestThread;
 }
 
-{% endhighlight %}
+```
 在networkRequestThread这个类方法中创建了一个NSThread的单例，然后紧接着就start了。而在初始化这个NSThread的时候又调用了networkRequestThreadEntryPoint 主要作用就是获取这个线程的currentRunLoop给它设置一个输入源NSPort，然后再run一下，这样这个线程就一直处于工作状态不退出。这个又是干啥呢？
 
 继续看代码
 
-{% highlight objc %}
+```
 
 - (void)operationDidStart {
     [self.lock lock];
@@ -180,26 +179,26 @@ title: iOS装13-之多线程
     });
 }
 
-{% endhighlight %}
+```
 
 这里NSURLConnection使用的是代理模式来回调，如果不把它设置到runLoop上执行完这个NSOperation就退出，当NSURLConnection的调用delegate的方法时，delegate已经为空。就不会发生后面的事了。所以必须将NSURLConnection设置一个NSRunLoop。另外这个runLoopMode也是🈶️讲究的，必须是NSRunLoopCommonModes，才能保证手机屏幕在接受手势事件的时候，网络访问不受影响。参考[我写的关于NSRunLoop的博客](http://quangelab.com/iOS-NSRunLoop/)。另外说一句NSRunLoop接受的输入源包括NSPort、NSConnection、NSTimer
 
 
 
 另外如果发通知又用GCD来切换到主线程发通知，这样看代码比较清晰吧
-{% highlight objc %}
+```
 
  dispatch_async(dispatch_get_main_queue(), ^{
             NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
             [notificationCenter postNotificationName:AFNetworkingOperationDidFinishNotification object:self];
         });
 
-{% endhighlight %}
+```
 
 
 还有一个比较有趣的是下面的代码
 
-{% highlight objc %}
+```
 - (void)resume {
     if (![self isPaused]) {
         return;
@@ -231,7 +230,7 @@ title: iOS装13-之多线程
 }
 
 
-{% endhighlight %}
+```
 
 看到没lock多次，再看lock的类型是NSRecursiveLock 即递归锁。
 
@@ -245,7 +244,7 @@ title: iOS装13-之多线程
 
 
 如RACCommand的 
-{% highlight objc %}
+```
 - (void)setAllowsConcurrentExecution:(BOOL)allowed {
     [self willChangeValueForKey:@keypath(self.allowsConcurrentExecution)];
 
@@ -257,7 +256,7 @@ title: iOS装13-之多线程
 
     [self didChangeValueForKey:@keypath(self.allowsConcurrentExecution)];
 }
-{% endhighlight %}
+```
 
 #### OSMemoryBarrier和volatile
 
@@ -277,22 +276,22 @@ title: iOS装13-之多线程
 这个用的比较多，苹果建立@synchronized的初衷就是方便开发者快速的实现代码同步，语法如下：
 
 
-{% highlight objc %}
+```
 @synchronized(obj) {
   //code
 }
-{% endhighlight %}
+```
 
 有人在测试项目的main.m中写了下面的代码
 
-{% highlight objc %}
+```
 void testSync()
 {
     NSObject* obj = [NSObject new];
     @synchronized (obj) {
     }
 }
-{% endhighlight %}
+```
 
 然后在Xcode中选择菜单Product->Perform Action->Assemble “main.m”，就得到了如下的汇编代码：
 
@@ -301,7 +300,8 @@ void testSync()
 _objc_sync_enter、_objc_sync_exit这两个函数应该就是synchronized进入和退出的调用
 
 上objc-sync.mm源码
-{% highlight objc %}
+
+```
 // Begin synchronizing on 'obj'. 
 // Allocates recursive mutex associated with 'obj' if needed.
 // Returns OBJC_SYNC_SUCCESS once lock is acquired.  
@@ -355,13 +355,15 @@ typedef struct SyncData {
     int32_t threadCount;  // number of THREADS using this block
     recursive_mutex_t mutex;
 } SyncData;
-{% endhighlight %}
+
+```
 
 synchronized是使用的递归mutex来做同步。
 
 那么@synchronized后面跟的参数是做什么用的呢 
 看objc_sync_enter 里面的 SyncData* data = id2data(obj, ACQUIRE);，跟进id2data，看到spinlock_t *lockp = &LOCK_FOR_OBJ(object);再跟进LOCK_FOR_OBJ
-{% highlight objc %}
+
+```
 #define LOCK_FOR_OBJ(obj) sDataLists[obj].lock
 #define LIST_FOR_OBJ(obj) sDataLists[obj].data
 static StripedMap<SyncList> sDataLists;
@@ -573,8 +575,7 @@ static SyncData* id2data(id object, enum usage why)
     return result;
 }
 
-
-{% endhighlight %}
+```
 
 
 可以看到 根据传入的参数会获取一个spinlock_t，再进行mutex生成的时候会用到，应该起到一个key的作用吧
