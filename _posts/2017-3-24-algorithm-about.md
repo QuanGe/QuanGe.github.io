@@ -2697,7 +2697,7 @@ exports:
 
 所以，我们从上面看出NSArray是通过framework动态链接库实现的，但是在iOS8.0之前苹果官方是不允许我们通过framework创建动态链接库供他人使用。好吧下面我们直接上例子。
 
-##### 自己动手写一个
+##### 基础概念
 
 在开始之前我们还要普及几个关键字
 
@@ -3096,6 +3096,63 @@ NSLog(@"%p",&b);
 ```
 
 可以看到内存地址与字符串常量和静态变量的内存地址相近，说明类对象是放在数据区的。
+
+##### List源码分析
+
+在objc中有个List类，虽然不用了，但是我们可以学习一下，首先数组里的内容如何保存，List是放在了一个指针数组里面
+
+```
+@interface List : Object
+{
+@public
+    id      *dataPtr  DEPRECATED_ATTRIBUTE; /* data of the List object */
+    unsigned    numElements  DEPRECATED_ATTRIBUTE;  /* Actual number of elements */
+    unsigned    maxElements  DEPRECATED_ATTRIBUTE;  /* Total allocated elements */
+}
+
+```
+
+在创建的时候初始化使用C函数malloc申请一块内存
+
+```
+#define DATASIZE(count) ((count) * sizeof(id))
+- (id)initCount:(unsigned)numSlots
+{
+    maxElements = numSlots;
+    if (maxElements) 
+    dataPtr = (id *)malloc(DATASIZE(maxElements));
+    return self;
+}
+
+```
+当插入元素检查是否需要扩容，如果需要使用realloc
+
+```
+- (id)insertObject:anObject at:(unsigned)index
+{
+    register id *this, *last, *prev;
+    if (! anObject) return nil;
+    if (index > numElements)
+        return nil;
+    if ((numElements + 1) > maxElements) {
+    volatile id *tempDataPtr;
+    /* we double the capacity, also a good size for malloc */
+    maxElements += maxElements + 1;
+    tempDataPtr = (id *) realloc (dataPtr, DATASIZE(maxElements));
+    dataPtr = (id*)tempDataPtr;
+    }
+    this = dataPtr + numElements;
+    prev = this - 1;
+    last = dataPtr + index;
+    while (this > last) 
+    *this-- = *prev--;
+    *last = anObject;
+    numElements++;
+    return self;
+}
+
+```
+
 
 
 
