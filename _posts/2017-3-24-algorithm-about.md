@@ -2442,5 +2442,662 @@ iOS都有哪些数据结构可以供我们使用：NSArray、NSMutableArray、NS
 
 #### NSArray
 
+##### 原理大揭秘
+
+###### NSArray官方是如何打包给我们使用的
+
+我们知道链接库分为动态链接库和静态链接库，动态链接库是运行的时候需要的，静态链接库是编译时候需要的。在windows中.lib是静态链接库.dll是动态链接库。
+
+####### iOS动态链接库
+
+而在iOS中.dylib是动态链接库，比如我们经常看的苹果开源代码objc编译以后就会生成`libobjc.A.dylib`，一般会放在系统目录中，我们随便打开一个项目，然后打开项目设置的Build Phases页面，在Link Binary With Libraries下面的+号点击，然后点击Orther 然后按下Command+Shift+G，就会提示你存放的动态链接库的目录`/usr/lib`，点击GO，你就会发现libobjc.A.dylib在这里哦,当然这是供PC上程序使用的。动态链接库实际功能使用有两种：第一是多个程序使用相同的函数等共享内存的问题，第二是因为是运行时需要，更新以后不需要编译，可以将各个功能模块话，程序更新的话只更新某个模块，这样的话就可以实现更新省时省力。
+
+另外动态链接库是不需要存在APP中的，放在系统之中。
+
+####### iOS静态链接库
+
+iOS中静态链接指.a文件，一般配合着.h一起打包发布，一般我们使用的第三方的分享库比如微信，新浪微博等。之所以叫做静态，是因为静态库在编译的时候会被直接拷贝一份，复制到目标程序里，这段代码在目标程序里就不会再改变了。
+
+####### framework
+
+这是一个有个性的库的类型，既可以是动态链接库，又可以是静态链接库，创建一个`Cocoa Touch Framework`类型的项目，然后在项目属性中的`Linking`组有个`Mach-O Type`可以选择`Dynamic Library`也可以选择`Static Library`.那么别人打包好的，如何查看Mach-O类型，比如腾讯QQ的sdk，就是framework，打开TencentOpenAPI.framework，里面有Headers和TencentOpenAPI。先`cd`到sdk的framework目录下，然后通过file命令查看TencentOpenAPI，`file TencentOpenAPI`，结果如下
+
+```
+TencentOpenAPI: Mach-O universal binary with 5 architectures: [arm_v7: current ar archive] [arm_v7s] [i386] [x86_64] [arm64]
+TencentOpenAPI (for architecture armv7):    current ar archive
+TencentOpenAPI (for architecture armv7s):   current ar archive
+TencentOpenAPI (for architecture i386): current ar archive
+TencentOpenAPI (for architecture x86_64):   current ar archive
+TencentOpenAPI (for architecture arm64):    current ar archive
+
+```
+
+看到`current ar archive`了么，说明是静态链接库，如果是类似`: Mach-O 64-bit dynamically linked shared library x86_64`说明是动态链接库
+
+也可以通过`otool -v -h TencentOpenAPI`命令来查看头部
+
+```
+Archive : TencentOpenAPI
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1696 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1296 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1536 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1856 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1696 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1856 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1616 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1376 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1136 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1536 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1456 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1136 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1776 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1616 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1936 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1456 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1936 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3        656 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1456 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1536 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1696 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1456 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1696 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1216 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1536 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1296 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1536 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3        576 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1376 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1296 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1296 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1696 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1616 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1456 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3        576 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3        816 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1216 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1616 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1376 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1376 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3        896 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1856 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1536 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1056 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1456 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1216 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1696 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1536 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1456 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3        416 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1216 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1216 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1856 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3       1856 SUBSECTIONS_VIA_SYMBOLS
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64  X86_64        ALL  0x00      OBJECT     3        816 SUBSECTIONS_VIA_SYMBOLS
+
+```
+
+其中filetype 是`OBJECT`代表是静态链接库，如果`DYLIB`代表是静态动态链接库。
+
+
+####### 总结
+
+说了半天还没切入正题iOS的NSArray是怎么打包给我们开发者的，打开一个项目找到NSArray，按着command键鼠标点击就会跳转到头文件，在Xcode的上方会显示在`Simulator-iOS 10.2 ->Frameworks->Foundation->NSArray.h`，说明官方是用framework打包给我们使用的，找到应用程序Xcode，右键显示包内容->Contents->Developer->Platforms,你就可以看到所有平台的sdk了，打开iPhoneOS.platform->Developer->SDKs->iPhoneOS.sdk->System->Library->Frameworks ，所有用到的官方的Framework都在这里了，然而打开Foundation.framework，我们却没有找到Foundation二进制文件，只有Foundation.tbd，用cat命令读取一下`cat Foundation.tbd`,结果如下
+
+```
+--- !tapi-tbd-v2
+archs:           [ armv7, armv7s, arm64 ]
+uuids:           [ 'armv7: E142F79B-70E0-3D00-A159-395B0C46F375', 'armv7s: 24F45751-84CB-3FB6-B9B6-E94B051517AE', 
+                   'arm64: 7D40355E-6850-36CC-8034-55E5CBF6245F' ]
+platform:        ios
+install-name:    /System/Library/Frameworks/Foundation.framework/Foundation
+current-version: 1349.13
+compatibility-version: 300.0
+objc-constraint: none
+exports:         
+  - archs:           [ armv7, armv7s ]
+    symbols:         [ '$ld$add$os2.0$_OBJC_CLASS_$_NSURL', '$ld$add$os2.0$_OBJC_METACLASS_$_NSURL', 
+                       '$ld$add$os2.1$_OBJC_CLASS_$_NSURL', '$ld$add$os2.1$_OBJC_METACLASS_$_NSURL', 
+                       '$ld$add$os2.2$_OBJC_CLASS_$_NSURL', '$ld$add$os2.2$_OBJC_METACLASS_$_NSURL', 
+                       '$ld$add$os3.0$_OBJC_CLASS_$_NSURL', '$ld$add$os3.0$_OBJC_METACLASS_$_NSURL', 
+                       '$ld$add$os3.1$_OBJC_CLASS_$_NSURL', '$ld$add$os3.1$_OBJC_METACLASS_$_NSURL', 
+                       '$ld$add$os3.2$_OBJC_CLASS_$_NSURL', '$ld$add$os3.2$_OBJC_METACLASS_$_NSURL' ]
+  - archs:           [ arm64 ]
+    objc-ivars:      [ _NSPredicate.reserved ]
+  - archs:           [ armv7, armv7s, arm64 ]
+    re-exports:      [ /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation, 
+                       /usr/lib/libobjc.A.dylib ]
+    symbols:         [ '$ld$add$os4.3$_NSHTTPCookieComment', '$ld$add$os4.3$_NSHTTPCookieCommentURL', 
+                       '$ld$add$os4.3$_NSHTTPCookieDiscard', '$ld$add$os4.3$_NSHTTPCookieDomain', 
+                       '$ld$add$os4.3$_NSHTTPCookieExpires', '$ld$add$os4.3$_NSHTTPCookieLocationHeader', 
+                       '$ld$add$os4.3$_NSHTTPCookieManagerAcceptPolicyChangedNotification', 
+
+
+```
+里面写明了真正动态链接库的位置，/System/Library/Frameworks/Foundation.framework/Foundation。我们也可以打开mac上的这个地址，`file /System/Library/Frameworks/Foundation.framework/Foundation`。可以看到
+
+```
+/System/Library/Frameworks/Foundation.framework/Foundation: Mach-O universal binary with 2 architectures: [x86_64: Mach-O 64-bit dynamically linked shared library x86_64] [i386]
+/System/Library/Frameworks/Foundation.framework/Foundation (for architecture x86_64):   Mach-O 64-bit dynamically linked shared library x86_64
+/System/Library/Frameworks/Foundation.framework/Foundation (for architecture i386): Mach-O dynamically linked shared library i386
+```
+
+当然这只是模拟器使用的，如果要看苹果手机的这个文件就要到`/System/Library/Frameworks/Foundation.framework/Foundation`查看一二了，由于我这里也没有越狱的iPhone所有没有办法看。
+
+另外这种.tbd格式是Xcode7.0以后才出现的，因为苹果的平台越来越多，为了节省空间，才这样搞，否则一个平台搞一套库，那得多大啊。
+
+所以，我们从上面看出NSArray是通过framework动态链接库实现的，但是在iOS8.0之前苹果官方是不允许我们通过framework创建动态链接库供他人使用。好吧下面我们直接上例子。
+
+##### 自己动手写一个
+
+在开始之前我们还要普及几个关键字
+
+###### NSObject
+
+如果你自定义个OC的类，基本都是最终都是要继承在这个类下面的。我们来看，它的定义
+
+```
+@interface NSObject <NSObject> {
+    Class isa  OBJC_ISA_AVAILABILITY;
+}
+
++ (void)load;
+
++ (void)initialize;
+- (instancetype)init
+#if NS_ENFORCE_NSOBJECT_DESIGNATED_INITIALIZER
+    NS_DESIGNATED_INITIALIZER
+#endif
+    ;
+
++ (instancetype)new OBJC_SWIFT_UNAVAILABLE("use object initializers instead");
++ (instancetype)allocWithZone:(struct _NSZone *)zone OBJC_SWIFT_UNAVAILABLE("use object initializers instead");
++ (instancetype)alloc OBJC_SWIFT_UNAVAILABLE("use object initializers instead");
+- (void)dealloc OBJC_SWIFT_UNAVAILABLE("use 'deinit' to define a de-initializer");
+
+- (void)finalize OBJC_DEPRECATED("Objective-C garbage collection is no longer supported");
+
+- (id)copy;
+- (id)mutableCopy;
+
++ (id)copyWithZone:(struct _NSZone *)zone OBJC_ARC_UNAVAILABLE;
++ (id)mutableCopyWithZone:(struct _NSZone *)zone OBJC_ARC_UNAVAILABLE;
+
++ (BOOL)instancesRespondToSelector:(SEL)aSelector;
++ (BOOL)conformsToProtocol:(Protocol *)protocol;
+- (IMP)methodForSelector:(SEL)aSelector;
++ (IMP)instanceMethodForSelector:(SEL)aSelector;
+- (void)doesNotRecognizeSelector:(SEL)aSelector;
+
+- (id)forwardingTargetForSelector:(SEL)aSelector OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0);
+- (void)forwardInvocation:(NSInvocation *)anInvocation OBJC_SWIFT_UNAVAILABLE("");
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector OBJC_SWIFT_UNAVAILABLE("");
+
++ (NSMethodSignature *)instanceMethodSignatureForSelector:(SEL)aSelector OBJC_SWIFT_UNAVAILABLE("");
+
+- (BOOL)allowsWeakReference UNAVAILABLE_ATTRIBUTE;
+- (BOOL)retainWeakReference UNAVAILABLE_ATTRIBUTE;
+
++ (BOOL)isSubclassOfClass:(Class)aClass;
+
++ (BOOL)resolveClassMethod:(SEL)sel OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0);
++ (BOOL)resolveInstanceMethod:(SEL)sel OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0);
+
++ (NSUInteger)hash;
++ (Class)superclass;
++ (Class)class OBJC_SWIFT_UNAVAILABLE("use 'aClass.self' instead");
++ (NSString *)description;
++ (NSString *)debugDescription;
+
+```
+
+有没有看到NSObject有一个实例变量（注意实例变量访问符号用->，property访问用符号.），Class类型的变量isa，后面还有个修饰符 OBJC_ISA_AVAILABILITY。先看看Class到底是个啥吧,在class按command点击鼠标，进到objc/objc.h头文件
+
+###### objc_class 
+
+```
+/// An opaque type that represents an Objective-C class.
+typedef struct objc_class *Class;
+```
+进到objc_class 
+
+```
+struct objc_class {
+    Class isa  OBJC_ISA_AVAILABILITY;
+
+#if !__OBJC2__
+    Class super_class                                        OBJC2_UNAVAILABLE;
+    const char *name                                         OBJC2_UNAVAILABLE;
+    long version                                             OBJC2_UNAVAILABLE;
+    long info                                                OBJC2_UNAVAILABLE;
+    long instance_size                                       OBJC2_UNAVAILABLE;
+    struct objc_ivar_list *ivars                             OBJC2_UNAVAILABLE;
+    struct objc_method_list **methodLists                    OBJC2_UNAVAILABLE;
+    struct objc_cache *cache                                 OBJC2_UNAVAILABLE;
+    struct objc_protocol_list *protocols                     OBJC2_UNAVAILABLE;
+#endif
+
+} OBJC2_UNAVAILABLE;
+/* Use `Class` instead of `struct objc_class *` */
+
+```
+看到OBJC2_UNAVAILABLE了么，说明在现在的oc2.0中已经不支持objc_class了，和上面的OBJC_ISA_AVAILABILITY遥相呼应，如果你在代码中写aa->isa那么会提示你使用object_getClass(aa).
+
+再进到object_getClass里面
+
+```
+/***********************************************************************
+* object_getClass.
+* Locking: None. If you add locking, tell gdb (rdar://7516456).
+**********************************************************************/
+Class object_getClass(id obj)
+{
+    if (obj) return obj->getIsa();
+    else return Nil;
+}
+```
+
+如果obj有值，则调用obj的getIsa方法。
+
+###### id
+
+```
+/// A pointer to an instance of a class.
+typedef struct objc_object *id;
+
+```
+
+id是objc_object类型的指针
+
+###### objc_object
+
+```
+struct objc_object {
+private:
+    isa_t isa;
+
+public:
+
+    // ISA() assumes this is NOT a tagged pointer object
+    Class ISA();
+
+    // getIsa() allows this to be a tagged pointer object
+    Class getIsa();
+
+    // initIsa() should be used to init the isa of new objects only.
+    // If this object already has an isa, use changeIsa() for correctness.
+    // initInstanceIsa(): objects with no custom RR/AWZ
+    // initClassIsa(): class objects
+    // initProtocolIsa(): protocol objects
+    // initIsa(): other objects
+    void initIsa(Class cls /*indexed=false*/);
+    void initClassIsa(Class cls /*indexed=maybe*/);
+    void initProtocolIsa(Class cls /*indexed=maybe*/);
+    void initInstanceIsa(Class cls, bool hasCxxDtor);
+
+    // changeIsa() should be used to change the isa of existing objects.
+    // If this is a new object, use initIsa() for performance.
+    Class changeIsa(Class newCls);
+
+    bool hasIndexedIsa();
+    bool isTaggedPointer();
+    bool isClass();
+
+    // object may have associated objects?
+    bool hasAssociatedObjects();
+    void setHasAssociatedObjects();
+
+    // object may be weakly referenced?
+    bool isWeaklyReferenced();
+    void setWeaklyReferenced_nolock();
+
+    // object may have -.cxx_destruct implementation?
+    bool hasCxxDtor();
+
+    // Optimized calls to retain/release methods
+    id retain();
+    void release();
+    id autorelease();
+
+    // Implementations of retain/release methods
+    id rootRetain();
+    bool rootRelease();
+    id rootAutorelease();
+    bool rootTryRetain();
+    bool rootReleaseShouldDealloc();
+    uintptr_t rootRetainCount();
+
+    // Implementation of dealloc methods
+    bool rootIsDeallocating();
+    void clearDeallocating();
+    void rootDealloc();
+
+private:
+    void initIsa(Class newCls, bool indexed, bool hasCxxDtor);
+
+    // Slow paths for inline control
+    id rootAutorelease2();
+    bool overrelease_error();
+
+#if SUPPORT_NONPOINTER_ISA
+    // Unified retain count manipulation for nonpointer isa
+    id rootRetain(bool tryRetain, bool handleOverflow);
+    bool rootRelease(bool performDealloc, bool handleUnderflow);
+    id rootRetain_overflow(bool tryRetain);
+    bool rootRelease_underflow(bool performDealloc);
+
+    void clearDeallocating_slow();
+
+    // Side table retain count overflow for nonpointer isa
+    void sidetable_lock();
+    void sidetable_unlock();
+
+    void sidetable_moveExtraRC_nolock(size_t extra_rc, bool isDeallocating, bool weaklyReferenced);
+    bool sidetable_addExtraRC_nolock(size_t delta_rc);
+    size_t sidetable_subExtraRC_nolock(size_t delta_rc);
+    size_t sidetable_getExtraRC_nolock();
+#endif
+
+    // Side-table-only retain count
+    bool sidetable_isDeallocating();
+    void sidetable_clearDeallocating();
+
+    bool sidetable_isWeaklyReferenced();
+    void sidetable_setWeaklyReferenced_nolock();
+
+    id sidetable_retain();
+    id sidetable_retain_slow(SideTable& table);
+
+    uintptr_t sidetable_release(bool performDealloc = true);
+    uintptr_t sidetable_release_slow(SideTable& table, bool performDealloc = true);
+
+    bool sidetable_tryRetain();
+
+    uintptr_t sidetable_retainCount();
+#if DEBUG
+    bool sidetable_present();
+#endif
+};
+```
+
+可以看到objc_object也有变量isa，私有的，只能通过getIsa访问
+
+```
+inline Class 
+objc_object::ISA() 
+{
+    assert(!isTaggedPointer()); 
+    return isa.cls;
+}
+
+inline Class 
+objc_object::getIsa() 
+{
+#if SUPPORT_TAGGED_POINTERS
+    if (isTaggedPointer()) {
+        uintptr_t slot = ((uintptr_t)this >> TAG_SLOT_SHIFT) & TAG_SLOT_MASK;
+        return objc_tag_classes[slot];
+    }
+#endif
+    return ISA();
+}
+
+```
+
+可以看到最终还是会访问实例变量isa，那么这个值是在那里初始化的呢？我们从alloc开始跟踪
+
+```
++ (id)self {
+    return (id)self;
+}
++ (id)alloc {
+    return _objc_rootAlloc(self);
+}
+// Base class implementation of +alloc. cls is not nil.
+// Calls [cls allocWithZone:nil].
+id
+_objc_rootAlloc(Class cls)
+{
+    return callAlloc(cls, false/*checkNil*/, true/*allocWithZone*/);
+}
+
+// Call [cls alloc] or [cls allocWithZone:nil], with appropriate 
+// shortcutting optimizations.
+static ALWAYS_INLINE id
+callAlloc(Class cls, bool checkNil, bool allocWithZone=false)
+{
+    if (checkNil && !cls) return nil;
+
+#if __OBJC2__
+    if (! cls->ISA()->hasCustomAWZ()) {
+        // No alloc/allocWithZone implementation. Go straight to the allocator.
+        // fixme store hasCustomAWZ in the non-meta class and 
+        // add it to canAllocFast's summary
+        if (cls->canAllocFast()) {
+            // No ctors, raw isa, etc. Go straight to the metal.
+            bool dtor = cls->hasCxxDtor();
+            id obj = (id)calloc(1, cls->bits.fastInstanceSize());
+            if (!obj) return callBadAllocHandler(cls);
+            obj->initInstanceIsa(cls, dtor);
+            return obj;
+        }
+        else {
+            // Has ctor or raw isa or something. Use the slower path.
+            id obj = class_createInstance(cls, 0);
+            if (!obj) return callBadAllocHandler(cls);
+            return obj;
+        }
+    }
+#endif
+
+    // No shortcuts available.
+    if (allocWithZone) return [cls allocWithZone:nil];
+    return [cls alloc];
+}
+
+id class_createInstance(Class cls, size_t extraBytes)
+{
+    if (UseGC) {
+        return _class_createInstance(cls, extraBytes);
+    } else {
+        return (*_alloc)(cls, extraBytes);
+    }
+}
+
+id (*_alloc)(Class, size_t) = _class_createInstance;
+
+static id _class_createInstance(Class cls, size_t extraBytes)
+{
+    return _class_createInstanceFromZone (cls, extraBytes, nil);
+}
+
+id 
+_class_createInstanceFromZone(Class cls, size_t extraBytes, void *zone)
+{
+    void *bytes;
+    size_t size;
+
+    // Can't create something for nothing
+    if (!cls) return nil;
+
+    // Allocate and initialize
+    size = cls->alignedInstanceSize() + extraBytes;
+
+    // CF requires all objects be at least 16 bytes.
+    if (size < 16) size = 16;
+
+#if SUPPORT_GC
+    if (UseGC) {
+        bytes = auto_zone_allocate_object(gc_zone, size,
+                                          AUTO_OBJECT_SCANNED, 0, 1);
+    } else 
+#endif
+    if (zone) {
+        bytes = malloc_zone_calloc((malloc_zone_t *)zone, 1, size);
+    } else {
+        bytes = calloc(1, size);
+    }
+
+    return objc_constructInstance(cls, bytes);
+}
+
+id 
+objc_constructInstance(Class cls, void *bytes) 
+{
+    if (!cls  ||  !bytes) return nil;
+
+    id obj = (id)bytes;
+
+    obj->initIsa(cls);
+
+    if (cls->hasCxxCtor()) {
+        return object_cxxConstructFromClass(obj, cls);
+    } else {
+        return obj;
+    }
+}
+
+```
+
+从上面代码可以看到最终调用obj->initIsa(cls);的参数是通过NSObject的self类方法传递进去的，然后self直接返回的是(id)self。也就是在OC中类本来就是对象，也就是说object_getClass(aa)返回的是类对象，我们可以通过对比内存地址，来简单分析下，类对象
+
+```
+static int b = 10;
+NSObject *so = [NSObject alloc];
+NSLog(@"%p",object_getClass(so));
+NSLog(@"%p",so);
+NSLog(@"%p",&so);
+NSLog(@"%p",@(2));
+NSLog(@"%p",@"aa");
+int a = 0;
+NSLog(@"%p",&a);
+NSLog(@"%p",&b);
+
+```
+输出
+
+```
+2017-04-11 11:24:26.269 DrawMaster[58811:1271136] 0x104fa2e58
+2017-04-11 11:24:26.269 DrawMaster[58811:1271136] 0x61000001e120
+2017-04-11 11:24:26.269 DrawMaster[58811:1271136] 0x7fff5f2db648
+2017-04-11 11:24:26.270 DrawMaster[58811:1271136] 0xb000000000000022
+2017-04-11 11:24:26.270 DrawMaster[58811:1271136] 0x100d5d1c0
+2017-04-11 11:24:26.270 DrawMaster[58811:1271136] 0x7fff5f2db644
+2017-04-11 11:24:26.270 DrawMaster[58811:1271136] 0x100e136f0
+```
+
+可以看到内存地址与字符串常量和静态变量的内存地址相近，说明类对象是放在数据区的。
+
+
+
 
 
