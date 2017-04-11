@@ -3152,7 +3152,91 @@ NSLog(@"%p",&b);
 }
 
 ```
+##### 下标访问
 
+```
+- (void)setObject:(id)object forKeyedSubscript:(id < NSCopying >)aKey;
+- (id)objectForKeyedSubscript:(id)key;
+- (void)setObject:(id)anObject atIndexedSubscript:(NSUInteger)index;
+- (id)objectAtIndexedSubscript:(NSUInteger)idx;
+
+```
+
+##### MRC和ARC兼容
+
+如果你写的代码本来是MRC，如果你直接将代码给ARC的项目使用会有问题,三种方式解决
+
+1、Xcode ->Edit->Convert->to Object-C ARC，复杂的会出错
+
+2、项目属性->Build Phases->Complier Flags->-fno-objc-arc 如果文件多的话可以使用[xproj](https://github.com/qfish/xproj)Shell脚本
+
+3、打包成.a静态库
+
+
+##### 真机和模拟器兼容
+
+New->Target->Aggregate->在target的Build Phases中点加号 添加一个Run Script
+
+```
+set -e
+set +u
+# Avoid recursively calling this script.
+if [[ $SF_MASTER_SCRIPT_RUNNING ]]
+then
+exit 0
+fi
+set -u
+export SF_MASTER_SCRIPT_RUNNING=1
+
+SF_TARGET_NAME=${PROJECT_NAME}
+SF_EXECUTABLE_PATH="${SF_TARGET_NAME}.framework/${SF_TARGET_NAME}"
+SF_WRAPPER_NAME="${SF_TARGET_NAME}.framework"
+
+if [[ "$SDK_NAME" =~ ([A-Za-z]+) ]]
+then
+SF_SDK_PLATFORM=${BASH_REMATCH[1]}
+else
+echo "Could not find platform name from SDK_NAME: $SDK_NAME"
+exit 1
+fi
+
+if [[ "$SDK_NAME" =~ ([0-9]+.*$) ]]
+then
+SF_SDK_VERSION=${BASH_REMATCH[1]}
+else
+echo "Could not find sdk version from SDK_NAME: $SDK_NAME"
+exit 1
+fi
+
+if [[ "$SF_SDK_PLATFORM" = "iphoneos" ]]
+then
+SF_OTHER_PLATFORM=iphonesimulator
+else
+SF_OTHER_PLATFORM=iphoneos
+fi
+
+if [[ "$BUILT_PRODUCTS_DIR" =~ (.*)$SF_SDK_PLATFORM$ ]]
+then
+SF_OTHER_BUILT_PRODUCTS_DIR="${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}"
+else
+echo "Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR"
+exit 1
+fi
+
+rm -rf buildProducts
+mkdir buildProducts
+
+# Build the other platform.
+xcrun xcodebuild -project "${PROJECT_FILE_PATH}" -target "${TARGET_NAME}" -configuration "${CONFIGURATION}" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR="${BUILD_DIR}" OBJROOT="${OBJROOT}" BUILD_ROOT="${BUILD_ROOT}" SYMROOT="${SYMROOT}" $ACTION
+
+# Smash the two static libraries into one fat binary and store it in the .framework
+xcrun lipo -create "${BUILT_PRODUCTS_DIR}/$PRODUCT_NAME.framework/$PRODUCT_NAME" "${SF_OTHER_BUILT_PRODUCTS_DIR}/$PRODUCT_NAME.framework/$PRODUCT_NAME" -output "${PROJECT_DIR}/buildProducts/$PRODUCT_NAME"
+
+cp -rf ${BUILT_PRODUCTS_DIR}/$PRODUCT_NAME.framework ${PROJECT_DIR}/buildProducts
+mv ${PROJECT_DIR}/buildProducts/$PRODUCT_NAME ${PROJECT_DIR}/buildProducts/$PRODUCT_NAME.framework
+```
+
+然后将需要给外界的头文件放在属性->Build Phases ->Headers 的public位置
 
 
 
