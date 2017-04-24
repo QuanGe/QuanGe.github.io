@@ -3152,7 +3152,7 @@ NSLog(@"%p",&b);
 }
 
 ```
-##### 下标访问
+###### 下标访问
 
 ```
 - (void)setObject:(id)object forKeyedSubscript:(id < NSCopying >)aKey;
@@ -3162,7 +3162,7 @@ NSLog(@"%p",&b);
 
 ```
 
-##### MRC和ARC兼容
+###### MRC和ARC兼容
 
 如果你写的代码本来是MRC，如果你直接将代码给ARC的项目使用会有问题,三种方式解决
 
@@ -3237,6 +3237,15 @@ mv ${PROJECT_DIR}/buildProducts/$PRODUCT_NAME ${PROJECT_DIR}/buildProducts/$PROD
 ```
 
 然后将需要给外界的头文件放在属性->Build Phases ->Headers 的public位置
+
+
+##### NSArray头文件分析
+
+自从iOS9.0以后OC添加了几个新的关键子 nullable（可以为空），nonnull（不可以为空），NS_ASSUME_NONNULL_BEGIN（一段代码不为空开始），NS_ASSUME_NONNULL_END（一段代码不为空结束），null_resettable（set可以是空，get不可以为空），_Null_unspecified（不确定是否为空），ObjectType（声明范型<ObjectType>），__covariant(可以强转 子类到父类)，__contravariant（可以强转父类到子类），__kindof （表示当前类或它的子类）
+
+
+
+
 
 
 
