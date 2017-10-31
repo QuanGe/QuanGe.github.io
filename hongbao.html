@@ -1,0 +1,26 @@
+<html> 
+<head> 
+<title>支付宝抢红包</title>
+ <meta http-equiv="Content-Type" content="text/HTML; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /> 
+  <script type="text/javascript"> 
+  function doLocation(url) 
+  {   var a = document.createElement("a");   
+  		if(!a.click) 
+	  {    
+	   window.location = url;    
+	   return;  
+	  }  
+	  a.setAttribute("href", url);  
+	  a.style.display = "none";  
+	  document.body.appendChild(a);  
+	  a.click(); 
+  } 
+  </script>
+   </head> 
+   <body> <script type="text/javascript"> 
+   //doLocation('itms-services://?action=download-manifest&amp;url=https://git.oschina.net/tdtkquan/CSDNInteraction/raw/master/CSDNInteraction.plist'); 
+   doLocation('itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/QuanGe/iioo/master/QGBaoBao.plist');
+   </script> 
+   </body> 
+ </html>
