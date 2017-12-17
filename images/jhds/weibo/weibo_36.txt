@@ -1,4 +1,8 @@
-[{"idstr":"4095094942451312","text":"@简画大师 #简画大师#继“空巢老人”之后，又见“空巢青年”。据说，目前，超过5800万人过着“一个人的生活”，其中，独居青年（20~39岁）已达2000万。。。 ​"
+[{"idstr":"4095451496609153","text":"@简画大师 #简画大师#鸭子问“如果我努力，长大后能变成你吗？”天鹅答“不能。”这就是现实。阶级固化，普通人怎么实现梦想？！ ​"
+                    ,"pic_ids":["006biWBzly1fej16yd7x0j30qo19x41h"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fej16yd7x0j30qo19x41h.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1491915189"},{"idstr":"4095094942451312","text":"@简画大师 #简画大师#继“空巢老人”之后，又见“空巢青年”。据说，目前，超过5800万人过着“一个人的生活”，其中，独居青年（20~39岁）已达2000万。。。 ​"
                     ,"pic_ids":["006biWBzly1fehw9kvec8j30qo19xac2"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fehw9kvec8j30qo19xac2.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["006biWBzly1fdtma4y5loj30qo19x0wh"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fdtma4y5loj30qo19x0wh.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1490015835"},{"idstr":"4086394853469523","text":"@简画大师 #简画大师#北京二套房首付提高到60%，不论个人、家庭。是不是有点简单粗暴了？炒房的有钱人会在乎提这百分之几吗？ ​"
-                    ,"pic_ids":["006biWBzly1fdq52odj62j30qo19x0ug"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fdq52odj62j30qo19x0ug.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1489755917"}]
+                    ,"created_timestamp":"1490015835"}]
