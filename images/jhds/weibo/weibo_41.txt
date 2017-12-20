@@ -1,8 +1,8 @@
-[{"idstr":"4186038073169387","text":"@简画大师 #简画大师#涂涂最近迷上了道德经，伴着诵读，翩翩起舞，律动稚嫩，但可爱可敬。“道可道，非常道。名可名，非常名……” ​"
-                    ,"pic_ids":["006biWBzly1fmk0tmgmzkj30qo19xq5a"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fmk0tmgmzkj30qo19xq5a.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+[{"idstr":"4186785322626278","text":"@简画大师 #简画大师#今天早上上班，电梯故障，被关在里面，电梯下沉……虽然沉得不多，虽然被关不久……心有余悸……平安健康，真的比什么都重要。 ​"
+                    ,"pic_ids":["006biWBzly1fmmenes7ktj30qo19xtcn"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fmmenes7ktj30qo19xtcn.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1513512711"},{"idstr":"4174753558137563","text":"@简画大师 #简画大师#小手一抖，简画在手 ​"
+                    ,"created_timestamp":"1513690869"},{"idstr":"4174753558137563","text":"@简画大师 #简画大师#小手一抖，简画在手 ​"
                     ,"pic_ids":["0064846ply1flk0xloipdj30qo19x76p"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/0064846ply1flk0xloipdj30qo19x76p.jpg","userIcon":"https://tva3.sinaimg.cn/crop.0.0.996.996.50/0064846pjw8fc7fdexfs7j30ro0ro40h.jpg"
                     ,"nickName":"曾老先生的脑残粉","userId":"5557824733"
