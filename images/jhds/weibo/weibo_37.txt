@@ -6,7 +6,11 @@
                     ,"pic_ids":["84181a79jw1f5p0yagooxj20ku112ta0"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/84181a79jw1f5p0yagooxj20ku112ta0.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.1.509.509.180/84181a79gw1f5uem0opbbj20e80e8mxn.jpg"
                     ,"nickName":"简画大师","userId":"2216172153"
-                    ,"created_timestamp":"1468149303"},{"idstr":"4186038073169387","text":"@简画大师 #简画大师#涂涂最近迷上了道德经，伴着诵读，翩翩起舞，律动稚嫩，但可爱可敬。“道可道，非常道。名可名，非常名……” ​"
+                    ,"created_timestamp":"1468149303"},{"idstr":"4186785322626278","text":"@简画大师 #简画大师#今天早上上班，电梯故障，被关在里面，电梯下沉……虽然沉得不多，虽然被关不久……心有余悸……平安健康，真的比什么都重要。 ​"
+                    ,"pic_ids":["006biWBzly1fmmenes7ktj30qo19xtcn"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fmmenes7ktj30qo19xtcn.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
+                    ,"nickName":"V-xiaoxin","userId":"5663851873"
+                    ,"created_timestamp":"1513690869"},{"idstr":"4186038073169387","text":"@简画大师 #简画大师#涂涂最近迷上了道德经，伴着诵读，翩翩起舞，律动稚嫩，但可爱可敬。“道可道，非常道。名可名，非常名……” ​"
                     ,"pic_ids":["006biWBzly1fmk0tmgmzkj30qo19xq5a"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fmk0tmgmzkj30qo19xq5a.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["006biWBzly1fevmowh89lj30qo19xwhc"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fevmowh89lj30qo19xwhc.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1492856579"},{"idstr":"4098724344730400","text":"@简画大师 #简画大师#谷雨，春季最后一个节气，源自古人“雨生百谷”之说。妈妈说“谷雨前后，种瓜点豆”。 ​"
-                    ,"pic_ids":["006biWBzly1feth3hqqhxj30qo19xq5n"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1feth3hqqhxj30qo19xq5n.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
-                    ,"nickName":"V-xiaoxin","userId":"5663851873"
-                    ,"created_timestamp":"1492695497"}]
+                    ,"created_timestamp":"1492856579"}]
