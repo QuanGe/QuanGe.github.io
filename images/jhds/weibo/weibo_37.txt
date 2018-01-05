@@ -10,7 +10,11 @@
                     ,"pic_ids":["84181a79jw1f5p0yagooxj20ku112ta0"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/84181a79jw1f5p0yagooxj20ku112ta0.jpg","userIcon":"http://tva1.sinaimg.cn/crop.0.1.509.509.180/84181a79gw1f5uem0opbbj20e80e8mxn.jpg"
                     ,"nickName":"简画大师","userId":"2216172153"
-                    ,"created_timestamp":"1468149303"},{"idstr":"4186785322626278","text":"@简画大师 #简画大师#今天早上上班，电梯故障，被关在里面，电梯下沉……虽然沉得不多，虽然被关不久……心有余悸……平安健康，真的比什么都重要。 ​"
+                    ,"created_timestamp":"1468149303"},{"idstr":"4191444988312064","text":"@简画大师 #简画大师#小手一抖，简画在手 ​"
+                    ,"pic_ids":["73710bb3gy1fn19x1d7vlj20qo19xdhl"]
+                    ,"original_pic":"http://ww1.sinaimg.cn/large/73710bb3gy1fn19x1d7vlj20qo19xdhl.jpg","userIcon":"https://tva2.sinaimg.cn/crop.0.0.180.180.50/73710bb3jw1f4eqkqmfxpj2050050q39.jpg"
+                    ,"nickName":"夏天的风太凉","userId":"1936788403"
+                    ,"created_timestamp":"1514801821"},{"idstr":"4186785322626278","text":"@简画大师 #简画大师#今天早上上班，电梯故障，被关在里面，电梯下沉……虽然沉得不多，虽然被关不久……心有余悸……平安健康，真的比什么都重要。 ​"
                     ,"pic_ids":["006biWBzly1fmmenes7ktj30qo19xtcn"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/006biWBzly1fmmenes7ktj30qo19xtcn.jpg","userIcon":"http://tva4.sinaimg.cn/crop.0.0.996.996.180/006biWBzjw8f5ts29vqdjj30ro0roq63.jpg"
                     ,"nickName":"V-xiaoxin","userId":"5663851873"
@@ -42,8 +46,4 @@
                     ,"pic_ids":["005MtOG9ly1fhxp5ij94yj30qo19xq5s"]
                     ,"original_pic":"http://ww1.sinaimg.cn/large/005MtOG9ly1fhxp5ij94yj30qo19xq5s.jpg","userIcon":"https://tvax1.sinaimg.cn/crop.0.0.664.664.50/005MtOG9ly8fh9ez7fhmoj30ig0ig74r.jpg"
                     ,"nickName":"我的名字就是这样的长啊长","userId":"5297034613"
-                    ,"created_timestamp":"1501082417"},{"idstr":"4121190731193920","text":"@简画大师 #简画大师#简画，就是简单，想画就画，我骄傲😄 丑了点 ​"
-                    ,"pic_ids":["d705447egy1fgt5btoe1wj20qo19xwhd"]
-                    ,"original_pic":"http://ww1.sinaimg.cn/large/d705447egy1fgt5btoe1wj20qo19xwhd.jpg","userIcon":"https://tvax2.sinaimg.cn/crop.0.0.996.996.50/d705447ely8fm74j5mw32j20ro0ro41m.jpg"
-                    ,"nickName":"影子Joecy","userId":"3607446654"
-                    ,"created_timestamp":"1498051901"}]
+                    ,"created_timestamp":"1501082417"}]
