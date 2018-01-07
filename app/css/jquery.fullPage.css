@@ -1,0 +1,318 @@
+/**
+ * fullPage 2.4.6
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+ body,ul,ol,li,dl,dt,dd,form,p,em,span,select,input,textarea,fieldset,abbr,table,td,h1,h2,h3,h4,h5,h6{ margin:0px; padding:0px;}
+body{ font-size:14px; line-height:1.5em; font-family:'Microsoft Yahei'; background:#fcfcfc;  color:#4d4d4d;}
+ul,ol,li{ list-style:none;}
+select,input,img{ vertical-align:middle; outline:none;}
+img{ border:none;}
+a{text-decoration:none; outline:none}
+a:visited {text-decoration:none;}
+a:hover{ text-decoration:none; outline:none;}
+.clearfix:after { content:""; display:block; clear:both; }
+.clearfix { zoom:1; }
+html, body {
+    overflow:hidden;
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+h1,h2,h3,h4,h5{font-weight:normal}
+#superContainer {
+    height: 100%;
+    position: relative;
+
+    /* Touch detection for Windows 8 */
+    -ms-touch-action: none;
+
+    /* IE 11 on Windows Phone 8.1*/
+    touch-action: none;
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+.fp-slide {
+    float: left;
+}
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+.fp-slides {
+    z-index:1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+    overflow: scroll;
+
+}
+.fp-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+#fp-nav.right {
+    right: 17px;
+}
+#fp-nav.left {
+    left: 17px;
+}
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+    background: #333;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+}
+#fp-nav ul li:hover .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+}
+
+.clear{clear:both;}
+/*app推广*/
+
+.wxfix{position:absolute;top:436px;left:218px;}
+
+.fp-tableCell{position:relative;}
+
+/*第一屏*/
+.pageWarp{height:100%;position:relative;margin:0 auto;width:1200px}
+
+.imgAbsolut{ min-width:1200px;position:absolute; top:50%; margin-top:-323px;}
+.scrollPage1 .imgAbsolut{height:632px}
+.scrollPage1 .imgAbsolut .left_img {float: left;background: url(../images/csdnphone-.png) 0 0 no-repeat;width: 597px;height: 630px;}
+.scrollPage1 .imgAbsolut .right_img{float: left;display: inline;padding-top:88px;margin-left:110px;width:420px;position:relative}
+.scrollPage1 .imgAbsolut .right_img h2{margin-bottom:40px}
+/*.scrollPage1 .imgAbsolut .right_img p{font-size:24px;color:#8c8e95;line-height:30px;text-align:center;margin-bottom:80px}*/
+.scrollPage1 .imgAbsolut .right_img .btn a{display:block;width:189px;height:48px;margin-right:18px;background:url(../images/downbtn-2.png) no-repeat 0 0;margin-bottom:13px}
+.scrollPage1 .imgAbsolut .right_img .btn a:nth-child(1){background-position:-218px -55px}
+.scrollPage1 .imgAbsolut .right_img .btn a:nth-child(2){background-position:0 -55px}
+ .scrollPage1 .imgAbsolut .right_img .btn a.downapp:hover{background-position:0 0} 
+.scrollPage1 .imgAbsolut .right_img .btn a.downand:hover{background-position:-218px 0}
+
+.share {margin-top:32px}
+.share .shtxt{float: left;line-height:18px;height:18px;display:inline-block;color:#999999;margin-right:10px;font-style:normal;}
+.share a span{margin-right:5px}
+.share .jiathis_style_24x24 .shtxt{line-height:24px;height:24px;}
+/*.jiathis_style_32x32 .jtico{background:url(../images/shareicon.png) no-repeat 0 0!important;}*/
+.share .jiathis_style_24x24 a span{margin-right:10px}
+
+/*第二屏*/
+.scrollPage2 .imgAbsolut{ height:653px}
+.scrollPage2 .imgAbsolut .right_img {float: left;background: url(../images/csdnphone2-.png) 0 0 no-repeat;width: 584px;height: 637px;}
+.scrollPage2 .imgAbsolut .left_img{float: left;display: inline;padding-top:88px;margin-right:57px;width:480px}
+.scrollPage2 .imgAbsolut .left_img ul li{background:url(../images/iconspr.png) no-repeat right center;text-align:right;padding-right:100px}
+.scrollPage2 .imgAbsolut .left_img ul li.num1{background-position:right 2px}
+.scrollPage2 .imgAbsolut .left_img ul li.num2{background-position:right -165px;margin:90px 0;}
+.scrollPage2 .imgAbsolut .left_img ul li.num3{background-position:right -331px;}
+.scrollPage2 .imgAbsolut .left_img ul li p{color:#2b2f3e;font-size:30px;line-height:36px;margin-bottom:12px}
+.scrollPage2 .imgAbsolut .left_img ul li p em{color:#e2394b;font-style:normal;}
+.scrollPage2 .imgAbsolut .left_img ul li span{font-size:18px;color:#666}
+
+
+/*第三屏*/
+.scrollPage3{background:transparent url(../images/screen3bg.png) no-repeat center center;background-size:cover}
+.scrollPage3 .imgAbsolut{ height:458px;text-align:center;}
+.scrollPage3 .imgAbsolut h3{font-size:48px;color:#2b2f3e;line-height:80px;margin-bottom: 80px}
+.scrollPage3  i.logo{background:url(../images/csdnlogo2.png) no-repeat;width:182px;height:182px;display:inline-block;margin-right:80px}
+.scrollPage3  i.wx{background:url(../images/wxicon.png) no-repeat;width:182px;height:182px;display:inline-block;}
+.scrollPage3 .share{text-align:center;overflow:hidden;display:inline-block;margin-top:55px}
+
+/*右侧导航*/
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span{background:#bdbec3}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{border:1px solid #ceced2}
+
+
+
+/*手机端*/
+@media (max-width:640px){
+    #fp-nav.right {display:none;}
+    .imgAbsolut .left_img,.imgAbsolut .right_img{float:none!important;}
+    .scrollPage1 .imgAbsolut .left_img{width:160px;height:377px;background-size:100%;}
+    
+}
+.scrollPage1 img ,.scrollPage2 img{max-width:100%;width:auto9;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;-webkit-tap-highlight-color:transparent;-moz-tap-highlight-color:transparent;-o-tap-highlight-color:transparent;-ms-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-touch-callout:none;-moz-touch-callout:none;-o-touch-callout:none;-ms-touch-callout:none;touch-callout:none}
+
+.Upmg,.Downimg{margin:0 auto;width:68%;}
+.phonebox .scrollPage1 .Upmg{width:74%}
+.imgBox img{display:block;width:100%}
+.btn{text-align:center;}
+.btn a{display:inline-block;width:40%;margin-top:2%}
+/* .btn a.phapp{margin-right:12px} */
+.btn a.phand{margin-right:12px}
+.downarrow{background:url(../images/phone_arrow.png) no-repeat;width:26px;height:14px;display:block;background-size:100%;position:absolute;bottom:2%;left:50%;margin-left:-13px}
+.scrollPage2 .Upmg{width:66%;margin-top:5%}
+.scrollPage2 .Downimg{width:88%}
+.phonebox .scrollPage3{background:none}
+.scrollPage3 .layer_bg{position:absolute;top:0;bottom:0;width:100%;z-index:0;height:100%}
+.scrollPage3 .headpic{width:90%;margin:-29% auto 50px;position:relative;z-index:2;height:40px}
+.phonebox .scrollPage3 i{position:relative;z-index:2;width:120px;height:120px;background-size:100%}
+.phonebox .scrollPage3 i.logo{margin-right:35px;}
+.phonebox .scrollPage3 .imgBox{text-align:center;}
+.phonebox .scrollPage3 .uparrow{background:url(../images/phone_img09.png) no-repeat;width:24px;height:16px;display:block;background-size:100%;position:absolute;top:2%;left:50%;margin-left:-13px}
+.scrollPage3 ul{font-size: 0;  box-sizing: border-box;  -moz-box-sizing: border-box;  -webkit-box-sizing: border-box;position:relative;z-index:3;  overflow: hidden;
+  padding: 0 7%;}
+.scrollPage3 ul li{float: left;
+  vertical-align: top;
+  width: 50%;
+  padding:18px 14px;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;}
+
+/*视网膜屏*/
+/*@media screen and (-webkit-min-device-pixel-ratio: 2){
+	.scrollPage2 .imgAbsolut .left_img ul li{background:url(../images/iconspr.png) no-repeat right center}
+}*/
+
+/*横屏提示*/
+.mask{width:100%;height:100%;background:#32373b;position:absolute;left:0;top:0;z-index:99999;display:none}
+.mask-box{width:100%;height:252px;position:absolute;top:50%;left:0;margin-top:-119px}
+.mask-pic{width:194px;height:194px;margin:0 auto;text-align:center}
+.mask span{font-size:15px;display:block;color:#fff;text-align:center;width:100%;height:25px;padding-top:10px}
+.mask i{width:100px;height:163px;background:url(../images/bg6.png) 0 0 no-repeat;background-size:100px 163px;display:block;margin:0 auto;-webkit-animation:maskAni 1.5s ease infinite alternate;animation:maskAni 1.5s ease infinite alternate}
+
+@-webkit-keyframes maskAni{
+0% {-webkit-transform:rotate(-90deg)}
+30% {-webkit-transform:rotate(-90deg)}
+70%{-webkit-transform:rotate(0deg)}
+100% {-webkit-transform:rotate(0deg)}
+}
+@media all and (orientation : landscape) {
+.mask{display:block}
+} 
+
+@media screen and (min-width: 640px) and (max-width: 768px){
+
+.Upmg,.Downimg{margin:0 auto;width:59%;}
+.phonebox .scrollPage1 .Upmg{width:58%;margin-top: -24px;margin-bottom: 10px;}
+.btn a{width: 30%;}
+.scrollPage2 .Upmg{  width: 58%;}
+.scrollPage2 .Downimg{width: 66%}
+.scrollPage3 .headpic{width: 77%;margin-bottom: 88px;}
+.scrollPage3 ul{padding: 0 12%}
+.scrollPage3 ul li{padding: 18px 30px}
+.scrollPage2 .Upmg{width: 60%;margin-top: 3%;}
+}
