@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <meta charset="utf-8">
+      <title>Carson_Ho</title>
+
+     <script>
+         function save(){
+            document.location = "YunBaby://save?arg1=5";
+         }
+	function back(){
+            document.location = "YunBaby://back";
+         }
+      </script>
+</head>
+
+<!-- 点击按钮则调用callAndroid（）方法  -->
+   <body>
+     <button type="button" id="button1" onclick="back()">返回</button>
+<button type="button" id="button1" onclick="save()">保存</button>
+   </body>
+</html>
