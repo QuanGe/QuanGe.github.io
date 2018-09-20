@@ -7,11 +7,18 @@
 
      <script>
          function save(){
-            document.location = "yunbaby://save?arg1=5";
+            OStarJSBridge.saveGame("5");
          }
-	function back(){
-            document.location = "yunbaby://back";
+	       function back(){
+            OStarJSBridge.quitGame();
          }
+         function callSaveGameComplete(){
+            alert("I am an alert box!!")
+         }
+         function callSaveGameError(){
+              alert("error!!")
+         }
+
       </script>
 </head>
 
