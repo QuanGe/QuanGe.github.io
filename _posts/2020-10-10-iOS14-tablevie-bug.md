@@ -11,17 +11,17 @@ title: iOS 14适配之--UITableView
 # 如何修改
 
 这个其实是写代码不规范造成的，正确的操作 在`UITableViewCell`自定义过程中
-```object-c
+{% highlight objc %}
 [self.contentView addSubview:self.bottomBoxView];
-```
+{% endhighlight %}
 错误
-```object-c
+{% highlight objc %}
 [self addSubview:self.bottomBoxView];
-```
+{% endhighlight %}
 
 因为代码中有大量的代码，如何快速的修复？
 
-```
+{% highlight objc %}
 @interface UIView (FixiOS14Bug)
 @end
 
@@ -42,8 +42,7 @@ title: iOS 14适配之--UITableView
     }
 }
 @end
-
-```
+{% endhighlight %}
 
 
 
