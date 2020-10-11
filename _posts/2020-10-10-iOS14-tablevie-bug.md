@@ -6,7 +6,7 @@ title: iOS 14适配之--UITableView
 # 概览
 
 最近升级了Xcode12 ，编译完项目发现有个bug，就是UITableView里面的部分cell无法点击，通过`Debug View Hierarchy` 发现最上面有个`UITableViewCellContentView`类型的view。
-
+![错误原因](http://quangelab.com/images/ios14tableview.jpg)
 
 # 如何修改
 
