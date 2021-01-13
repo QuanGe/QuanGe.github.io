@@ -188,3 +188,26 @@ ls -l  根据日期选择要拷贝的APP
 
 
 scp -r -P 2222 root@127.0.0.1:/var/containers/Bundle/Application/63021253-0E17-4242-BC7A-4E8D96954AE8/Aweme.app /Users/zhangruquan/code/App_copy
+
+### 重签名后多设备支持
+修改Info.plist
+
+```
+<key>UISupportedDevices</key>
+	<array>
+		<string>iPad5,1</string>
+		<string>iPad5,2</string>
+		<string>iPad5,3</string>
+		<string>iPad5,4</string>
+		<string>iPad6,11</string>
+		<string>iPad6,12</string>
+		<string>iPad6,7</string>
+		<string>iPad6,8</string>
+		<string>iPad7,11</string>
+		<string>iPad7,12</string>
+		<string>iPad7,5</string>
+		<string>iPad7,6</string>
+		<string>iPhone9,2</string>
+		<string>iPhone9,4</string>
+	</array>
+```
