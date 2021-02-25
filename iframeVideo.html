@@ -32,8 +32,10 @@
 </html>
 
 <script type="text/javascript">
-    /*获取对应元素id*/
-    var box=document.getElementById('box');
-    // 读操作
-    alert(box.innerHTML);
-</script>
+        // document.onclick = function(){
+        window.onload = function(){
+            var myIframe = document.getElementById("iframe0").contentWindow.document.getElementsByTagName('video')[0].currentSrc;
+            // document.getElementsByTagName('video')[0].currentSrc
+            console.log('myIframe',)   
+        }
+    </script>
