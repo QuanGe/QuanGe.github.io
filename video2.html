@@ -18,17 +18,16 @@
 
   <script>
          function save(){
-            fetch('http://vjs.zencdn.net/v/oceans.mp4').then(res => res.blob()).then(blob => {
+            
              const a = document.createElement('a');
               document.body.appendChild(a)
               a.style.display = 'none'
-              const url = window.URL.createObjectURL(blob);
-              a.href = url;
+              a.href = 'http://vjs.zencdn.net/v/oceans.mp4';
               a.download = '视频.mp4';
               a.click();
               document.body.removeChild(a)
               window.URL.revokeObjectURL(url);
-            });
+            
 
          }
 
