@@ -1,0 +1,8 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXTINF:4.000000,
+https://r4---sn-i3belnls.googlevideo.com/videoplayback?expire=1620588962&ei=QuWXYNrSLty9qAGivbXQDw&ip=8.210.80.150&id=o-AJbHosieLwTk3hmglFFaBEuH0shk5tsbCyFUztiwTQb7&itag=18&source=youtube&requiressl=yes&mh=_i&mm=31%2C26&mn=sn-i3belnls%2Csn-30a7rn7s&ms=au%2Conr&mv=m&mvi=4&pl=17&initcwndbps=761250&vprv=1&mime=video%2Fmp4&ns=c-po4Ua4OSqA6uP6RfaxIlEF&gir=yes&clen=48540968&ratebypass=yes&dur=582.797&lmt=1612635209493212&mt=1620567165&fvip=6&fexp=24001373%2C24007246&c=WEB&txp=5430432&n=STQI0kMLTx2a1fDYTuX&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRgIhAJSjH1vNnAzyg3r4Wf6bdkRhMXdmlEuwm8iRtZutxtQUAiEA8sj7ryeUNYO_3Hzc1bIcsG7X_SyjJiaP0FUN6U0q1N8%3D&sig=AOq0QJ8wRgIhAOqM8lKdr-OsFjFHaL17ltA7959IVF6RgQ8lgL169UvQAiEAnV0sPkJr093EX2niQWaa_VxPme3q9h5YreOTZRNef8Y=
+#EXT-X-ENDLIST
