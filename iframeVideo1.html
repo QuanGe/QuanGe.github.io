@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>необходимо разрешение на использование вашей учетной </title>
+  <style>
+    .container{
+      width: 100%;
+      margin: 0 auto;
+      border: 1px solid #f00;
+      text-align: center;
+    }
+    video,embed,iframe{
+      border: 1px solid #000;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>如何获取下面iframe里面的视频url</h1>
+    
+      <div id="box">
+        <iframe id="iframe0" frameborder="0" src="https://v.qq.com/iframe/player.html?vid=i0670jbe37a&tiny=0" allowfullscreen></iframe>
+     </div>
+    
+  </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+        // document.onclick = function(){
+        window.onload = function(){
+            var myIframe = document.getElementById("iframe0").contentWindow.document.getElementsByTagName('video')[0].currentSrc;
+            // document.getElementsByTagName('video')[0].currentSrc
+            console.log('myIframe',)   
+        }
+    </script>
