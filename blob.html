@@ -38,11 +38,15 @@
               video.onload = function(e) {
                 window.URL.revokeObjectURL(video.src); // 清除释放
               };
+              //  display video duration when available
+            video.addEventListener("play", function () {
+              window.URL.revokeObjectURL(video.src); // 清除释放
+            }, false);
               video.src = window.URL.createObjectURL(xhr.response);
          
       }
     }
-    xhr.open('get','http://vjs.zencdn.net/v/oceans.mp4',true);
+    xhr.open('get','https://devstreaming-cdn.apple.com/videos/wwdc/2021/10321/1/DB3216C0-2220-4AE8-8584-9620ABB91F65/cmaf.m3u8',true);
     xhr.responseType = "blob";
     xhr.send();
   }
