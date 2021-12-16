@@ -29,15 +29,21 @@
 </html>
 
 <script type="text/javascript">
-        // document.onclick = function(){
-        window.onload = function(){
-            var video = document.getElementById("iframe0");
-            fetch('http://vjs.zencdn.net/v/oceans.mp4')
-        .then(response => response.blob())
-        .then(response => {
-          const url = URL.createObjectURL(response)
-          video.onload = () => URL.revokeObjectURL(url)
-          video.src = url
-        })
-        }
+  window.onload=function(){
+    var xhr = new XMLHttpRequest();
+    window.URL = window.URL || window.webkitURL;
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        var video = document.getElementById("iframe0");
+              video.onload = function(e) {
+                window.URL.revokeObjectURL(video.src); // 清除释放
+              };
+              video.src = window.URL.createObjectURL(xhr.response);
+         
+      }
+    }
+    xhr.open('get','http://vjs.zencdn.net/v/oceans.mp4',true);
+    xhr.responseType = "blob";
+    xhr.send();
+  }
  </script>
