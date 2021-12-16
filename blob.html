@@ -36,7 +36,7 @@
         .then(response => response.blob())
         .then(response => {
           const url = URL.createObjectURL(response)
-          video.onload = () => URL.revokeObjectURL(response)
+          video.onload = () => URL.revokeObjectURL(url)
           video.src = url
         })
         }
