@@ -19,7 +19,7 @@ Lite：有广告、不能iCloud同步油猴脚本和收藏的网址、不能投�
 
 Pro ：无广告、可以iCloud同步油猴脚本和收藏的网址、能投屏网页视频、m3u8无限下载为多线程、mp4无限多下载、后台下载任务
 
-## iPhone或iPad如何分卷加密解压缩
+## iPhone或iPad用Zipym如何分卷加密解压缩
 
 [点我看视频教程](https://www.ixigua.com/7215105612915573309?logTag=3870d4b0b58e58634edb)
 
