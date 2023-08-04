@@ -9,11 +9,14 @@ Zipym是一个多功能文件管理的工具，主要功能有下载文件、解
 
 ## 安装APP
 
-[Zipym Lite](https://apps.apple.com/cn/app/id6447483394)
-[Zipym Pro](https://apps.apple.com/cn/app/id1661537823)
+[点我安装Zipym Lite](https://apps.apple.com/cn/app/id6447483394)
+
+[点我安装Zipym Pro](https://apps.apple.com/cn/app/id1661537823)
 
 区别：
+
 Lite：有广告、不能iCloud同步油猴脚本和收藏的网址、不能投屏网页视频、m3u8无限下载为单线程、mp4无限多下载、后台下载任务
+
 Pro ：无广告、可以iCloud同步油猴脚本和收藏的网址、能投屏网页视频、m3u8无限下载为多线程、mp4无限多下载、后台下载任务
 
 ## iPhone或iPad如何分卷加密解压缩
