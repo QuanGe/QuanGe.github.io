@@ -23,3 +23,14 @@ Pro ：无广告、可以iCloud同步油猴脚本和收藏的网址、能投屏�
 
 [点我看视频教程](https://www.ixigua.com/7215105612915573309?logTag=3870d4b0b58e58634edb)
 
+## Facebook和instagram网页显示空白
+![Facebook和instagram网页显示空白](https://quangelab.com/images/facebook_error.jpg)
+如果Facebook和instagram网页显示空白，大家只需要去网页先登录即可，如何登录？
+[Facebook登录，长按复制链接](https://www.facebook.com/)
+[instagram登录，长按复制链接](https://www.instagram.com)
+
+## 如何保存网页图片
+扫码关注，回复【Zipym交流群】
+![如何保存网页图片](https://quangelab.com/images/zipym-pic.jpg)
+
+
