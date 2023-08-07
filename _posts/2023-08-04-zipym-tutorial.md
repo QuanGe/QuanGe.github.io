@@ -40,7 +40,6 @@ Pro ：无广告、可以iCloud同步油猴脚本和收藏的网址、能投屏�
 [m3u8油猴脚本，在Zipym浏览器里点我可以下载安装](https://quangelab.com/images/M3U8.user.js)
 
 ## 如何保存网页图片
-扫码关注，回复【Zipym交流群】
 ![如何保存网页图片](https://quangelab.com/images/zipym-pic.jpg)
 
 
