@@ -9,8 +9,7 @@
         
         const el = document.getElementById('mySearch');
         if (el.value && el.value.startsWith('http')) {
-          alert(el.value);
-          window.location.href= el.value;
+          window.open(el.value);
         }
       }
     </script>
