@@ -1,0 +1,25 @@
+<html> 
+<head> 
+<title>x.go</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" /> 
+   </head> 
+   <body>
+    <script>
+      function changeColor() {
+        
+        const el = document.getElementById('mySearch');
+        if (el.value && el.value.startsWith('http')) {
+          alert(el.value);
+          window.location.href= el.value;
+        }
+      }
+    </script>
+    <form>
+      <div>
+        <input type="search" placeholder="输入x的链接" id="mySearch" name="q" />
+        <button onclick="changeColor()">GO</button>
+      </div>
+    </form>
+    
+   </body> 
+ </html>
